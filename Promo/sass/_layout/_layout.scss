@@ -4,13 +4,15 @@ html {
         background-color:   black;
         text-align: right;        
         header {
-            position: absolute;
-            top: $topMargin;
+            position: fixed;
             padding-top: $leading;
             @include smallCaps;
             margin-left: $gutter;
             
-                        @media screen and (min-width: 48em) {}
+            @media screen and (min-width: 48em) {
+                position: absolute;
+                top: $topMargin;
+            }
 
             
             h1 {
@@ -24,10 +26,10 @@ html {
         section.dates {
             text-align: right;
             float: right;
-            margin-top: $topMargin;
             
             @media screen and (min-width: 48em) {
                 width: 100%;
+                margin-top: $topMargin;
             }
 
             ul {

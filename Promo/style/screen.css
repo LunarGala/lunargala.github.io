@@ -80,14 +80,41 @@ html ::-moz-selection {
   color: black;
 }
 
-/* line 12, ../sass/_globals/_type.scss */
+@font-face {
+  font-family: 'DINPro-Bold';
+  src: url("../sass/_globals/fonts/DINPro-Bold.eot?#iefix") format("embedded-opentype"), url("../sass/_globals/fonts/DINPro-Bold.otf") format("opentype"), url("../sass/_globals/fonts/DINPro-Bold.woff") format("woff"), url("../sass/_globals/fonts/DINPro-Bold.ttf") format("truetype"), url("../sass/_globals/fonts/DINPro-Bold.svg#DINPro-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINPro-Regular';
+  src: url("../sass/_globals/fonts/DINPro-Regular.eot?#iefix") format("embedded-opentype"), url("../sass/_globals/fonts/DINPro-Regular.otf") format("opentype"), url("../sass/_globals/fonts/DINPro-Regular.woff") format("woff"), url("../sass/_globals/fonts/DINPro-Regular.ttf") format("truetype"), url("../sass/_globals/fonts/DINPro-Regular.svg#DINPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINPro-Medium';
+  src: url("../sass/_globals/fonts/DINPro-Medium.eot?#iefix") format("embedded-opentype"), url("../sass/_globals/fonts/DINPro-Medium.otf") format("opentype"), url("../sass/_globals/fonts/DINPro-Medium.woff") format("woff"), url("../sass/_globals/fonts/DINPro-Medium.ttf") format("truetype"), url("../sass/_globals/fonts/DINPro-Medium.svg#DINPro-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 19, ../sass/_globals/_type.scss */
 html {
-  font-family: "DINPro-Regular", serif;
+  font-family: "DINPro-Medium", sans-serif;
   font-size: 10pt;
   line-height: 1.5em;
   color: white;
 }
-/* line 16, ../sass/_globals/_type.scss */
+@media screen and (min-width: 48em) {
+  /* line 19, ../sass/_globals/_type.scss */
+  html {
+    font-family: "DINPro-Regular", sans-serif;
+  }
+}
+/* line 23, ../sass/_globals/_type.scss */
 html a {
   color: white;
   text-decoration: none;
@@ -101,8 +128,7 @@ html body {
 }
 /* line 6, ../sass/_layout/_layout.scss */
 html body header {
-  position: absolute;
-  top: 50vh;
+  position: fixed;
   padding-top: 1.5em;
   font-size: .666em;
   font-family: "DINPro-Bold";
@@ -110,39 +136,46 @@ html body header {
   text-transform: uppercase !important;
   margin-left: 1.5625%;
 }
-/* line 18, ../sass/_layout/_layout.scss */
+@media screen and (min-width: 48em) {
+  /* line 6, ../sass/_layout/_layout.scss */
+  html body header {
+    position: absolute;
+    top: 50vh;
+  }
+}
+/* line 20, ../sass/_layout/_layout.scss */
 html body header h1 a {
   border: none;
 }
-/* line 24, ../sass/_layout/_layout.scss */
+/* line 26, ../sass/_layout/_layout.scss */
 html body section.dates {
   text-align: right;
   float: right;
-  margin-top: 50vh;
 }
 @media screen and (min-width: 48em) {
-  /* line 24, ../sass/_layout/_layout.scss */
+  /* line 26, ../sass/_layout/_layout.scss */
   html body section.dates {
     width: 100%;
+    margin-top: 50vh;
   }
 }
-/* line 33, ../sass/_layout/_layout.scss */
+/* line 35, ../sass/_layout/_layout.scss */
 html body section.dates ul {
   text-align: left;
   margin-right: 1.5625%;
   vertical-align: top;
 }
 @media screen and (min-width: 48em) {
-  /* line 33, ../sass/_layout/_layout.scss */
+  /* line 35, ../sass/_layout/_layout.scss */
   html body section.dates ul {
     display: inline-block;
   }
 }
-/* line 42, ../sass/_layout/_layout.scss */
+/* line 44, ../sass/_layout/_layout.scss */
 html body section.dates ul li {
   margin-top: 0.75em;
 }
-/* line 45, ../sass/_layout/_layout.scss */
+/* line 47, ../sass/_layout/_layout.scss */
 html body section.dates ul li h1 {
   font-size: .666em;
   font-family: "DINPro-Bold";
