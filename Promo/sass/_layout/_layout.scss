@@ -1,0 +1,53 @@
+html {
+    
+    body {
+        background-color:   black;
+        text-align: right;        
+        header {
+            position: absolute;
+            top: $topMargin;
+            padding-top: $leading;
+            @include smallCaps;
+            margin-left: $gutter;
+            
+                        @media screen and (min-width: 48em) {}
+
+            
+            h1 {
+                
+                a {
+                    border: none;
+                }
+            }
+        }
+        
+        section.dates {
+            text-align: right;
+            float: right;
+            margin-top: $topMargin;
+            
+            @media screen and (min-width: 48em) {
+                width: 100%;
+            }
+
+            ul {
+                text-align: left;
+                margin-right: $gutter;
+                vertical-align: top;
+                
+                @media screen and (min-width: 48em) {
+                    display:        inline-block;
+                }
+            
+                li {
+                    margin-top: $leading/2;
+                    
+                    h1 {
+                        @include    smallCaps;
+                        margin-top: $leading;
+                    }
+                } 
+            }
+        }
+    }
+}
