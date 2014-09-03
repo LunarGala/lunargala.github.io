@@ -65,19 +65,19 @@ html {
             background-size: cover;
             -webkit-animation: slides 50s infinite;
             -webkit-animation-timing-function: linear;
-            opacity: .5;
+            opacity: .6;
             height: 100%;
             width: 100%;
             top: 0;
             left: 0;
             position: fixed;
             z-index: -1;
-            -webkit-filter: grayscale(1);
+            -webkit-filter: grayscale(1) contrast(1.25);
         }
         
         header {
             position: fixed;
-            padding-top: $leading;
+            padding-top: $leading/2;
             margin-left: $gutter;
             text-align: left;
             

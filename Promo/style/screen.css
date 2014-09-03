@@ -199,19 +199,19 @@ html body:after {
   background-size: cover;
   -webkit-animation: slides 50s infinite;
   -webkit-animation-timing-function: linear;
-  opacity: .5;
+  opacity: .6;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   position: fixed;
   z-index: -1;
-  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(1) contrast(1.25);
 }
 /* line 78, ../sass/_layout/_layout.scss */
 html body header {
   position: fixed;
-  padding-top: 1.5em;
+  padding-top: 0.75em;
   margin-left: 1.5625%;
   text-align: left;
 }
