@@ -1,8 +1,80 @@
+@-webkit-keyframes slides {
+    0% {
+        background-image: url('../images/hyp_screenshot3.jpg');
+        -webkit-transform: scale(1);
+    }
+    
+    10% {
+        background-image: url('../images/48136_534974529880053_504516729_n.jpg');
+    }
+    
+    20% {
+        background-image: url('../images/71734_525772054133872_305102573_n.jpg');
+    }
+    
+    30% {
+        background-image: url('../images/150770_624006500958997_290599421_n.jpg');
+    }
+    
+    40% {
+        background-image: url('../images/179256_620920111267636_1540728685_n.jpg');
+    }
+    /*
+
+    50% {
+        background-image: url('../images/539319_525783944132683_420728233_n (1).jpg');
+    }
+*/
+    
+    50% {
+        background-image: url('../images/539319_525783944132683_420728233_n.jpg');
+        -webkit-transform: scale(1.25);
+    }
+    
+    60% {
+        background-image: url('../images/994666_10151682411472273_1157409616_n.jpg');
+    }
+    
+    70% {
+        background-image: url('../images/1462899_10151682411962273_1358716012_n.jpg');
+    }
+    
+    80% {
+        background-image: url('../images/1622073_711836072194135_268131317_n.jpg');
+    }
+    
+    90% {
+        background-image: url('../images/46789_525780607466350_177554268_n.jpg');
+    }
+
+    100% {
+        background-image: url('../images/hyp_screenshot3.jpg');
+        -webkit-transform: scale(1);
+    }
+}
+
 html {
     
     body {
+        text-align: right;
         background-color:   black;
-        text-align: right;        
+        
+        &:after {
+            content: "";
+            background-position: center top;
+            background-size: cover;
+            -webkit-animation: slides 50s infinite;
+            -webkit-animation-timing-function: linear;
+            opacity: .5;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+            z-index: -1;
+            -webkit-filter: grayscale(1);
+        }
+        
         header {
             position: fixed;
             padding-top: $leading;
@@ -26,6 +98,7 @@ html {
         section.dates {
             text-align: right;
             float: right;
+            margin-bottom: $leading;
             
             @media screen and (min-width: 48em) {
                 width: 100%;
