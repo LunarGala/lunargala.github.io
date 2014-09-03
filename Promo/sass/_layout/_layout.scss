@@ -78,8 +78,8 @@ html {
         header {
             position: fixed;
             padding-top: $leading;
-            @include smallCaps;
             margin-left: $gutter;
+            text-align: left;
             
             @media screen and (min-width: 48em) {
                 position: absolute;
@@ -88,6 +88,7 @@ html {
 
             
             h1 {
+                @include smallCaps;
                 
                 a {
                     border: none;
