@@ -28,8 +28,10 @@ $(document).ready(function(){
 
             if (currentSection != newCurrentSection) {
                 var diff = newCurrentSection - currentSection;
+                $(sections[currentSection]).removeClass("open");
+                $(sections[newCurrentSection]).addClass("open");
                 currentSection = newCurrentSection;
-                console.log("————————————————————————————————————————————————————");
+//                 console.log("————————————————————————————————————————————————————");
                 
                 sections.each(function(){
                     var i = $(this).index(), newScaleIndex;
@@ -46,11 +48,9 @@ $(document).ready(function(){
                             newScaleIndex = 0;
                         }
                     }
-                    
-    //                     newScaleIndex = Math.max(Math.min(5, newScaleIndex), 0);
-
+                                        
                     $(this).data("scaleIndex", newScaleIndex);
-                    console.log(currentSection, i, $(this).data("scaleIndex"));
+//                     console.log(currentSection, i, $(this).data("scaleIndex"));
                     $(this).css("height", scale($(this).data("scaleIndex")) * 100 + "%");
                 });
             }
