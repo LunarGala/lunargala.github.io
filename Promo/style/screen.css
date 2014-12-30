@@ -1013,6 +1013,7 @@ body > section.content > section.human .inside {
 body > section.content > section.human .inside h1, body > section.content > section.human .inside h2, body > section.content > section.human .inside p {
   display: inline;
 }
+<<<<<<< HEAD
 /* line 72, ../sass/screen.scss */
 body > section.content > section.human .inside h1:after, body > section.content > section.human .inside h2:after, body > section.content > section.human .inside p:after {
   content: ",";
@@ -1036,10 +1037,36 @@ body > section.content > section .inside {
   display: block;
   vertical-align: top;
   font-family: Munro, sans-serif;
+=======
+
+@font-face {
+    font-family: hellovetica;
+    src: url(../type/hellovetica.ttf);
+}
+
+@font-face {
+    font-family: apple;
+    src: url(../type/Apple][.ttf);
+}
+
+/* line 71, ../sass/screen.scss */
+body > section.content > section h1, body > section.content > section h2, body > section.content > section p {
+  text-align: center;
+  letter-spacing: 2em;
+  opacity: 0;
+  display: block;
+  vertical-align: top;
+  color: white;
+  font-family: apple, sans-serif;
+>>>>>>> FETCH_HEAD
   -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   transform-origin: top left;
   text-transform: lowercase;
+}
+
+section.intro {
+  background-color:black;
 }
