@@ -1001,6 +1001,17 @@ body > section.content > section.open h1, body > section.content > section.open 
   opacity: 1;
   margin-bottom: 2em;
 }
+
+@font-face {
+    font-family: hellovetica;
+    src: url(../type/hellovetica.ttf);
+}
+
+@font-face {
+    font-family: apple;
+    src: url(../type/Apple][.ttf);
+}
+
 /* line 71, ../sass/screen.scss */
 body > section.content > section h1, body > section.content > section h2, body > section.content > section p {
   text-align: center;
@@ -1009,10 +1020,14 @@ body > section.content > section h1, body > section.content > section h2, body >
   display: block;
   vertical-align: top;
   color: white;
-  font-family: Munro, sans-serif;
+  font-family: apple, sans-serif;
   -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   text-transform: lowercase;
+}
+
+section.intro {
+  background-color:black;
 }
