@@ -30,6 +30,11 @@ $(document).ready(function(){
                 var diff = newCurrentSection - currentSection;
                 $(sections[currentSection]).removeClass("open");
                 $(sections[newCurrentSection]).addClass("open");
+                /*
+$(sections[newCurrentSection]).children(".inside").css({
+                    transform : "scale(" + 
+                });
+*/
                 currentSection = newCurrentSection;
 //                 console.log("————————————————————————————————————————————————————");
                 
@@ -52,6 +57,9 @@ $(document).ready(function(){
                     $(this).data("scaleIndex", newScaleIndex);
 //                     console.log(currentSection, i, $(this).data("scaleIndex"));
                     $(this).css("height", scale($(this).data("scaleIndex")) * 100 + "%");
+                    $(this).children(".inside").css({
+                        "transform" : "scaleY(" + scale($(this).data("scaleIndex")) + ")"
+                    });
                 });
             }
         });

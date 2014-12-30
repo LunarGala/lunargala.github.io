@@ -13,7 +13,7 @@ html {
 
 body {
     height: 500vh;
-    font-size: 20pt;
+    font-size: 10pt;
     
     > section.content {
         position: fixed;
@@ -34,6 +34,16 @@ body {
                     width: 100%;
                 }
             }
+            
+            &.intro {
+                .inside {
+                    font-size: 1.5em;
+                    letter-spacing: .5em;
+                }
+                h1, h2 {
+                    display: none;
+                }
+            }
     
             &.human {
                 background-repeat: no-repeat;
@@ -49,34 +59,50 @@ body {
                 }
 */
                 
-                h1, h2, p {
+                .inside {
+                    color: white;
                     width: 100%;
+                    font-size: 1.5em;
+                    letter-spacing: 2em;
+                    letter-spacing: 1em;
+                    
+                    h1, h2, p {
+                        display: inline;
+                        
+                        &:after {
+                            content: ",";
+                        }
+                        
+                        &:last-child {
+                            &:after {
+                                content: "";
+                            }
+                        }
+                    }
                 }
             }
             
             &.open {
-                h1, h2, p {
-                    opacity: 1;
-                    margin-bottom: 2em;
-                }
-                h1 {
-//                     margin-top: 25vh;
-                    
+                .inside {
+//                     opacity: 1;
+                    @include transform(scaleY(1));
                 }
             }
             
             h1 {
             }
             
-            h1, h2, p {
-                text-align: center;
-                letter-spacing: 2em;
-                opacity: 0;
+            .inside {
+                text-align: justify;
+                margin-bottom: 2em;
+                line-height: 1.5em;
+//                 opacity: 0;
                 display: block;
                 vertical-align: top;
-                color: white;
                 font-family: Munro, sans-serif;
                 @include sectionTransition;
+//                 @include transform(scaleY(0));
+                transform-origin: top left;
                 text-transform: lowercase;
             }
         }

@@ -953,7 +953,7 @@ html {
 /* line 14, ../sass/screen.scss */
 body {
   height: 500vh;
-  font-size: 20pt;
+  font-size: 10pt;
 }
 /* line 18, ../sass/screen.scss */
 body > section.content {
@@ -979,7 +979,16 @@ body > section.content > section.video {
 body > section.content > section.video video {
   width: 100%;
 }
-/* line 38, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
+body > section.content > section.intro .inside {
+  font-size: 1.5em;
+  letter-spacing: .5em;
+}
+/* line 43, ../sass/screen.scss */
+body > section.content > section.intro h1, body > section.content > section.intro h2 {
+  display: none;
+}
+/* line 48, ../sass/screen.scss */
 body > section.content > section.human {
   background-repeat: no-repeat;
   background-size: 200% 200%;
@@ -992,27 +1001,45 @@ body > section.content > section.human {
                 }
 */
 }
-/* line 52, ../sass/screen.scss */
-body > section.content > section.human h1, body > section.content > section.human h2, body > section.content > section.human p {
+/* line 62, ../sass/screen.scss */
+body > section.content > section.human .inside {
+  color: white;
   width: 100%;
-}
-/* line 58, ../sass/screen.scss */
-body > section.content > section.open h1, body > section.content > section.open h2, body > section.content > section.open p {
-  opacity: 1;
-  margin-bottom: 2em;
-}
-/* line 71, ../sass/screen.scss */
-body > section.content > section h1, body > section.content > section h2, body > section.content > section p {
-  text-align: center;
+  font-size: 1.5em;
   letter-spacing: 2em;
-  opacity: 0;
+  letter-spacing: 1em;
+}
+/* line 69, ../sass/screen.scss */
+body > section.content > section.human .inside h1, body > section.content > section.human .inside h2, body > section.content > section.human .inside p {
+  display: inline;
+}
+/* line 72, ../sass/screen.scss */
+body > section.content > section.human .inside h1:after, body > section.content > section.human .inside h2:after, body > section.content > section.human .inside p:after {
+  content: ",";
+}
+/* line 77, ../sass/screen.scss */
+body > section.content > section.human .inside h1:last-child:after, body > section.content > section.human .inside h2:last-child:after, body > section.content > section.human .inside p:last-child:after {
+  content: "";
+}
+/* line 86, ../sass/screen.scss */
+body > section.content > section.open .inside {
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+/* line 95, ../sass/screen.scss */
+body > section.content > section .inside {
+  text-align: justify;
+  margin-bottom: 2em;
+  line-height: 1.5em;
   display: block;
   vertical-align: top;
-  color: white;
   font-family: Munro, sans-serif;
   -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transform-origin: top left;
   text-transform: lowercase;
 }
