@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    height: 500vh;
+    height: 5000vh;
     font-size: 10pt;
     
     > section.content {
@@ -84,8 +84,8 @@ body {
             
             &.open {
                 .inside {
-//                     opacity: 1;
-                    @include transform(scaleY(1));
+                    opacity: 1;
+//                     @include transform(scaleY(1));
                 }
             }
             
@@ -96,11 +96,12 @@ body {
                 text-align: justify;
                 margin-bottom: 2em;
                 line-height: 1.5em;
-//                 opacity: 0;
+                opacity: 0;
                 display: block;
                 vertical-align: top;
                 font-family: Munro, sans-serif;
                 @include sectionTransition;
+                @include transition-delay(1s);
 //                 @include transform(scaleY(0));
                 transform-origin: top left;
                 text-transform: lowercase;

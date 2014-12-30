@@ -952,7 +952,7 @@ html {
 
 /* line 14, ../sass/screen.scss */
 body {
-  height: 500vh;
+  height: 5000vh;
   font-size: 10pt;
 }
 /* line 18, ../sass/screen.scss */
@@ -1023,16 +1023,14 @@ body > section.content > section.human .inside h1:last-child:after, body > secti
 }
 /* line 86, ../sass/screen.scss */
 body > section.content > section.open .inside {
-  -moz-transform: scaleY(1);
-  -ms-transform: scaleY(1);
-  -webkit-transform: scaleY(1);
-  transform: scaleY(1);
+  opacity: 1;
 }
 /* line 95, ../sass/screen.scss */
 body > section.content > section .inside {
   text-align: justify;
   margin-bottom: 2em;
   line-height: 1.5em;
+  opacity: 0;
   display: block;
   vertical-align: top;
   font-family: Munro, sans-serif;
@@ -1040,6 +1038,10 @@ body > section.content > section .inside {
   -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
   transform-origin: top left;
   text-transform: lowercase;
 }

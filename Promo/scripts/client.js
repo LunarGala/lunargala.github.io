@@ -10,21 +10,26 @@ $(document).ready(function(){
             newCurrentSection = currentSection;
         
         sections.each(function(){
-            var i               = $(this).index();
+            var i = $(this).index();
                 
             $(this).css("height", scale(i) * 100 + "%");
             $(this).data("scaleIndex", i);
         });
         
+        $(sections).click(function(event) {
+            event.preventDefault();
+            var scrollTo = ($(document).height() - $(window).height()) * (($(this).index())/$(sections).length);
+            $(document).scrollTop(scrollTo);
+        });
+        
         $(document).on("scroll", function(event){
-            var scrollPercentage = $(window).scrollTop() / ($(document).height() - $(window).height()),
-                newCurrentSection = Math.min(
-                                        Math.max(
-                                            Math.round(numberOfSections * scrollPercentage),                                        
-//                                         numberOfSections * scrollPercentage,
-                                            0), 
-                                        numberOfSections);
-                
+            var scrollPercentage = $(window).scrollTop() / ($(document).height() - $(window).height());
+            
+            newCurrentSection = Math.min(
+                                    Math.max(
+                                        Math.round(numberOfSections * scrollPercentage),
+                                        0), 
+                                    numberOfSections);
 
             if (currentSection != newCurrentSection) {
                 var diff = newCurrentSection - currentSection;
@@ -57,9 +62,11 @@ $(sections[newCurrentSection]).children(".inside").css({
                     $(this).data("scaleIndex", newScaleIndex);
 //                     console.log(currentSection, i, $(this).data("scaleIndex"));
                     $(this).css("height", scale($(this).data("scaleIndex")) * 100 + "%");
-                    $(this).children(".inside").css({
+                    /*
+$(this).children(".inside").css({
                         "transform" : "scaleY(" + scale($(this).data("scaleIndex")) + ")"
                     });
+*/
                 });
             }
         });
