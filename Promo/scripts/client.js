@@ -4,6 +4,7 @@ $(document).ready(function(){
         sections = $("body > section.content > section");
         
     setSectionHeight();
+    addVideo();
     
     function setSectionHeight() {
         var currentSection = 0,
@@ -46,7 +47,7 @@ $(sections[newCurrentSection]).children(".inside").css({
                 sections.each(function(){
                     var i = $(this).index(), newScaleIndex;
                     
-                    if (currentSection < sections.length) {
+                    if (currentSection < sections.length) { // if not at end
                         if (currentSection < i) { // above
                             newScaleIndex = $(this).data("scaleIndex") - diff;
                         } else if (currentSection > i) { // below
@@ -56,6 +57,12 @@ $(sections[newCurrentSection]).children(".inside").css({
                             }
                         } else {
                             newScaleIndex = 0;
+                        }
+                        
+                        if (currentSection < 3) {
+                            addVideo();
+                        } else {
+                            removeVideo();
                         }
                     }
                                         
@@ -70,6 +77,17 @@ $(this).children(".inside").css({
                 });
             }
         });
+    }
+    
+    function addVideo() {
+        if ($("section.video iframe")) {
+            var iframe = '<iframe src="http://player.vimeo.com/video/115355275?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="1281" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+            $("section.video").html(iframe);
+        }
+    }
+    
+    function removeVideo() {
+        $("section.video iframe").remove();
     }
     
     function scale(x) {

@@ -29,6 +29,11 @@ body {
             
             &.video {
                 overflow: hidden;
+                                
+                iframe {
+                    height: 100% !important;
+                    width: 100% !important;
+                }
                 
                 video {
                     width: 100%;
@@ -101,7 +106,7 @@ body {
                 vertical-align: top;
                 font-family: Munro, sans-serif;
                 @include sectionTransition;
-                @include transition-delay(1s);
+//                 @include transition-delay(1s);
 //                 @include transform(scaleY(0));
                 transform-origin: top left;
                 text-transform: lowercase;

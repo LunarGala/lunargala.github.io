@@ -976,19 +976,24 @@ body > section.content > section.video {
   overflow: hidden;
 }
 /* line 33, ../sass/screen.scss */
+body > section.content > section.video iframe {
+  height: 100% !important;
+  width: 100% !important;
+}
+/* line 38, ../sass/screen.scss */
 body > section.content > section.video video {
   width: 100%;
 }
-/* line 39, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 body > section.content > section.intro .inside {
   font-size: 1.5em;
   letter-spacing: .5em;
 }
-/* line 43, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 body > section.content > section.intro h1, body > section.content > section.intro h2 {
   display: none;
 }
-/* line 48, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 body > section.content > section.human {
   background-repeat: no-repeat;
   background-size: 200% 200%;
@@ -1001,7 +1006,7 @@ body > section.content > section.human {
                 }
 */
 }
-/* line 62, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 body > section.content > section.human .inside {
   color: white;
   width: 100%;
@@ -1009,23 +1014,23 @@ body > section.content > section.human .inside {
   letter-spacing: 2em;
   letter-spacing: 1em;
 }
-/* line 69, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 body > section.content > section.human .inside h1, body > section.content > section.human .inside h2, body > section.content > section.human .inside p {
   display: inline;
 }
-/* line 72, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 body > section.content > section.human .inside h1:after, body > section.content > section.human .inside h2:after, body > section.content > section.human .inside p:after {
   content: ",";
 }
-/* line 77, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 body > section.content > section.human .inside h1:last-child:after, body > section.content > section.human .inside h2:last-child:after, body > section.content > section.human .inside p:last-child:after {
   content: "";
 }
-/* line 86, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 body > section.content > section.open .inside {
   opacity: 1;
 }
-/* line 95, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 body > section.content > section .inside {
   text-align: justify;
   margin-bottom: 2em;
@@ -1038,10 +1043,6 @@ body > section.content > section .inside {
   -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-  -moz-transition-delay: 1s;
-  -o-transition-delay: 1s;
-  -webkit-transition-delay: 1s;
-  transition-delay: 1s;
   transform-origin: top left;
   text-transform: lowercase;
 }
