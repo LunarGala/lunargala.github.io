@@ -996,17 +996,11 @@ body > section.content > section.intro h1, body > section.content > section.intr
 /* line 53, ../sass/screen.scss */
 body > section.content > section.human {
   background-repeat: no-repeat;
-  background-size: 200% 200%;
+  background-size: 100% 100%;
   background-position: center center;
   display: block;
-                /*
-&.open {
-                    background-size: cover;
-                    background-position-y: center;
-                }
-*/
 }
-/* line 67, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 body > section.content > section.human .inside {
   color: white;
   width: 100%;
@@ -1014,23 +1008,23 @@ body > section.content > section.human .inside {
   letter-spacing: 2em;
   letter-spacing: 1em;
 }
-/* line 74, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 body > section.content > section.human .inside h1, body > section.content > section.human .inside h2, body > section.content > section.human .inside p {
   display: inline;
 }
-/* line 77, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 body > section.content > section.human .inside h1:after, body > section.content > section.human .inside h2:after, body > section.content > section.human .inside p:after {
   content: ",";
 }
-/* line 82, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 body > section.content > section.human .inside h1:last-child:after, body > section.content > section.human .inside h2:last-child:after, body > section.content > section.human .inside p:last-child:after {
   content: "";
 }
-/* line 91, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 body > section.content > section.open .inside {
   opacity: 1;
 }
-/* line 100, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 body > section.content > section .inside {
   text-align: justify;
   margin-bottom: 2em;

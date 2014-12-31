@@ -4,7 +4,7 @@ $(document).ready(function(){
         sections = $("body > section.content > section");
         
     setSectionHeight();
-    addVideo();
+//     addVideo();
     
     function setSectionHeight() {
         var currentSection = 0,
@@ -80,14 +80,16 @@ $(this).children(".inside").css({
     }
     
     function addVideo() {
-        if ($("section.video iframe")) {
+        /*
+if ($("section.video iframe")) {
             var iframe = '<iframe src="http://player.vimeo.com/video/115355275?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="1281" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
             $("section.video").html(iframe);
         }
+*/
     }
     
     function removeVideo() {
-        $("section.video iframe").remove();
+//         $("section.video iframe").remove();
     }
     
     function scale(x) {
