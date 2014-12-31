@@ -61,7 +61,7 @@ $(sections[newCurrentSection]).children(".inside").css({
                         
                         if (currentSection < 3) {
                             addVideo();
-                        } else {
+                        } else if ((currentSection > 4) && (currentSection < 7)) { // range to handle very fast scrollign
                             removeVideo();
                         }
                     }
