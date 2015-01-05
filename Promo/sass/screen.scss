@@ -99,13 +99,9 @@ body {
                 }
             }
             
-            &:hover {
+            &.hover {
                 -webkit-filter: brightness(2);
             }
-            
-            h1 {
-            }
-            
             .inside {
                 text-align: justify;
                 margin-bottom: 2em;

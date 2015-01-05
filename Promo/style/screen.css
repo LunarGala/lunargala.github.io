@@ -1036,10 +1036,10 @@ body > section.content > section.open .inside {
   opacity: 1;
 }
 /* line 102, ../sass/screen.scss */
-body > section.content > section:hover {
+body > section.content > section.hover {
   -webkit-filter: brightness(2);
 }
-/* line 109, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 body > section.content > section .inside {
   text-align: justify;
   margin-bottom: 2em;

@@ -4,7 +4,7 @@ $(document).ready(function(){
         sections = $("body > section.content > section");
         
     setSectionHeight();
-//     addVideo();
+    addVideo();
     
     function setSectionHeight() {
         var currentSection = 0,
@@ -26,6 +26,8 @@ $(document).ready(function(){
         $(document).on("scroll", function(event){
             var scrollPercentage = $(window).scrollTop() / ($(document).height() - $(window).height());
             
+            $(sections).removeClass("hover");
+            
             newCurrentSection = Math.min(
                                     Math.max(
                                         Math.round(numberOfSections * scrollPercentage),
@@ -36,13 +38,7 @@ $(document).ready(function(){
                 var diff = newCurrentSection - currentSection;
                 $(sections[currentSection]).removeClass("open");
                 $(sections[newCurrentSection]).addClass("open");
-                /*
-$(sections[newCurrentSection]).children(".inside").css({
-                    transform : "scale(" + 
-                });
-*/
                 currentSection = newCurrentSection;
-//                 console.log("————————————————————————————————————————————————————");
                 
                 sections.each(function(){
                     var i = $(this).index(),
@@ -54,9 +50,6 @@ $(sections[newCurrentSection]).children(".inside").css({
                             newScaleIndex = $(this).data("scaleIndex") - diff;
                         } else if (currentSection > i) { // below
                             newScaleIndex = $(this).data("scaleIndex") + diff;
-                            if (newScaleIndex === 0) {
-                                console.log("WHOA");
-                            }
                         } else {
                             newScaleIndex = 0;
                         }
@@ -69,14 +62,17 @@ $(sections[newCurrentSection]).children(".inside").css({
                     }
                                         
                     $(this).data("scaleIndex", newScaleIndex);
-//                     console.log(currentSection, i, $(this).data("scaleIndex"));
-                    console.log(scale($(this).data("scaleIndex")), $(this).data("scaleIndex"));
-                    if ($(this).data("scaleIndex") < 13) {
-                        scaleMultiple = scale($(this).data("scaleIndex"));
-                    } else {
-                        scaleMultiple = 0.002;
+                    
+                    if ($(this).data("scaleIndex") < 20) { // change in height
+                        if ($(this).data("scaleIndex") < 13) { // visible difference in height
+                            scaleMultiple = scale($(this).data("scaleIndex"));
+                        } else { // no visible difference in height
+                            scaleMultiple = 0.002;
+                        }
+                        
+                        $(this).css("height", scaleMultiple * 100 + "%");
                     }
-                    $(this).css("height", scaleMultiple * 100 + "%");
+                    
 //                     $(this).css("-webkit-filter", scale($(this).data("scaleIndex")) * 100 + "%");
                     /*
 $(this).children(".inside").css({
@@ -88,17 +84,24 @@ $(this).children(".inside").css({
         });
     }
     
+    $(sections).mouseenter(function() {
+        $(this).addClass("hover");
+        $(sections).not($(this)).removeClass("hover");
+    })
+    
+    $(sections).mouseleave()(function() {
+        $(this).removeClass("hover");
+    })
+    
     function addVideo() {
-        /*
-if ($("section.video iframe")) {
+        if ($("section.video iframe")) {
             var iframe = '<iframe src="http://player.vimeo.com/video/115355275?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="1281" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
             $("section.video").html(iframe);
         }
-*/
     }
     
     function removeVideo() {
-//         $("section.video iframe").remove();
+        $("section.video iframe").remove();
     }
     
     function scale(x) {
