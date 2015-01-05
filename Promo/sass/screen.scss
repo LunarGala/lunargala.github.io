@@ -20,12 +20,12 @@ body {
         width: 100%;
         height: 90vh;
         
-        
         > section {
             height: 10em;
             width: 100%;
             position: relative;
             @include sectionTransition;
+            cursor: pointer;
             
             &.video {
                 overflow: hidden;
@@ -54,6 +54,7 @@ body {
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
                 background-position: center center;
+                background-color: white;
                 display: block;
                 
                 &.open {
@@ -67,12 +68,13 @@ body {
                     font-size: 1.5em;
                     letter-spacing: 2em;
                     letter-spacing: 1em;
+                    opacity: 0;
                     
                     h1, h2, p {
                         display: inline;
                         
                         &:after {
-                            content: ",";
+                            content: "";
                         }
                         
                         &:last-child {
@@ -85,10 +87,20 @@ body {
             }
             
             &.open {
+                cursor: default;
+                
+                &:hover {
+                    -webkit-filter: none;
+                }
+                
                 .inside {
                     opacity: 1;
 //                     @include transform(scaleY(1));
                 }
+            }
+            
+            &:hover {
+                -webkit-filter: brightness(2);
             }
             
             h1 {
@@ -98,7 +110,6 @@ body {
                 text-align: justify;
                 margin-bottom: 2em;
                 line-height: 1.5em;
-                opacity: 0;
                 display: block;
                 vertical-align: top;
                 font-family: Munro, sans-serif;

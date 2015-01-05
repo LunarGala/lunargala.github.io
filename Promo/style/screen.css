@@ -961,7 +961,7 @@ body > section.content {
   width: 100%;
   height: 90vh;
 }
-/* line 24, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 body > section.content > section {
   height: 10em;
   width: 100%;
@@ -970,6 +970,7 @@ body > section.content > section {
   -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: pointer;
 }
 /* line 30, ../sass/screen.scss */
 body > section.content > section.video {
@@ -998,38 +999,51 @@ body > section.content > section.human {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center center;
+  background-color: white;
   display: block;
 }
-/* line 64, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 body > section.content > section.human .inside {
   color: white;
   width: 100%;
   font-size: 1.5em;
   letter-spacing: 2em;
   letter-spacing: 1em;
+  opacity: 0;
 }
-/* line 71, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 body > section.content > section.human .inside h1, body > section.content > section.human .inside h2, body > section.content > section.human .inside p {
   display: inline;
 }
-/* line 74, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 body > section.content > section.human .inside h1:after, body > section.content > section.human .inside h2:after, body > section.content > section.human .inside p:after {
-  content: ",";
+  content: "";
 }
-/* line 79, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 body > section.content > section.human .inside h1:last-child:after, body > section.content > section.human .inside h2:last-child:after, body > section.content > section.human .inside p:last-child:after {
   content: "";
 }
-/* line 88, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
+body > section.content > section.open {
+  cursor: default;
+}
+/* line 92, ../sass/screen.scss */
+body > section.content > section.open:hover {
+  -webkit-filter: none;
+}
+/* line 96, ../sass/screen.scss */
 body > section.content > section.open .inside {
   opacity: 1;
 }
-/* line 97, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
+body > section.content > section:hover {
+  -webkit-filter: brightness(2);
+}
+/* line 109, ../sass/screen.scss */
 body > section.content > section .inside {
   text-align: justify;
   margin-bottom: 2em;
   line-height: 1.5em;
-  opacity: 0;
   display: block;
   vertical-align: top;
   font-family: Munro, sans-serif;

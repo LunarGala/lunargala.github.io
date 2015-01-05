@@ -94,7 +94,7 @@ if ($("section.video iframe")) {
     
     function scale(x) {
         x++;
-        var scaleMax = 1000,
+        var scaleMax = 500,
             xFactor  = 1.1,
             scaleX   = ((1 + ((scaleMax - 1) / (Math.pow((x * xFactor), 3)))) / scaleMax);
             
