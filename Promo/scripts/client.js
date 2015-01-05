@@ -45,7 +45,9 @@ $(sections[newCurrentSection]).children(".inside").css({
 //                 console.log("————————————————————————————————————————————————————");
                 
                 sections.each(function(){
-                    var i = $(this).index(), newScaleIndex;
+                    var i = $(this).index(),
+                            newScaleIndex,
+                            scaleMultiple;
                     
                     if (currentSection < sections.length) { // if not at end
                         if (currentSection < i) { // above
@@ -68,7 +70,14 @@ $(sections[newCurrentSection]).children(".inside").css({
                                         
                     $(this).data("scaleIndex", newScaleIndex);
 //                     console.log(currentSection, i, $(this).data("scaleIndex"));
-                    $(this).css("height", scale($(this).data("scaleIndex")) * 100 + "%");
+                    console.log(scale($(this).data("scaleIndex")), $(this).data("scaleIndex"));
+                    if ($(this).data("scaleIndex") < 13) {
+                        scaleMultiple = scale($(this).data("scaleIndex"));
+                    } else {
+                        scaleMultiple = 0.002;
+                    }
+                    $(this).css("height", scaleMultiple * 100 + "%");
+//                     $(this).css("-webkit-filter", scale($(this).data("scaleIndex")) * 100 + "%");
                     /*
 $(this).children(".inside").css({
                         "transform" : "scaleY(" + scale($(this).data("scaleIndex")) + ")"
