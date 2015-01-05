@@ -944,28 +944,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-size: 100% 100%;
 }
 
-/* line 9, ../sass/screen.scss */
+@font-face {
+  font-family: 'ArialLol';
+  src: url("../type/ArialLol/compressed-arial-mono.eot");
+  src: url("../type/ArialLol/compressed-arial-mono.eot?#iefix") format("embedded-opentype"), url("../type/ArialLol/compressed-arial-mono.woff") format("woff"), url("../type/ArialLol/compressed-arial-mono.ttf") format("truetype"), url("../type/ArialLol/compressed-arial-mono.svg#compressed-arial-mono") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-201D;
+}
+/* line 22, ../sass/screen.scss */
 html {
   text-rendering: optimizeLegibility;
   -webkit-touch-callout: none;
 }
 
-/* line 14, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 body {
   height: 5000vh;
   font-size: 10pt;
+  font-family: "ArialLol";
 }
-/* line 18, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 body ::selection {
   background: #ff00ff;
 }
-/* line 22, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 body > section.content {
   position: fixed;
   width: 100%;
   height: 90vh;
 }
-/* line 27, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 body > section.content > section {
   height: 10em;
   width: 100%;
@@ -976,29 +986,29 @@ body > section.content > section {
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   cursor: pointer;
 }
-/* line 34, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 body > section.content > section.video {
   overflow: hidden;
 }
-/* line 37, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 body > section.content > section.video iframe {
   height: 100% !important;
   width: 100% !important;
 }
-/* line 42, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 body > section.content > section.video video {
   width: 100%;
 }
-/* line 48, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 body > section.content > section.intro .inside {
   font-size: 1.5em;
   letter-spacing: .5em;
 }
-/* line 52, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 body > section.content > section.intro h1, body > section.content > section.intro h2 {
   display: none;
 }
-/* line 57, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 body > section.content > section.human {
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1006,51 +1016,50 @@ body > section.content > section.human {
   background-color: white;
   display: block;
 }
-/* line 69, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 body > section.content > section.human .inside {
   color: white;
   width: 100%;
-  font-size: 1.5em;
-  letter-spacing: 2em;
-  letter-spacing: 1em;
+  font-size: 3em;
+  letter-spacing: 5vw;
   opacity: 0;
 }
-/* line 77, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 body > section.content > section.human .inside h1, body > section.content > section.human .inside h2, body > section.content > section.human .inside p {
   display: inline;
+  text-align: justify;
 }
-/* line 80, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 body > section.content > section.human .inside h1:after, body > section.content > section.human .inside h2:after, body > section.content > section.human .inside p:after {
   content: "";
 }
-/* line 85, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 body > section.content > section.human .inside h1:last-child:after, body > section.content > section.human .inside h2:last-child:after, body > section.content > section.human .inside p:last-child:after {
   content: "";
 }
-/* line 93, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 body > section.content > section.open {
   cursor: default;
 }
-/* line 96, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 body > section.content > section.open.hover {
   -webkit-filter: none !important;
 }
-/* line 100, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 body > section.content > section.open .inside {
   opacity: 1;
 }
-/* line 106, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 body > section.content > section.hover {
   -webkit-filter: brightness(2);
 }
-/* line 110, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 body > section.content > section .inside {
   text-align: justify;
   margin-bottom: 2em;
   line-height: 1.5em;
   display: block;
   vertical-align: top;
-  font-family: Munro, sans-serif;
   -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);

@@ -6,6 +6,19 @@
     @include transition(all 1s cubic-bezier(0.19, 1, 0.22, 1));
 }
 
+@font-face {
+	font-family:'ArialLol';
+	src: url('../type/ArialLol/compressed-arial-mono.eot');
+	src: url('../type/ArialLol/compressed-arial-mono.eot?#iefix') format('embedded-opentype'),
+		url('../type/ArialLol/compressed-arial-mono.woff') format('woff'),
+		url('../type/ArialLol/compressed-arial-mono.ttf') format('truetype'),
+		url('../type/ArialLol/compressed-arial-mono.svg#compressed-arial-mono') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-201D;
+}
+
 html {
     text-rendering:         optimizeLegibility;
     -webkit-touch-callout:  none;
@@ -14,6 +27,7 @@ html {
 body {
     height: 5000vh;
     font-size: 10pt;
+    font-family: 'ArialLol', ;
     
     ::selection {
         background: #ff00ff;
@@ -69,13 +83,13 @@ body {
                 .inside {
                     color: white;
                     width: 100%;
-                    font-size: 1.5em;
-                    letter-spacing: 2em;
-                    letter-spacing: 1em;
+                    font-size: 3em;
+                    letter-spacing: 5vw;
                     opacity: 0;
                     
                     h1, h2, p {
                         display: inline;
+                        text-align: justify;
                         
                         &:after {
                             content: "";
@@ -113,7 +127,6 @@ body {
                 line-height: 1.5em;
                 display: block;
                 vertical-align: top;
-                font-family: Munro, sans-serif;
                 @include sectionTransition;
 //                 @include transition-delay(1s);
 //                 @include transform(scaleY(0));
