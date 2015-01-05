@@ -1,7 +1,8 @@
 $(document).ready(function(){
     var scrollDistance,
         numberOfSections = $("body > section.content > section").length,
-        sections = $("body > section.content > section");
+        sections = $("body > section.content > section"),
+        scaleAll = true;
         
     setSectionHeight();
     addVideo();
@@ -19,6 +20,7 @@ $(document).ready(function(){
         
         $(sections).click(function(event) {
             event.preventDefault();
+            scaleAll = true;
             var scrollTo = ($(document).height() - $(window).height()) * (($(this).index())/$(sections).length);
             $(document).scrollTop(scrollTo);
         });
@@ -63,15 +65,16 @@ $(document).ready(function(){
                                         
                     $(this).data("scaleIndex", newScaleIndex);
                     
-                    if ($(this).data("scaleIndex") < 20) { // change in height
+                    // change in height or first scroll (in case user is reloading a scrolled down page)
+//                     if (($(this).data("scaleIndex") < 20) || scaleAll) { 
                         if ($(this).data("scaleIndex") < 13) { // visible difference in height
                             scaleMultiple = scale($(this).data("scaleIndex"));
                         } else { // no visible difference in height
                             scaleMultiple = 0.002;
                         }
-                        
                         $(this).css("height", scaleMultiple * 100 + "%");
-                    }
+                        console.log(scaleAll);
+//                     }
                     
 //                     $(this).css("-webkit-filter", scale($(this).data("scaleIndex")) * 100 + "%");
                     /*
@@ -81,6 +84,8 @@ $(this).children(".inside").css({
 */
                 });
             }
+            
+            if (scaleAll) scaleAll = false;
         });
     }
     
@@ -89,8 +94,8 @@ $(this).children(".inside").css({
         $(sections).not($(this)).removeClass("hover");
     })
     
-    $(sections).mouseleave()(function() {
-        $(this).removeClass("hover");
+    $(sections).mouseleave(function() {
+        $(sections).removeClass("hover");
     })
     
     function addVideo() {
