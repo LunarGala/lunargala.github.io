@@ -74,6 +74,7 @@ body {
                 background-position: center center;
                 background-color: white;
                 display: block;
+                -webkit-filter: brightness(1);
                 
                 &.open {
 //                     background-size: cover;

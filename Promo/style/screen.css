@@ -1015,8 +1015,9 @@ body > section.content > section.human {
   background-position: center center;
   background-color: white;
   display: block;
+  -webkit-filter: brightness(1);
 }
-/* line 83, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 body > section.content > section.human .inside {
   color: white;
   width: 100%;
@@ -1024,36 +1025,36 @@ body > section.content > section.human .inside {
   letter-spacing: 5vw;
   opacity: 0;
 }
-/* line 90, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 body > section.content > section.human .inside h1, body > section.content > section.human .inside h2, body > section.content > section.human .inside p {
   display: inline;
   text-align: justify;
 }
-/* line 94, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 body > section.content > section.human .inside h1:after, body > section.content > section.human .inside h2:after, body > section.content > section.human .inside p:after {
   content: "";
 }
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 body > section.content > section.human .inside h1:last-child:after, body > section.content > section.human .inside h2:last-child:after, body > section.content > section.human .inside p:last-child:after {
   content: "";
 }
-/* line 107, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 body > section.content > section.open {
   cursor: default;
 }
-/* line 110, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 body > section.content > section.open.hover {
   -webkit-filter: none !important;
 }
-/* line 114, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 body > section.content > section.open .inside {
   opacity: 1;
 }
-/* line 120, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 body > section.content > section.hover {
   -webkit-filter: brightness(2);
 }
-/* line 124, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 body > section.content > section .inside {
   text-align: justify;
   margin-bottom: 2em;
