@@ -65,6 +65,10 @@ $(document).ready(function(){
                                         
                     $(this).data("scaleIndex", newScaleIndex);
                     
+                    if ($(this).data("scaleIndex") < 2) { // open section or adjacent to it
+                        $(this).addClass("visible");
+                    }
+                    
                     // change in height or first scroll (in case user is reloading a scrolled down page)
 //                     if (($(this).data("scaleIndex") < 20) || scaleAll) { 
                         if ($(this).data("scaleIndex") < 13) { // visible difference in height

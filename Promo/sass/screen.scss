@@ -74,7 +74,7 @@ body {
                 background-position: center center;
                 background-color: white;
                 display: block;
-                -webkit-filter: brightness(1);
+                -webkit-filter: none;
                 
                 &.open {
 //                     background-size: cover;
@@ -85,12 +85,11 @@ body {
                     color: white;
                     width: 100%;
                     font-size: 3em;
-                    letter-spacing: 5vw;
+//                     letter-spacing: 5vw;
                     opacity: 0;
                     
                     h1, h2, p {
                         display: inline;
-                        text-align: justify;
                         
                         &:after {
                             content: "";
@@ -109,13 +108,16 @@ body {
                 cursor: default;
                 
                 &.hover {
-                    -webkit-filter: none !important;
-                }
-                
+                    -webkit-filter: brightness(1) !important;
+                }                
                 .inside {
                     opacity: 1;
 //                     @include transform(scaleY(1));
                 }
+            }
+            
+            &.visible {
+                -webkit-filter: brightness(1);
             }
             
             &.hover {
@@ -124,6 +126,7 @@ body {
             
             .inside {
                 text-align: justify;
+                text-justify: newspaper;
                 margin-bottom: 2em;
                 line-height: 1.5em;
                 display: block;

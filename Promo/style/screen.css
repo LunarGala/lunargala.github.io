@@ -1015,48 +1015,51 @@ body > section.content > section.human {
   background-position: center center;
   background-color: white;
   display: block;
-  -webkit-filter: brightness(1);
+  -webkit-filter: none;
 }
 /* line 84, ../sass/screen.scss */
 body > section.content > section.human .inside {
   color: white;
   width: 100%;
   font-size: 3em;
-  letter-spacing: 5vw;
   opacity: 0;
 }
 /* line 91, ../sass/screen.scss */
 body > section.content > section.human .inside h1, body > section.content > section.human .inside h2, body > section.content > section.human .inside p {
   display: inline;
-  text-align: justify;
 }
-/* line 95, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 body > section.content > section.human .inside h1:after, body > section.content > section.human .inside h2:after, body > section.content > section.human .inside p:after {
   content: "";
 }
-/* line 100, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 body > section.content > section.human .inside h1:last-child:after, body > section.content > section.human .inside h2:last-child:after, body > section.content > section.human .inside p:last-child:after {
   content: "";
 }
-/* line 108, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 body > section.content > section.open {
   cursor: default;
 }
-/* line 111, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 body > section.content > section.open.hover {
-  -webkit-filter: none !important;
+  -webkit-filter: brightness(1) !important;
 }
-/* line 115, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 body > section.content > section.open .inside {
   opacity: 1;
 }
-/* line 121, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
+body > section.content > section.visible {
+  -webkit-filter: brightness(1);
+}
+/* line 123, ../sass/screen.scss */
 body > section.content > section.hover {
   -webkit-filter: brightness(2);
 }
-/* line 125, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 body > section.content > section .inside {
   text-align: justify;
+  text-justify: newspaper;
   margin-bottom: 2em;
   line-height: 1.5em;
   display: block;
