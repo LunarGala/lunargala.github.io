@@ -1,4 +1,4 @@
-/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,52 +20,52 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /* line 2, ../sass/humans.scss */
 .human.human01 {
-  background-image: url(../headshots/01adeleyeIbukunFayo.jpg);
+  background-image: url(../headshots/adeleyeIbukunFayo.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -76,7 +76,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 10, ../sass/humans.scss */
 .human.human02 {
-  background-image: url(../headshots/02lanre.jpg);
+  background-image: url(../headshots/aeuyeungAllison.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -87,7 +87,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 18, ../sass/humans.scss */
 .human.human03 {
-  background-image: url(../headshots/03jonesWesley.jpg);
+  background-image: url(../headshots/ahmedSam.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -98,7 +98,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 26, ../sass/humans.scss */
 .human.human04 {
-  background-image: url(../headshots/04aniJibby.jpg);
+  background-image: url(../headshots/ajithArchana.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -109,7 +109,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 34, ../sass/humans.scss */
 .human.human05 {
-  background-image: url(../headshots/05ideraSade.jpg);
+  background-image: url(../headshots/aliyuZai.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -120,7 +120,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 42, ../sass/humans.scss */
 .human.human06 {
-  background-image: url(../headshots/06boruKeerthi.jpg);
+  background-image: url(../headshots/anandSwathi.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -131,7 +131,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 50, ../sass/humans.scss */
 .human.human07 {
-  background-image: url(../headshots/07edmondsIsaiah.jpg);
+  background-image: url(../headshots/aniJibby.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -142,7 +142,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 58, ../sass/humans.scss */
 .human.human08 {
-  background-image: url(../headshots/08josephKeith.jpg);
+  background-image: url(../headshots/baileyJordan.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -153,7 +153,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 66, ../sass/humans.scss */
 .human.human09 {
-  background-image: url(../headshots/09ajithArchana.jpg);
+  background-image: url(../headshots/bergeronZach.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -164,7 +164,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 74, ../sass/humans.scss */
 .human.human10 {
-  background-image: url(../headshots/10aliyuZai.jpg);
+  background-image: url(../headshots/boruKeerthi.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -175,7 +175,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 82, ../sass/humans.scss */
 .human.human11 {
-  background-image: url(../headshots/11delarosaAlexis.jpg);
+  background-image: url(../headshots/bouraiAbdelwahab.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -186,7 +186,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 90, ../sass/humans.scss */
 .human.human12 {
-  background-image: url(../headshots/12anandSwathi.jpg);
+  background-image: url(../headshots/brahmBella.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -197,7 +197,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 98, ../sass/humans.scss */
 .human.human13 {
-  background-image: url(../headshots/13baileyJordan.jpg);
+  background-image: url(../headshots/buchwaldMiriam.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -208,7 +208,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 106, ../sass/humans.scss */
 .human.human14 {
-  background-image: url(../headshots/14cJess.jpg);
+  background-image: url(../headshots/cavilaroRachel.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -219,7 +219,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 114, ../sass/humans.scss */
 .human.human15 {
-  background-image: url(../headshots/15kodiNeha.jpg);
+  background-image: url(../headshots/chambersDelaney.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -230,7 +230,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 122, ../sass/humans.scss */
 .human.human16 {
-  background-image: url(../headshots/16singhShana.jpg);
+  background-image: url(../headshots/changSabrina.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -241,7 +241,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 130, ../sass/humans.scss */
 .human.human17 {
-  background-image: url(../headshots/17taylorAmaya.jpg);
+  background-image: url(../headshots/chenAmy.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -252,7 +252,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 138, ../sass/humans.scss */
 .human.human18 {
-  background-image: url(../headshots/18patelChanda.jpg);
+  background-image: url(../headshots/chenYutong.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -263,7 +263,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 146, ../sass/humans.scss */
 .human.human19 {
-  background-image: url(../headshots/19deleonLynzky.jpg);
+  background-image: url(../headshots/choMichelle.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -274,7 +274,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 154, ../sass/humans.scss */
 .human.human20 {
-  background-image: url(../headshots/20moiseStephane.jpg);
+  background-image: url(../headshots/chouMolly.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -285,7 +285,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 162, ../sass/humans.scss */
 .human.human21 {
-  background-image: url(../headshots/20sunSteven.jpg);
+  background-image: url(../headshots/chukwumaJess.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -296,7 +296,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 170, ../sass/humans.scss */
 .human.human22 {
-  background-image: url(../headshots/21yeAlice.jpg);
+  background-image: url(../headshots/cliffordColleen.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -307,7 +307,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 178, ../sass/humans.scss */
 .human.human23 {
-  background-image: url(../headshots/22ahmedSam.jpg);
+  background-image: url(../headshots/criglerAmelia.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -318,7 +318,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 186, ../sass/humans.scss */
 .human.human24 {
-  background-image: url(../headshots/23linJarret.jpg);
+  background-image: url(../headshots/delarosaAlexis.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -329,7 +329,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 194, ../sass/humans.scss */
 .human.human25 {
-  background-image: url(../headshots/24wooSohee.jpg);
+  background-image: url(../headshots/deleonLynzky.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -340,7 +340,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 202, ../sass/humans.scss */
 .human.human26 {
-  background-image: url(../headshots/25aeuyeungAllison.jpg);
+  background-image: url(../headshots/demlerAya.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -351,7 +351,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 210, ../sass/humans.scss */
 .human.human27 {
-  background-image: url(../headshots/26liangAngela.jpg);
+  background-image: url(../headshots/edmondsIsaiah.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -362,7 +362,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 219, ../sass/humans.scss */
 .human.human28 {
-  background-image: url(../headshots/27chouMolly.jpg);
+  background-image: url(../headshots/essexChristopher.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -373,7 +373,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 227, ../sass/humans.scss */
 .human.human29 {
-  background-image: url(../headshots/28ragazzoKira.jpg);
+  background-image: url(../headshots/felbingerBrenan.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -384,7 +384,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 235, ../sass/humans.scss */
 .human.human30 {
-  background-image: url(../headshots/29kongLiana.jpg);
+  background-image: url(../headshots/fieldsSaraRemi.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -395,7 +395,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 243, ../sass/humans.scss */
 .human.human31 {
-  background-image: url(../headshots/30goldsteinLauren.jpg);
+  background-image: url(../headshots/frazierKatherine.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -406,7 +406,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 251, ../sass/humans.scss */
 .human.human32 {
-  background-image: url(../headshots/31kimJay.jpg);
+  background-image: url(../headshots/gardnerDavid.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -417,7 +417,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 259, ../sass/humans.scss */
 .human.human33 {
-  background-image: url(../headshots/32choMichelle.jpg);
+  background-image: url(../headshots/goldsteinLauren.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -428,7 +428,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 267, ../sass/humans.scss */
 .human.human34 {
-  background-image: url(../headshots/33onoAntonio.jpg);
+  background-image: url(../headshots/hackerEmmy.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
@@ -439,7 +439,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 275, ../sass/humans.scss */
 .human.human35 {
-  background-image: url(../headshots/34shenJessica.jpg);
+  background-image: url(../headshots/heXuran.jpg);
   -webkit-background-size: 100% 100%;
   /* For WebKit*/
   -moz-background-size: 100% 100%;
