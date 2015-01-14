@@ -45,6 +45,20 @@ body {
             @include sectionTransition;
             cursor: pointer;
             
+
+            &.logo {
+                .inside {
+                    font-size: 3em;
+                    letter-spacing: 13vw;
+
+                    h2 {
+                        &:after {
+                            content: "";
+                        }
+                    }
+                }
+            }
+
             &.video {
                 overflow: hidden;
                                 
@@ -62,6 +76,12 @@ body {
                 .inside {
                     font-size: 1.5em;
                     letter-spacing: .5em;
+                    opacity: 0;
+                    p {
+                        &:after {
+                            content: "";
+                        }
+                    }
                 }
                 h1, h2 {
                     display: none;
