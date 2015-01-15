@@ -1,3 +1,16 @@
+
+
+.logo {
+  background-image: url(../lg-logo-03.png);
+  -webkit-background-size: 100% 100%;
+  /* For WebKit*/
+  -moz-background-size: 100% 100%;
+  /* Mozilla*/
+  -o-background-size: 100% 100%;
+  /* Opera*/
+  background-size: 100% 100%;
+}
+
 /* line 2, ../sass/humans.scss */
 .human.adeleyeIbukunFayo {
   background-image: url(../headshots/adeleyeIbukunFayo.jpg);
