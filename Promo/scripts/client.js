@@ -5,7 +5,10 @@ $(document).ready(function(){
         scaleAll = true;
         
     setSectionHeight();
-    addVideo();
+    
+    $("section.video").click(function(event) {
+        addVideo();
+    });
     
     function setSectionHeight() {
         var currentSection = 0,
@@ -56,9 +59,9 @@ $(document).ready(function(){
                             newScaleIndex = 0;
                         }
                         
-                        if (currentSection < 3) {
+                        if (currentSection === 0) {
                             addVideo();
-                        } else if ((currentSection > 4) && (currentSection < 7)) { // range to handle very fast scrollign
+                        } else { // range to handle very fast scrolling
                             removeVideo();
                         }
                     }
@@ -81,11 +84,9 @@ $(document).ready(function(){
 //                     }
                     
 //                     $(this).css("-webkit-filter", scale($(this).data("scaleIndex")) * 100 + "%");
-                    /*
-$(this).children(".inside").css({
+                    $(this).children(".inside").css({
                         "transform" : "scaleY(" + scale($(this).data("scaleIndex")) + ")"
                     });
-*/
                 });
             }
             

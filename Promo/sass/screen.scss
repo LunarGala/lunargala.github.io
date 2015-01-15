@@ -61,6 +61,8 @@ body {
 
             &.video {
                 overflow: hidden;
+                background-image: url("../images/video-bg.jpg");
+                background-size: 100% 100%;
                                 
                 iframe {
                     height: 100% !important;
@@ -76,7 +78,7 @@ body {
                 .inside {
                     font-size: 1.5em;
                     letter-spacing: .5em;
-                    opacity: 0;
+
                     p {
                         &:after {
                             content: "";
@@ -96,6 +98,14 @@ body {
                 display: block;
                 -webkit-filter: none;
                 
+                &.visible {
+                    -webkit-filter: brightness(1);
+                    
+                    .inside {
+                        opacity: 1;
+                    }
+                }
+                
                 &.open {
 //                     background-size: cover;
 //                     background-position-y: center;
@@ -105,8 +115,9 @@ body {
                     color: white;
                     width: 100%;
                     font-size: 3em;
-//                     letter-spacing: 5vw;
                     opacity: 0;
+//                     letter-spacing: 5vw;
+//                     opacity: 0;
                     
                     h1, h2, p {
                         display: inline;
@@ -135,11 +146,7 @@ body {
 //                     @include transform(scaleY(1));
                 }
             }
-            
-            &.visible {
-                -webkit-filter: brightness(1);
-            }
-            
+                        
             &.hover {
                 -webkit-filter: brightness(2);
             }
@@ -154,7 +161,7 @@ body {
                 @include sectionTransition;
 //                 @include transition-delay(1s);
 //                 @include transform(scaleY(0));
-                transform-origin: top left;
+                -webkit-transform-origin: top left;
                 text-transform: lowercase;
             }
         }
