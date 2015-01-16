@@ -7,16 +7,16 @@
 }
 
 @font-face {
-	font-family:'ArialLol';
-	src: url('../type/ArialLol/compressed-arial-mono.eot');
-	src: url('../type/ArialLol/compressed-arial-mono.eot?#iefix') format('embedded-opentype'),
-		url('../type/ArialLol/compressed-arial-mono.woff') format('woff'),
-		url('../type/ArialLol/compressed-arial-mono.ttf') format('truetype'),
-		url('../type/ArialLol/compressed-arial-mono.svg#compressed-arial-mono') format('svg');
-	font-weight: 400;
-	font-style: normal;
-	font-stretch: normal;
-	unicode-range: U+0020-201D;
+    font-family:'ArialLol';
+    src: url('../type/ArialLol/compressed-arial-mono.eot');
+    src: url('../type/ArialLol/compressed-arial-mono.eot?#iefix') format('embedded-opentype'),
+        url('../type/ArialLol/compressed-arial-mono.woff') format('woff'),
+        url('../type/ArialLol/compressed-arial-mono.ttf') format('truetype'),
+        url('../type/ArialLol/compressed-arial-mono.svg#compressed-arial-mono') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-201D;
 }
 
 html {
@@ -28,46 +28,68 @@ body {
     height: 5000vh;
     font-size: 10pt;
     font-family: 'ArialLol', ;
-    
+
     ::selection {
         background: #ff00ff;
     }
-    
+
     > section.content {
         position: fixed;
         width: 100%;
         height: 90vh;
-        
+
         > section {
             height: 10em;
             width: 100%;
             position: relative;
             @include sectionTransition;
             cursor: pointer;
-            
+
+
+            &.logo {
+                .inside {
+                    font-size: 3em;
+                    letter-spacing: 13vw;
+
+                    h2 {
+                        &:after {
+                            content: "";
+                        }
+                    }
+                }
+            }
+
             &.video {
                 overflow: hidden;
-                                
+                background-image: url("../images/video-bg.jpg");
+                background-size: 100% 100%;
+
                 iframe {
                     height: 100% !important;
                     width: 100% !important;
                 }
-                
+
                 video {
                     width: 100%;
                 }
             }
-            
+
             &.intro {
                 .inside {
                     font-size: 1.5em;
                     letter-spacing: .5em;
+
+                    p {
+                        &:after {
+                            content: "";
+                        }
+                    }
                 }
                 h1, h2 {
                     display: none;
                 }
             }
-    
+
             &.human {
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
@@ -75,26 +97,35 @@ body {
                 background-color: white;
                 display: block;
                 -webkit-filter: none;
-                
+
+                &.visible {
+                    -webkit-filter: brightness(1);
+
+                    .inside {
+                        opacity: 1;
+                    }
+                }
+
                 &.open {
 //                     background-size: cover;
 //                     background-position-y: center;
                 }
-                
+
                 .inside {
                     color: white;
                     width: 100%;
                     font-size: 3em;
-//                     letter-spacing: 5vw;
                     opacity: 0;
-                    
+//                     letter-spacing: 5vw;
+//                     opacity: 0;
+
                     h1, h2, p {
                         display: inline;
-                        
+
                         &:after {
                             content: "";
                         }
-                        
+
                         &:last-child {
                             &:after {
                                 content: "";
@@ -103,10 +134,10 @@ body {
                     }
                 }
             }
-            
+
             &.open {
                 cursor: default;
-                
+
                 &.hover {
                     -webkit-filter: brightness(1) !important;
                 }                
@@ -115,15 +146,11 @@ body {
 //                     @include transform(scaleY(1));
                 }
             }
-            
-            &.visible {
-                -webkit-filter: brightness(1);
-            }
-            
+
             &.hover {
                 -webkit-filter: brightness(2);
             }
-            
+
             .inside {
                 text-align: justify;
                 text-justify: newspaper;
@@ -134,7 +161,7 @@ body {
                 @include sectionTransition;
 //                 @include transition-delay(1s);
 //                 @include transform(scaleY(0));
-                transform-origin: top left;
+                -webkit-transform-origin: top left;
                 text-transform: lowercase;
             }
         }

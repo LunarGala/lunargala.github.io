@@ -1008,29 +1008,44 @@ body > section.content > section {
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   cursor: pointer;
 }
-/* line 48, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
+body > section.content > section.logo .inside {
+  font-size: 3em;
+  letter-spacing: 13vw;
+}
+/* line 55, ../sass/screen.scss */
+body > section.content > section.logo .inside h2:after {
+  content: "";
+}
+/* line 62, ../sass/screen.scss */
 body > section.content > section.video {
   overflow: hidden;
+  background-image: url("../images/video-bg.jpg");
+  background-size: 100% 100%;
 }
-/* line 51, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 body > section.content > section.video iframe {
   height: 100% !important;
   width: 100% !important;
 }
-/* line 56, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 body > section.content > section.video video {
   width: 100%;
 }
-/* line 62, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 body > section.content > section.intro .inside {
   font-size: 1.5em;
   letter-spacing: .5em;
 }
-/* line 66, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
+body > section.content > section.intro .inside p:after {
+  content: "";
+}
+/* line 88, ../sass/screen.scss */
 body > section.content > section.intro h1, body > section.content > section.intro h2 {
   display: none;
 }
-/* line 71, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 body > section.content > section.human {
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1039,46 +1054,50 @@ body > section.content > section.human {
   display: block;
   -webkit-filter: none;
 }
-/* line 84, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
+body > section.content > section.human.visible {
+  -webkit-filter: brightness(1);
+}
+/* line 104, ../sass/screen.scss */
+body > section.content > section.human.visible .inside {
+  opacity: 1;
+}
+/* line 114, ../sass/screen.scss */
 body > section.content > section.human .inside {
   color: white;
   width: 100%;
   font-size: 3em;
   opacity: 0;
 }
-/* line 91, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 body > section.content > section.human .inside h1, body > section.content > section.human .inside h2, body > section.content > section.human .inside p {
   display: inline;
 }
-/* line 94, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 body > section.content > section.human .inside h1:after, body > section.content > section.human .inside h2:after, body > section.content > section.human .inside p:after {
   content: "";
 }
-/* line 99, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 body > section.content > section.human .inside h1:last-child:after, body > section.content > section.human .inside h2:last-child:after, body > section.content > section.human .inside p:last-child:after {
   content: "";
 }
-/* line 107, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 body > section.content > section.open {
   cursor: default;
 }
-/* line 110, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 body > section.content > section.open.hover {
   -webkit-filter: brightness(1) !important;
 }
-/* line 113, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 body > section.content > section.open .inside {
   opacity: 1;
 }
-/* line 119, ../sass/screen.scss */
-body > section.content > section.visible {
-  -webkit-filter: brightness(1);
-}
-/* line 123, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 body > section.content > section.hover {
   -webkit-filter: brightness(2);
 }
-/* line 127, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 body > section.content > section .inside {
   text-align: justify;
   text-justify: newspaper;
@@ -1090,6 +1109,6 @@ body > section.content > section .inside {
   -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-  transform-origin: top left;
+  -webkit-transform-origin: top left;
   text-transform: lowercase;
 }
