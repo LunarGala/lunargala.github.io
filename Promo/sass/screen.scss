@@ -97,12 +97,8 @@ body {
                 background-color: white;
                 display: block;
                 -webkit-filter: none;
-<<<<<<< HEAD
                 font-size: 2em;
-                
-=======
 
->>>>>>> FETCH_HEAD
                 &.visible {
                     -webkit-filter: brightness(1);
 
@@ -125,13 +121,8 @@ body {
 //                     opacity: 0;
 
                     h1, h2, p {
-<<<<<<< HEAD
                         display: block;
                         
-=======
-                        display: inline;
-
->>>>>>> FETCH_HEAD
                         &:after {
                             content: "-";
                             display: block;
