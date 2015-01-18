@@ -76,7 +76,7 @@ body {
             
             &.intro {
                 .inside {
-                    font-size: 1.5em;
+                    font-size: 3vw;
                     letter-spacing: .5em;
 
                     p {
@@ -97,6 +97,7 @@ body {
                 background-color: white;
                 display: block;
                 -webkit-filter: none;
+                font-size: 2em;
                 
                 &.visible {
                     -webkit-filter: brightness(1);
@@ -114,16 +115,17 @@ body {
                 .inside {
                     color: white;
                     width: 100%;
-                    font-size: 3em;
+                    font-size: 2em;
                     opacity: 0;
-//                     letter-spacing: 5vw;
+                    letter-spacing: 3vw;
 //                     opacity: 0;
                     
                     h1, h2, p {
-                        display: inline;
+                        display: block;
                         
                         &:after {
-                            content: "";
+                            content: "-";
+                            display: block;
                         }
                         
                         &:last-child {

@@ -1034,7 +1034,7 @@ body > section.content > section.video video {
 }
 /* line 78, ../sass/screen.scss */
 body > section.content > section.intro .inside {
-  font-size: 1.5em;
+  font-size: 3vw;
   letter-spacing: .5em;
 }
 /* line 83, ../sass/screen.scss */
@@ -1053,51 +1053,54 @@ body > section.content > section.human {
   background-color: white;
   display: block;
   -webkit-filter: none;
+  font-size: 2em;
 }
-/* line 101, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 body > section.content > section.human.visible {
   -webkit-filter: brightness(1);
 }
-/* line 104, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 body > section.content > section.human.visible .inside {
   opacity: 1;
 }
-/* line 114, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 body > section.content > section.human .inside {
   color: white;
   width: 100%;
-  font-size: 3em;
+  font-size: 2em;
   opacity: 0;
+  letter-spacing: 3vw;
 }
-/* line 122, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 body > section.content > section.human .inside h1, body > section.content > section.human .inside h2, body > section.content > section.human .inside p {
-  display: inline;
+  display: block;
 }
-/* line 125, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 body > section.content > section.human .inside h1:after, body > section.content > section.human .inside h2:after, body > section.content > section.human .inside p:after {
-  content: "";
+  content: " -";
+  display: block;
 }
-/* line 130, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 body > section.content > section.human .inside h1:last-child:after, body > section.content > section.human .inside h2:last-child:after, body > section.content > section.human .inside p:last-child:after {
   content: "";
 }
-/* line 138, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 body > section.content > section.open {
   cursor: default;
 }
-/* line 141, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 body > section.content > section.open.hover {
   -webkit-filter: brightness(1) !important;
 }
-/* line 144, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 body > section.content > section.open .inside {
   opacity: 1;
 }
-/* line 150, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 body > section.content > section.hover {
   -webkit-filter: brightness(2);
 }
-/* line 154, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 body > section.content > section .inside {
   text-align: justify;
   text-justify: newspaper;

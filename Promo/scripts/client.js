@@ -60,7 +60,7 @@ $(document).ready(function(){
                         }
                         
                         if (currentSection === 0) {
-                            addVideo();
+//                             addVideo();
                         } else { // range to handle very fast scrolling
                             removeVideo();
                         }
@@ -105,7 +105,7 @@ $(document).ready(function(){
     
     function addVideo() {
         if ($("section.video iframe")) {
-            var iframe = '<iframe src="http://player.vimeo.com/video/115355275?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="1281" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+            var iframe = '<iframe src="http://player.vimeo.com/video/115355275?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff;autoplay=1" width="1281" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
             $("section.video").html(iframe);
         }
     }
