@@ -22,16 +22,17 @@
 html {
     text-rendering:         optimizeLegibility;
     -webkit-touch-callout:  none;
+    
+    
+    ::selection {
+        background: #ff00ff !important;
+    }
 }
 
 body {
     height: 5000vh;
     font-size: 10pt;
     font-family: 'ArialLol', ;
-
-    ::selection {
-        background: #ff00ff;
-    }
 
     > section.content {
         position: fixed;
@@ -121,7 +122,7 @@ body {
 //                     opacity: 0;
 
                     h1, h2, p {
-                        display: block;
+                        display: inline;
                         
                         &:after {
                             content: "-";
