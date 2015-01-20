@@ -1,0 +1,64 @@
+/* TYPE */
+@font-face {
+    font-family: 'ArialLol';
+    src: url('type/ArialLol/compressed-arial-mono.eot');
+    src: url('type/ArialLol/compressed-arial-mono.eot?#iefix') format('embedded-opentype'),
+        url('type/ArialLol/compressed-arial-mono.woff') format('woff'),
+        url('type/ArialLol/compressed-arial-mono.ttf') format('truetype'),
+        url('type/ArialLol/compressed-arial-mono.svg#compressed-arial-mono') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-201D;
+}
+
+body {
+    font-size: 3em;
+    font-family: 'ArialLol';
+    transform: translateZ(0); /* Trigger 3d acceleration */
+}
+
+section {
+    height: .136842105%; /* 13% / 95 sections */
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: height 0.3s;
+    width: 100%;
+    -webkit-background-size: 100% 100%; 
+    -moz-background-size: 100% 100%;    
+    -o-background-size: 100% 100%;      
+    background-size: 100% 100%;
+}
+
+section .inside {
+    transform-origin: 0 0; /* Keep text aligned properly */
+    transition: transform 0.3s
+}
+
+section.active {
+    height: 75%;
+}   
+
+section.second-class {
+    height: 4.5%;
+}
+
+section.third-class { 
+    height: 1.5%;
+}
+
+section .inside {
+    transform: scaleY(0.001824561); /* .136742195 / 75 */
+}
+
+section.active .inside {
+    transform: scaleY(1.0);         /* 75 / 75 */
+}
+
+section.second-class .inside {
+    transform: scaleY(0.06);        /* 4.5 / 75 */
+}
+
+section.third-class .inside {
+    transform: scaleY(0.02);        /* 1.5 / 75 */
+}
