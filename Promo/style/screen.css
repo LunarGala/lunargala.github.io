@@ -1,4 +1,4 @@
-/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -1272,29 +1272,58 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-stretch: normal;
   unicode-range: U+0020-201D;
 }
-/* line 22, ../sass/screen.scss */
+@font-face {
+  font-family: 'arialLawlSmallBody';
+  src: url("../type/arialLawl/ariallol1-webfont.eot");
+  src: url("../type/arialLawl/ariallol1-webfont.eot?#iefix") format("embedded-opentype"), url("../type/arialLawl/ariallol1-webfont.woff2") format("woff2"), url("../type/arialLawl/ariallol1-webfont.woff") format("woff"), url("../type/arialLawl/ariallol1-webfont.ttf") format("truetype"), url("../type/arialLawl/ariallol1-webfont.svg#ariallol1regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'arialLawlHeader';
+  src: url("../type/arialLawl/arial-lawl-header--webfont.eot");
+  src: url("../type/arialLawl/arial-lawl-header--webfont.eot?#iefix") format("embedded-opentype"), url("../type/arialLawl/arial-lawl-header--webfont.woff2") format("woff2"), url("../type/arialLawl/arial-lawl-header--webfont.woff") format("woff"), url("../type/arialLawl/arial-lawl-header--webfont.ttf") format("truetype"), url("../type/arialLawl/arial-lawl-header--webfont.svg#arial_lawl_header_regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'arialLawlLargeBody';
+  src: url("../type/arialLawl/arial-lawl-large-type-webfont.eot");
+  src: url("../type/arialLawl/arial-lawl-large-type-webfont.eot?#iefix") format("embedded-opentype"), url("../type/arialLawl/arial-lawl-large-type-webfont.woff2") format("woff2"), url("../type/arialLawl/arial-lawl-large-type-webfont.woff") format("woff"), url("../type/arialLawl/arial-lawl-large-type-webfont.ttf") format("truetype"), url("../type/arialLawl/arial-lawl-large-type-webfont.svg#arial_lawl_large_typeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'arialLawlSubheader';
+  src: url("../type/arialLawl/arial-lawl-subhead-webfont.eot");
+  src: url("../type/arialLawl/arial-lawl-subhead-webfont.eot?#iefix") format("embedded-opentype"), url("../type/arialLawl/arial-lawl-subhead-webfont.woff2") format("woff2"), url("../type/arialLawl/arial-lawl-subhead-webfont.woff") format("woff"), url("../type/arialLawl/arial-lawl-subhead-webfont.ttf") format("truetype"), url("../type/arialLawl/arial-lawl-subhead-webfont.svg#arial_lawl_subheadregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 91, ../sass/screen.scss */
 html {
   text-rendering: optimizeLegibility;
   -webkit-touch-callout: none;
 }
-/* line 27, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 html ::selection {
   background: #ff00ff !important;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 body {
   height: 5000vh;
   font-size: 10pt;
-  font-family: "ArialLol";
+  font-family: arialLawlSmallBody;
+  font-size: 9pt;
 }
-/* line 37, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 body > section.content {
   position: fixed;
   width: 100%;
   height: 90vh;
 }
-/* line 42, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 body > section.content > section {
   height: 10em;
   width: 100%;
@@ -1305,44 +1334,46 @@ body > section.content > section {
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   cursor: pointer;
 }
-/* line 51, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
+-family
 body > section.content > section.logo .inside {
   font-size: 3em;
   letter-spacing: 13vw;
 }
-/* line 56, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
+-family
 body > section.content > section.logo .inside h2:after {
   content: "";
 }
-/* line 63, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 body > section.content > section.video {
   overflow: hidden;
   background-image: url("../images/video-bg.jpg");
   background-size: 100% 100%;
 }
-/* line 68, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 body > section.content > section.video iframe {
   height: 100% !important;
   width: 100% !important;
 }
-/* line 73, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 body > section.content > section.video video {
   width: 100%;
 }
-/* line 79, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 body > section.content > section.intro .inside {
   font-size: 3vw;
   letter-spacing: .5em;
 }
-/* line 84, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 body > section.content > section.intro .inside p:after {
   content: "";
 }
-/* line 89, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 body > section.content > section.intro h1, body > section.content > section.intro h2 {
   display: none;
 }
-/* line 94, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 body > section.content > section.human {
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1350,54 +1381,58 @@ body > section.content > section.human {
   background-color: white;
   display: block;
   -webkit-filter: none;
+  font-family: arialLawlHeader;
+  font-size: 72pt;
   font-size: 2em;
 }
-/* line 103, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 body > section.content > section.human.visible {
   -webkit-filter: brightness(1);
 }
-/* line 106, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 body > section.content > section.human.visible .inside {
   opacity: 1;
 }
-/* line 116, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 body > section.content > section.human .inside {
   color: white;
   width: 100%;
-  font-size: 2em;
+  font-size: 5em;
   opacity: 0;
   letter-spacing: 3vw;
 }
-/* line 124, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 body > section.content > section.human .inside h1, body > section.content > section.human .inside h2, body > section.content > section.human .inside p {
   display: inline;
+  line-height: 0;
 }
-/* line 127, ../sass/screen.scss */
-body > section.content > section.human .inside h1:after, body > section.content > section.human .inside h2:after, body > section.content > section.human .inside p:after {
-  content: "-";
-  display: block;
-}
-/* line 133, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 body > section.content > section.human .inside h1:last-child:after, body > section.content > section.human .inside h2:last-child:after, body > section.content > section.human .inside p:last-child:after {
   content: "";
 }
-/* line 141, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
+body > section.content > section.human .inside h2, body > section.content > section.human .inside p {
+  font-family: arialLawlLargeBody;
+  font-size: 18pt;
+  font-size: .4em;
+}
+/* line 217, ../sass/screen.scss */
 body > section.content > section.open {
   cursor: default;
 }
-/* line 144, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 body > section.content > section.open.hover {
   -webkit-filter: brightness(1) !important;
 }
-/* line 147, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 body > section.content > section.open .inside {
   opacity: 1;
 }
-/* line 153, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 body > section.content > section.hover {
   -webkit-filter: brightness(2);
 }
-/* line 157, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 body > section.content > section .inside {
   text-align: justify;
   text-justify: newspaper;
