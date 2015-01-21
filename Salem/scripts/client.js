@@ -1,17 +1,21 @@
 (function (window, document, $) {
     /* Constants */
-    var ACTIVE_CLASS = 'active',
-        SECOND_CLASS = 'second-class', 
-        THIRD_CLASS  = 'third-class';
+    var ACTIVE_CLASS    = 'active',
+        SECOND_CLASS    = 'second-class', 
+        THIRD_CLASS     = 'third-class',
+        THROTTLE_RATE   = 350;
 
     /* Globals */
     var $sections,
         $player,
-        active = 0;
+        active = 0; // TODO: Remove this. 
 
 
 
-    /* Stops the video playing, covers it, hides the player */
+    /* 
+     * Stops the video playing, covers it, hides the player.
+     * This is to keep from having to animate an iframe.
+     */
     var killVideo = function() {
         var $video = $('section.video'),
             $playerFrame = $video.find('iframe'),
@@ -22,7 +26,9 @@
         $playerFrame.hide();
     };
 
-    /* Makes the @idx-th element active, and adjusts the 
+
+    /* 
+     * Makes the @idx-th element active, and adjusts the 
      * surrounding elements appropriately.
      */
     var updateActive = function(idx) {
@@ -51,7 +57,11 @@
                 .addClass(THIRD_CLASS).end();
     };
 
-    /* Let people scroll with arrow keys */
+
+    /* 
+     * Let people navigate with arrow keys.
+     * Useful for testing.
+     */
     var initializeArrowHandlers = function() {
         // _.throttle prevents key events happening faster than css animations
         var keyhandler = _.throttle(function(e) {
@@ -80,13 +90,15 @@
                 default: return; 
             }
             e.preventDefault(); // prevent the default action
-        }, 350);
+        }, THROTTLE_RATE);
 
         $(document).keydown(keyhandler);
     };
 
 
-    /* Let people set an active element by clicking */
+    /* 
+     * Let people set an active element by clicking 
+     */
     var initializeClickHandlers = function() {
         $('.content section').click(function() {
             console.log('click', this);
@@ -95,9 +107,30 @@
         });
     };
 
-    /* Handle play/pause video events */
+    /* 
+     * Handle scrolling
+     */
+    var initializeScrollHandler = function() {
+        // We can't help fast scrolling, but we can help fast updating. 
+        var updateScroll = _.throttle(updateActive, THROTTLE_RATE);
+
+        $(window).scroll(function() {
+            console.log('scroll');
+            // Figure out how far the user has scrolled
+            var scrollPercent = ($(window).scrollTop() / $(document).height());
+
+            // Figure out which section should be active
+            var newActive = Math.floor(scrollPercent * $sections.length);
+
+            // Update the screen
+            updateScroll(newActive);
+        });
+    }
+
+    /* 
+     * Handle play/pause video events 
+     */
     var initializeVideoHandlers = function() {
-        // TODO: Make video cover fade in and out on play/pause
         var $video = $('section.video'),
             $playerFrame = $video.find('iframe'),
             $videoCover = $video.find('.video-cover');
@@ -116,7 +149,9 @@
         });
     };
 
-    /* Initialize on page load */
+    /* 
+     * Initialize on page load 
+     */
     $(document).ready(function() {
         // Get all sections
         $sections = $('.content section');
@@ -135,6 +170,7 @@
         initializeArrowHandlers();
         initializeClickHandlers();
         initializeVideoHandlers();
+        initializeScrollHandler();
        
         // Prevent some of the flash of unloaded content.
         $('body').fadeIn(200);

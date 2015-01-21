@@ -22,7 +22,7 @@ body {
     font-family: 'ArialLol';
     color: white; 
     display: none;              /* Hide until loaded */
-    height: 5000vh;             /* To allow scrolling */
+    height: 10000vh;            /* To allow scrolling */
 }
 
 body ::-moz-selection { background: #ff00ff; }
@@ -77,7 +77,7 @@ section .inside {
 
     -webkit-transition: -webkit-transform 0.3s;
             transition: transform 0.3s -webkit-transform 0.3s;
-            
+
     -webkit-transform: scaleY(0.001824561); /* .136742195 / 75 */
             transform: scaleY(0.001824561);
 }
@@ -85,33 +85,6 @@ section .inside {
 section .inside h1,
 section .inside h2 {
     display: inline;
-}
-
-section.active {
-    height: 75%;
-}   
-
-section.second-class {
-    height: 4.5%;
-}
-
-section.third-class { 
-    height: 1.5%;
-}
-
-section.active .inside {
-    -webkit-transform: scaleY(1.0);         /* 75 / 75 */
-            transform: scaleY(1.0);
-}
-
-section.second-class .inside {
-    -webkit-transform: scaleY(0.06);        /* 4.5 / 75 */
-            transform: scaleY(0.06);
-}
-
-section.third-class .inside {
-    -webkit-transform: scaleY(0.02);        /* 1.5 / 75 */
-            transform: scaleY(0.02);
 }
 
 
@@ -141,6 +114,39 @@ section.video .video-cover {
 /* Video */
 section.video iframe {
     display: none;
+}
+
+/*************************
+
+ * Section sizing
+
+ *************************/
+
+section.active {
+    height: 75%;
+}   
+
+section.second-class {
+    height: 4.5%;
+}
+
+section.third-class { 
+    height: 1.5%;
+}
+
+section.active .inside {
+    -webkit-transform: scale3d(1.0, 1.0, 1.0);         /* 75 / 75 */
+            transform: scale3d(1.0, 1.0, 1.0);
+}
+
+section.second-class .inside {
+    -webkit-transform: scale3d(1.0, 0.06, 1.0);        /* 4.5 / 75 */
+            transform: scale3d(1.0, 0.06, 1.0);
+}
+
+section.third-class .inside {
+    -webkit-transform: scale3d(1.0, 0.02, 1.0);        /* 1.5 / 75 */
+            transform: scale3d(1.0, 0.02, 1.0);
 }
 
 /*************************
