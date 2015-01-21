@@ -6,6 +6,7 @@
 
     /* Globals */
     var $sections,
+        $plqyer,
         active = 0;
 
     /* Makes the @idx-th element active, and adjusts the 
@@ -37,12 +38,12 @@
                 .addClass(THIRD_CLASS).end();
     };
 
+    /* Let people scroll with arrow keys */
     var initializeArrowHandlers = function() {
+        // TODO: Make sure this fires at most once every .3 seconds
         $(document).keydown(function(e) {
             switch(e.which) {
                 case 37: // left
-                break;
-
                 case 38: // up
                     if (active > 0) {
                         updateActive(active - 1);
@@ -50,8 +51,6 @@
                 break;
 
                 case 39: // right
-                break;
-
                 case 40: // down
                     if (active < $sections.length - 1) {
                         updateActive(active + 1);
@@ -65,16 +64,37 @@
     };
 
 
+    /* Let people set an active element by clicking */
+    var initializeClickHandlers = function() {
+        $('.content section').click(function() {
+            console.log('click', this);
+            var idx = $(this).data('index');
+            updateActive(idx);
+        });
+    };
+
+    /* Handle play/pause video events */
+    var initializeVideoHandlers = function() {
+
+    };
+
     /* Initialize on page load */
     $(document).ready(function() {
         // Get all sections
         $sections = $('.content section');
+        $sections.each(function(idx, elem) {
+            $(elem).data('index', idx);
+        });
+
+        // Initialize vimeo player
+        $player = $f( $('.video iframe')[0] );
 
         // Starting state
-        updateActive(0);
+        updateActive(active);
 
         // Bind handlers
         initializeArrowHandlers();
+        initializeClickHandlers();
        
         console.log('good to go');
     });
