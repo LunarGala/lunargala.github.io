@@ -21,8 +21,12 @@ body {
     font-size: 3em;
     font-family: 'ArialLol';
     color: white; 
+    display: none;              /* Hide until loaded */
     height: 5000vh;             /* To allow scrolling */
 }
+
+body ::-moz-selection { background: #ff00ff; }
+body ::selection { background: #ff00ff; }
 
 /*************************
 
@@ -53,6 +57,8 @@ body {
     transition: height 0.3s;
     position: relative;
     width: 100%;
+    text-align: justify;
+    text-transform: lowercase;
     -webkit-background-size: 100% 100%; 
        -moz-background-size: 100% 100%;    
          -o-background-size: 100% 100%;      
@@ -62,9 +68,15 @@ body {
 section .inside {
     -webkit-transform-origin: 0 0; /* Keep text aligned properly */
             transform-origin: 0 0;
-
     -webkit-transition: -webkit-transform 0.3s;
-    transition: transform 0.3s -webkit-transform 0.3s;
+            transition: transform 0.3s -webkit-transform 0.3s;
+    -webkit-transform: scaleY(0.001824561); /* .136742195 / 75 */
+            transform: scaleY(0.001824561);
+}
+
+section .inside h1,
+section .inside h2 {
+    display: inline;
 }
 
 section.active {
@@ -77,11 +89,6 @@ section.second-class {
 
 section.third-class { 
     height: 1.5%;
-}
-
-section .inside {
-    -webkit-transform: scaleY(0.001824561); /* .136742195 / 75 */
-            transform: scaleY(0.001824561);
 }
 
 section.active .inside {

@@ -136,6 +136,8 @@
         initializeClickHandlers();
         initializeVideoHandlers();
        
+        // Prevent some of the flash of unloaded content.
+        $('body').fadeIn(200);
         console.log('good to go');
     });
 
