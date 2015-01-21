@@ -9,7 +9,34 @@ body {
     text-rendering:         optimizeLegibility;
     -webkit-touch-callout:  none;
     
-    &::-moz-selection, ::selection {
+    ::selection {
         background: #ff00ff;
+    }
+    
+    .content {
+        
+        section {
+            cursor: pointer;
+            @include transition(all          $transitionDuration $transitionCurve);
+            
+            &.human {
+            
+                &.active {
+                    -webkit-filter: none;
+                    
+                    &:hover, &:active {
+                        -webkit-filter: none;
+                    }
+                }
+                
+                &:hover {
+                    -webkit-filter: brightness(1.5);
+                    
+                    &:active {
+                        -webkit-filter: brightness(3);
+                    }
+                }                
+            }
+        }
     }
 }

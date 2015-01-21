@@ -29,7 +29,6 @@ body{
             text-align: justify;
             text-transform: lowercase;
             
-            @include transition(height $transitionDuration $transitionCurve);
             @include background-size(100% 100%);
             @include transform(translate3d(0, 0, 0)); /* force hardware acceleration */
             @include backface-visibility(hidden); /* other hacky speed-up tricks */

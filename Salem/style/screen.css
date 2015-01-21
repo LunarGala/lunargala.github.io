@@ -154,10 +154,6 @@ body .content section {
   width: 100%;
   text-align: justify;
   text-transform: lowercase;
-  -moz-transition: height 1s cubic-bezier(0.19, 1, 0.22, 1);
-  -o-transition: height 1s cubic-bezier(0.19, 1, 0.22, 1);
-  -webkit-transition: height 1s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: height 1s cubic-bezier(0.19, 1, 0.22, 1);
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
@@ -191,11 +187,11 @@ body .content section {
 
          *************************/
 }
-/* line 45, ../sass/_scrolling.scss */
+/* line 44, ../sass/_scrolling.scss */
 body .content section.intro .inside {
   color: black;
 }
-/* line 51, ../sass/_scrolling.scss */
+/* line 50, ../sass/_scrolling.scss */
 body .content section.video .video-cover {
   background-image: url(../images/video-bg.jpg);
   -moz-background-size: 100% 100%;
@@ -208,15 +204,15 @@ body .content section.video .video-cover {
   left: 0;
   right: 0;
 }
-/* line 61, ../sass/_scrolling.scss */
+/* line 60, ../sass/_scrolling.scss */
 body .content section.video iframe {
   display: none;
 }
-/* line 72, ../sass/_scrolling.scss */
+/* line 71, ../sass/_scrolling.scss */
 body .content section.active {
   height: 75%;
 }
-/* line 75, ../sass/_scrolling.scss */
+/* line 74, ../sass/_scrolling.scss */
 body .content section.active .inside {
   -moz-transform: scale3d(1, 1, 1);
   -ms-transform: scale3d(1, 1, 1);
@@ -224,11 +220,11 @@ body .content section.active .inside {
   transform: scale3d(1, 1, 1);
   /* 75 / 75 */
 }
-/* line 80, ../sass/_scrolling.scss */
+/* line 79, ../sass/_scrolling.scss */
 body .content section.second-class {
   height: 4.5%;
 }
-/* line 83, ../sass/_scrolling.scss */
+/* line 82, ../sass/_scrolling.scss */
 body .content section.second-class .inside {
   -moz-transform: scale3d(1, 0.06, 1);
   -ms-transform: scale3d(1, 0.06, 1);
@@ -236,11 +232,11 @@ body .content section.second-class .inside {
   transform: scale3d(1, 0.06, 1);
   /* 4.5 / 75 */
 }
-/* line 88, ../sass/_scrolling.scss */
+/* line 87, ../sass/_scrolling.scss */
 body .content section.third-class {
   height: 1.5%;
 }
-/* line 91, ../sass/_scrolling.scss */
+/* line 90, ../sass/_scrolling.scss */
 body .content section.third-class .inside {
   -moz-transform: scale3d(1, 0.02, 1);
   -ms-transform: scale3d(1, 0.02, 1);
@@ -248,25 +244,25 @@ body .content section.third-class .inside {
   transform: scale3d(1, 0.02, 1);
   /* 1.5 / 75 */
 }
-/* line 103, ../sass/_scrolling.scss */
+/* line 102, ../sass/_scrolling.scss */
 body .content section:first-child.active {
   height: 81%;
   /* 75 + 4.5 + 1.5 */
 }
-/* line 107, ../sass/_scrolling.scss */
+/* line 106, ../sass/_scrolling.scss */
 body .content section:first-child.second-class {
   height: 6%;
   /* 4.5 + 1.5 */
 }
-/* line 111, ../sass/_scrolling.scss */
+/* line 110, ../sass/_scrolling.scss */
 body .content section:nth-last-child(2).active {
   height: 76.5%;
 }
-/* line 115, ../sass/_scrolling.scss */
+/* line 114, ../sass/_scrolling.scss */
 body .content section:nth-last-child(1).active {
   height: 81%;
 }
-/* line 119, ../sass/_scrolling.scss */
+/* line 118, ../sass/_scrolling.scss */
 body .content section .inside {
   -webkit-transform-origin: 0 0;
   /* Keep text aligned properly */
@@ -1486,6 +1482,30 @@ body {
   -webkit-touch-callout: none;
 }
 /* line 12, ../sass/screen.scss */
-body::-moz-selection, body ::selection {
+body ::selection {
   background: #ff00ff;
+}
+/* line 18, ../sass/screen.scss */
+body .content section {
+  cursor: pointer;
+  -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* line 24, ../sass/screen.scss */
+body .content section.human.active {
+  -webkit-filter: none;
+}
+/* line 27, ../sass/screen.scss */
+body .content section.human.active:hover, body .content section.human.active:active {
+  -webkit-filter: none;
+}
+/* line 32, ../sass/screen.scss */
+body .content section.human:hover {
+  -webkit-filter: brightness(1.5);
+}
+/* line 35, ../sass/screen.scss */
+body .content section.human:hover:active {
+  -webkit-filter: brightness(3);
 }
