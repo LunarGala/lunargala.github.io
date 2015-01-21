@@ -100,18 +100,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
-/* line 83, ../sass/_type.scss */
+/* line 85, ../sass/_type.scss */
 body {
-  font-size: 3em;
-  font-family: 'ArialLol';
   color: white;
   font-family: arialLawlSmallBody;
-  font-size: 9pt;
+  font-size: 18pt;
+  letter-spacing: .0625em;
 }
 /* line 93, ../sass/_type.scss */
 body .content section.human {
+  font-family: arialLawlHeader;
+  font-size: 72pt;
+  letter-spacing: .0625em;
+}
+/* line 96, ../sass/_type.scss */
+body .content section.human h2, body .content section.human p {
   font-family: arialLawlLargeBody;
   font-size: 18pt;
+  display: block;
 }
 
 /* line 1, ../sass/_scrolling.scss */
@@ -272,10 +278,6 @@ body .content section .inside {
   -webkit-transform: scaleY(0.00182);
   transform: scaleY(0.00182);
   /* .136742195 / 75 */
-}
-/* line 127, ../sass/_scrolling.scss */
-body .content section .inside h1, body .content section .inside h2 {
-  display: inline;
 }
 
 /* line 8, ../sass/_humans.scss */

@@ -123,10 +123,6 @@ body{
                         transition: transform $transitionDuration -webkit-transform $transitionDuration $transitionCurve;
                 // @include transition(transform $transitionDuration -webkit-transform $transitionDuration);
                 @include transform(scaleY(0.001824561)); /* .136742195 / 75 */
-    
-                h1, h2 {
-                    display: inline;
-                }
             }
         }
     }

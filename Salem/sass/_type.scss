@@ -62,7 +62,8 @@
 
 @mixin smallBodyType {
     font-family: arialLawlSmallBody;
-    font-size: 9pt;
+    font-size: 18pt;
+    letter-spacing: .0625em;
 }
 
 @mixin largeBodyType {
@@ -78,11 +79,10 @@
 @mixin headerType {
     font-family: arialLawlHeader;
     font-size: 72pt;
+    letter-spacing: .0625em;
 }
 
 body {
-    font-size: 3em;
-    font-family: 'ArialLol';
     color: white; 
     @include smallBodyType;
     
@@ -91,7 +91,12 @@ body {
         section {
             
             &.human {
-                @include largeBodyType;
+                @include headerType;
+                
+                h2, p {
+                    @include largeBodyType;
+                    display: block;
+                }
             }
         }
     }
