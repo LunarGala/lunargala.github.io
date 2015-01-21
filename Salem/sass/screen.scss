@@ -1,17 +1,13 @@
 @import "compass/reset";
 @import "compass/css3";
+@import "_globals.scss";
 @import "_type.scss";
 @import "_scrolling.scss";
 @import "_humans.scss";
 
-$transitionCurve: cubic-bezier(0.19, 1, 0.22, 1);
-$transitionDuration: .5s;
-
 body {
     text-rendering:         optimizeLegibility;
     -webkit-touch-callout:  none;
-    display: none;              /* Hide until loaded */
-    height: 10000vh;            /* To allow scrolling */
     
     &::-moz-selection, ::selection {
         background: #ff00ff;

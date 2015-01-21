@@ -1,4 +1,6 @@
 body{
+    height: 5000vh;            /* To allow scrolling */
+    display: none;              /* Hide until loaded */
 
     /*************************
     
@@ -117,8 +119,8 @@ body{
             .inside {
                 -webkit-transform-origin: 0 0; /* Keep text aligned properly */
                         transform-origin: 0 0;
-                -webkit-transition: -webkit-transform $transitionDuration;
-                        transition: transform $transitionDuration -webkit-transform $transitionDuration;
+                -webkit-transition: -webkit-transform $transitionDuration $transitionCurve;
+                        transition: transform $transitionDuration -webkit-transform $transitionDuration $transitionCurve;
                 // @include transition(transform $transitionDuration -webkit-transform $transitionDuration);
                 @include transform(scaleY(0.001824561)); /* .136742195 / 75 */
     

@@ -65,8 +65,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face {
   font-family: 'ArialLol';
-  src: url("../style/type/ArialLol/compressed-arial-mono.eot");
-  src: url("../style/type/ArialLol/compressed-arial-mono.eot?#iefix") format("embedded-opentype"), url("../style/type/ArialLol/compressed-arial-mono.woff") format("woff"), url("../style/type/ArialLol/compressed-arial-mono.ttf") format("truetype"), url("../style/type/ArialLol/compressed-arial-mono.svg#compressed-arial-mono") format("svg");
+  src: url("type/ArialLol/compressed-arial-mono.eot");
+  src: url("type/ArialLol/compressed-arial-mono.eot?#iefix") format("embedded-opentype"), url("type/ArialLol/compressed-arial-mono.woff") format("woff"), url("type/ArialLol/compressed-arial-mono.ttf") format("truetype"), url("type/ArialLol/compressed-arial-mono.svg#compressed-arial-mono") format("svg");
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
@@ -74,29 +74,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @font-face {
   font-family: 'arialLawlSmallBody';
-  src: url("../style/type/arialLawl/ariallol1-webfont.eot");
-  src: url("../style/type/arialLawl/ariallol1-webfont.eot?#iefix") format("embedded-opentype"), url("../style/type/arialLawl/ariallol1-webfont.woff2") format("woff2"), url("../style/type/arialLawl/ariallol1-webfont.woff") format("woff"), url("../style/type/arialLawl/ariallol1-webfont.ttf") format("truetype"), url("../style/type/arialLawl/ariallol1-webfont.svg#ariallol1regular") format("svg");
+  src: url("type/arialLawl/ariallol1-webfont.eot");
+  src: url("type/arialLawl/ariallol1-webfont.eot?#iefix") format("embedded-opentype"), url("type/arialLawl/ariallol1-webfont.woff2") format("woff2"), url("type/arialLawl/ariallol1-webfont.woff") format("woff"), url("type/arialLawl/ariallol1-webfont.ttf") format("truetype"), url("type/arialLawl/ariallol1-webfont.svg#ariallol1regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'arialLawlHeader';
-  src: url("../style/type/arialLawl/arial-lawl-header--webfont.eot");
-  src: url("../style/type/arialLawl/arial-lawl-header--webfont.eot?#iefix") format("embedded-opentype"), url("../style/type/arialLawl/arial-lawl-header--webfont.woff2") format("woff2"), url("../style/type/arialLawl/arial-lawl-header--webfont.woff") format("woff"), url("../style/type/arialLawl/arial-lawl-header--webfont.ttf") format("truetype"), url("../style/type/arialLawl/arial-lawl-header--webfont.svg#arial_lawl_header_regular") format("svg");
+  src: url("type/arialLawl/arial-lawl-header--webfont.eot");
+  src: url("type/arialLawl/arial-lawl-header--webfont.eot?#iefix") format("embedded-opentype"), url("type/arialLawl/arial-lawl-header--webfont.woff2") format("woff2"), url("type/arialLawl/arial-lawl-header--webfont.woff") format("woff"), url("type/arialLawl/arial-lawl-header--webfont.ttf") format("truetype"), url("type/arialLawl/arial-lawl-header--webfont.svg#arial_lawl_header_regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'arialLawlLargeBody';
-  src: url("../style/type/arialLawl/arial-lawl-large-type-webfont.eot");
-  src: url("../style/type/arialLawl/arial-lawl-large-type-webfont.eot?#iefix") format("embedded-opentype"), url("../style/type/arialLawl/arial-lawl-large-type-webfont.woff2") format("woff2"), url("../style/type/arialLawl/arial-lawl-large-type-webfont.woff") format("woff"), url("../style/type/arialLawl/arial-lawl-large-type-webfont.ttf") format("truetype"), url("../style/type/arialLawl/arial-lawl-large-type-webfont.svg#arial_lawl_large_typeregular") format("svg");
+  src: url("type/arialLawl/arial-lawl-large-type-webfont.eot");
+  src: url("type/arialLawl/arial-lawl-large-type-webfont.eot?#iefix") format("embedded-opentype"), url("type/arialLawl/arial-lawl-large-type-webfont.woff2") format("woff2"), url("type/arialLawl/arial-lawl-large-type-webfont.woff") format("woff"), url("type/arialLawl/arial-lawl-large-type-webfont.ttf") format("truetype"), url("type/arialLawl/arial-lawl-large-type-webfont.svg#arial_lawl_large_typeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'arialLawlSubheader';
-  src: url("../style/type/arialLawl/arial-lawl-subhead-webfont.eot");
-  src: url("../style/type/arialLawl/arial-lawl-subhead-webfont.eot?#iefix") format("embedded-opentype"), url("../style/type/arialLawl/arial-lawl-subhead-webfont.woff2") format("woff2"), url("../style/type/arialLawl/arial-lawl-subhead-webfont.woff") format("woff"), url("../style/type/arialLawl/arial-lawl-subhead-webfont.ttf") format("truetype"), url("../style/type/arialLawl/arial-lawl-subhead-webfont.svg#arial_lawl_subheadregular") format("svg");
+  src: url("type/arialLawl/arial-lawl-subhead-webfont.eot");
+  src: url("type/arialLawl/arial-lawl-subhead-webfont.eot?#iefix") format("embedded-opentype"), url("type/arialLawl/arial-lawl-subhead-webfont.woff2") format("woff2"), url("type/arialLawl/arial-lawl-subhead-webfont.woff") format("woff"), url("type/arialLawl/arial-lawl-subhead-webfont.ttf") format("truetype"), url("type/arialLawl/arial-lawl-subhead-webfont.svg#arial_lawl_subheadregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -112,6 +112,170 @@ body {
 body .content section.human {
   font-family: arialLawlLargeBody;
   font-size: 18pt;
+}
+
+/* line 1, ../sass/_scrolling.scss */
+body {
+  height: 5000vh;
+  /* To allow scrolling */
+  display: none;
+  /* Hide until loaded */
+  /*************************
+  
+   * Scroll control code
+  
+   *************************/
+}
+/* line 11, ../sass/_scrolling.scss */
+body .content {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+    /*************************
+
+     * General section layout
+
+     *************************/
+}
+/* line 23, ../sass/_scrolling.scss */
+body .content section {
+  height: .136842105%;
+  /* 13% / 95 sections */
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  text-align: justify;
+  text-transform: lowercase;
+  -moz-transition: height 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: height 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: height 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: height 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  /* force hardware acceleration */
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* other hacky speed-up tricks */
+  -moz-perspective: 1000;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+        /*************************
+
+        * Specific section layout
+
+        *************************/
+        /*************************
+
+        * Section sizing
+
+        *************************/
+        /*************************
+
+         * Edge case layouts
+         * (only one first-child, etc.)
+
+         *************************/
+}
+/* line 45, ../sass/_scrolling.scss */
+body .content section.intro .inside {
+  color: black;
+}
+/* line 51, ../sass/_scrolling.scss */
+body .content section.video .video-cover {
+  background-image: url(../images/video-bg.jpg);
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 61, ../sass/_scrolling.scss */
+body .content section.video iframe {
+  display: none;
+}
+/* line 72, ../sass/_scrolling.scss */
+body .content section.active {
+  height: 75%;
+}
+/* line 75, ../sass/_scrolling.scss */
+body .content section.active .inside {
+  -moz-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  /* 75 / 75 */
+}
+/* line 80, ../sass/_scrolling.scss */
+body .content section.second-class {
+  height: 4.5%;
+}
+/* line 83, ../sass/_scrolling.scss */
+body .content section.second-class .inside {
+  -moz-transform: scale3d(1, 0.06, 1);
+  -ms-transform: scale3d(1, 0.06, 1);
+  -webkit-transform: scale3d(1, 0.06, 1);
+  transform: scale3d(1, 0.06, 1);
+  /* 4.5 / 75 */
+}
+/* line 88, ../sass/_scrolling.scss */
+body .content section.third-class {
+  height: 1.5%;
+}
+/* line 91, ../sass/_scrolling.scss */
+body .content section.third-class .inside {
+  -moz-transform: scale3d(1, 0.02, 1);
+  -ms-transform: scale3d(1, 0.02, 1);
+  -webkit-transform: scale3d(1, 0.02, 1);
+  transform: scale3d(1, 0.02, 1);
+  /* 1.5 / 75 */
+}
+/* line 103, ../sass/_scrolling.scss */
+body .content section:first-child.active {
+  height: 81%;
+  /* 75 + 4.5 + 1.5 */
+}
+/* line 107, ../sass/_scrolling.scss */
+body .content section:first-child.second-class {
+  height: 6%;
+  /* 4.5 + 1.5 */
+}
+/* line 111, ../sass/_scrolling.scss */
+body .content section:nth-last-child(2).active {
+  height: 76.5%;
+}
+/* line 115, ../sass/_scrolling.scss */
+body .content section:nth-last-child(1).active {
+  height: 81%;
+}
+/* line 119, ../sass/_scrolling.scss */
+body .content section .inside {
+  -webkit-transform-origin: 0 0;
+  /* Keep text aligned properly */
+  transform-origin: 0 0;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transform: scaleY(0.00182);
+  -ms-transform: scaleY(0.00182);
+  -webkit-transform: scaleY(0.00182);
+  transform: scaleY(0.00182);
+  /* .136742195 / 75 */
+}
+/* line 127, ../sass/_scrolling.scss */
+body .content section .inside h1, body .content section .inside h2 {
+  display: inline;
 }
 
 /* line 8, ../sass/_humans.scss */
@@ -1314,172 +1478,12 @@ body .content section.human {
   background-size: 100% 100%;
 }
 
-/* line 9, ../sass/screen.scss */
+/* line 8, ../sass/screen.scss */
 body {
   text-rendering: optimizeLegibility;
   -webkit-touch-callout: none;
-  display: none;
-  /* Hide until loaded */
-  height: 1000vh;
-  /* To allow scrolling */
-  /*************************
-  
-   * Scroll control code
-  
-   *************************/
 }
-/* line 15, ../sass/screen.scss */
+/* line 12, ../sass/screen.scss */
 body::-moz-selection, body ::selection {
   background: #ff00ff;
-}
-/* line 25, ../sass/screen.scss */
-body .content {
-  height: 100vh;
-  position: fixed;
-  width: 100%;
-  top: 0;
-    /*************************
-
-     * General section layout
-
-     *************************/
-}
-/* line 37, ../sass/screen.scss */
-body .content section {
-  height: .136842105%;
-  /* 13% / 95 sections */
-  overflow: hidden;
-  box-sizing: border-box;
-  position: relative;
-  width: 100%;
-  text-align: justify;
-  text-transform: lowercase;
-  -moz-transition: height 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  -o-transition: height 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  -webkit-transition: height 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: height 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  /* force hardware acceleration */
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  /* other hacky speed-up tricks */
-  -moz-perspective: 1000;
-  -webkit-perspective: 1000;
-  perspective: 1000;
-        /*************************
-
-        * Specific section layout
-
-        *************************/
-        /*************************
-
-        * Section sizing
-
-        *************************/
-        /*************************
-
-         * Edge case layouts
-         * (only one first-child, etc.)
-
-         *************************/
-}
-/* line 59, ../sass/screen.scss */
-body .content section.intro .inside {
-  color: black;
-}
-/* line 65, ../sass/screen.scss */
-body .content section.video .video-cover {
-  background-image: url(../images/video-bg.jpg);
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-/* line 75, ../sass/screen.scss */
-body .content section.video iframe {
-  display: none;
-}
-/* line 86, ../sass/screen.scss */
-body .content section.active {
-  height: 75%;
-}
-/* line 89, ../sass/screen.scss */
-body .content section.active .inside {
-  -moz-transform: scale3d(1, 1, 1);
-  -ms-transform: scale3d(1, 1, 1);
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-  /* 75 / 75 */
-}
-/* line 94, ../sass/screen.scss */
-body .content section.second-class {
-  height: 4.5%;
-}
-/* line 97, ../sass/screen.scss */
-body .content section.second-class .inside {
-  -moz-transform: scale3d(1, 0.06, 1);
-  -ms-transform: scale3d(1, 0.06, 1);
-  -webkit-transform: scale3d(1, 0.06, 1);
-  transform: scale3d(1, 0.06, 1);
-  /* 4.5 / 75 */
-}
-/* line 102, ../sass/screen.scss */
-body .content section.third-class {
-  height: 1.5%;
-}
-/* line 105, ../sass/screen.scss */
-body .content section.third-class .inside {
-  -moz-transform: scale3d(1, 0.02, 1);
-  -ms-transform: scale3d(1, 0.02, 1);
-  -webkit-transform: scale3d(1, 0.02, 1);
-  transform: scale3d(1, 0.02, 1);
-  /* 1.5 / 75 */
-}
-/* line 117, ../sass/screen.scss */
-body .content section:first-child.active {
-  height: 81%;
-  /* 75 + 4.5 + 1.5 */
-}
-/* line 121, ../sass/screen.scss */
-body .content section:first-child.second-class {
-  height: 6%;
-  /* 4.5 + 1.5 */
-}
-/* line 125, ../sass/screen.scss */
-body .content section:nth-last-child(2).active {
-  height: 76.5%;
-}
-/* line 129, ../sass/screen.scss */
-body .content section:nth-last-child(1).active {
-  height: 81%;
-}
-/* line 133, ../sass/screen.scss */
-body .content section .inside {
-  -webkit-transform-origin: 0 0;
-  /* Keep text aligned properly */
-  transform-origin: 0 0;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s -webkit-transform 0.5s;
-  -moz-transform: scaleY(0.00182);
-  -ms-transform: scaleY(0.00182);
-  -webkit-transform: scaleY(0.00182);
-  transform: scaleY(0.00182);
-  /* .136742195 / 75 */
-}
-/* line 141, ../sass/screen.scss */
-body .content section .inside h1, body .content section .inside h2 {
-  display: inline;
 }
