@@ -41,7 +41,7 @@
     /* Let people scroll with arrow keys */
     var initializeArrowHandlers = function() {
         // TODO: Make sure this fires at most once every .3 seconds
-        $(document).keydown(function(e) {
+        var keyhandler = _.throttle(function(e) {
             switch(e.which) {
                 case 37: // left
                 case 38: // up
@@ -60,7 +60,8 @@
                 default: return; // exit this handler for other keys
             }
             e.preventDefault(); // prevent the default action (scroll / move caret)
-        });
+        }, 350);
+        $(document).keydown(keyhandler);
     };
 
 
