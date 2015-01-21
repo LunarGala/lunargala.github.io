@@ -39,8 +39,6 @@ body ::selection { background: #ff00ff; }
     position: fixed;
     width: 100%;
     top: 0;
-    -webkit-transform: translateZ(0);   /* Trigger 3d acceleration */
-            transform: translateZ(0);
 }
 
 
@@ -59,17 +57,27 @@ body ::selection { background: #ff00ff; }
     width: 100%;
     text-align: justify;
     text-transform: lowercase;
+
     -webkit-background-size: 100% 100%; 
        -moz-background-size: 100% 100%;    
          -o-background-size: 100% 100%;      
             background-size: 100% 100%;
+
+    -webkit-transform: translate3d(0, 0, 0);   /* force hardware acceleration */
+            transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;       /* other hacky speed-up tricks */
+            backface-visibility: hidden;
+    -webkit-perspective: 1000;
+            perspective: 1000;
 }
 
 section .inside {
     -webkit-transform-origin: 0 0; /* Keep text aligned properly */
             transform-origin: 0 0;
+
     -webkit-transition: -webkit-transform 0.3s;
             transition: transform 0.3s -webkit-transform 0.3s;
+            
     -webkit-transform: scaleY(0.001824561); /* .136742195 / 75 */
             transform: scaleY(0.001824561);
 }
