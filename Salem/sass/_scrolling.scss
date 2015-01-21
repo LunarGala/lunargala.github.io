@@ -1,0 +1,131 @@
+body{
+
+    /*************************
+    
+     * Scroll control code
+    
+     *************************/
+    
+    .content { 
+        height: 100vh;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    
+        /*************************
+    
+         * General section layout
+    
+         *************************/
+    
+         section {
+            height: .136842105%; /* 13% / 95 sections */
+            overflow: hidden;
+            box-sizing: border-box;
+            position: relative;
+            width: 100%;
+            text-align: justify;
+            text-transform: lowercase;
+            
+            @include transition(height $transitionDuration $transitionCurve);
+            @include background-size(100% 100%);
+            @include transform(translate3d(0, 0, 0)); /* force hardware acceleration */
+            @include backface-visibility(hidden); /* other hacky speed-up tricks */
+            @include perspective(1000);
+    
+            /*************************
+    
+            * Specific section layout
+    
+            *************************/
+    
+            &.intro {
+                .inside {
+                    color: black;
+                }
+            }
+    
+            &.video {
+                .video-cover {
+                    background-image: url(../images/video-bg.jpg);
+                    @include background-size(100% 100%);
+                    position: absolute;
+                    top: 0;
+                    bottom: 0; 
+                    left: 0; 
+                    right: 0;
+                }
+    
+                iframe {
+                    display: none;
+                }
+            }
+    
+            /*************************
+    
+            * Section sizing
+    
+            *************************/    
+    
+            &.active {
+                height: 75%;
+    
+                .inside {
+                    @include transform(scale3d(1.0, 1.0, 1.0));         /* 75 / 75 */
+                }
+            }   
+    
+            &.second-class {
+                height: 4.5%;
+    
+                .inside {
+                    @include transform(scale3d(1.0, 0.06, 1.0));        /* 4.5 / 75 */
+                }
+            }
+    
+            &.third-class { 
+                height: 1.5%;
+    
+                .inside {
+                    @include transform(scale3d(1.0, 0.02, 1.0));        /* 1.5 / 75 */
+                }
+            }
+    
+            /*************************
+    
+             * Edge case layouts
+             * (only one first-child, etc.)
+    
+             *************************/
+    
+            &:first-child.active {
+                height: 81%; /* 75 + 4.5 + 1.5 */
+            }
+    
+            &:first-child.second-class {
+                height: 6%; /* 4.5 + 1.5 */  
+            }
+    
+            &:nth-last-child(2).active {
+                height: 76.5%;
+            }
+    
+            &:nth-last-child(1).active {
+                height: 81%;
+            }
+    
+            .inside {
+                -webkit-transform-origin: 0 0; /* Keep text aligned properly */
+                        transform-origin: 0 0;
+                -webkit-transition: -webkit-transform $transitionDuration;
+                        transition: transform $transitionDuration -webkit-transform $transitionDuration;
+                // @include transition(transform $transitionDuration -webkit-transform $transitionDuration);
+                @include transform(scaleY(0.001824561)); /* .136742195 / 75 */
+    
+                h1, h2 {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
