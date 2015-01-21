@@ -8,9 +8,9 @@
     font-family: 'ArialLol';
     src: url('type/ArialLol/compressed-arial-mono.eot');
     src: url('type/ArialLol/compressed-arial-mono.eot?#iefix') format('embedded-opentype'),
-        url('type/ArialLol/compressed-arial-mono.woff') format('woff'),
-        url('type/ArialLol/compressed-arial-mono.ttf') format('truetype'),
-        url('type/ArialLol/compressed-arial-mono.svg#compressed-arial-mono') format('svg');
+         url('type/ArialLol/compressed-arial-mono.woff') format('woff'),
+         url('type/ArialLol/compressed-arial-mono.ttf') format('truetype'),
+         url('type/ArialLol/compressed-arial-mono.svg#compressed-arial-mono') format('svg');
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;
@@ -51,6 +51,7 @@ body {
     overflow: hidden;
     box-sizing: border-box;
     transition: height 0.3s;
+    position: relative;
     width: 100%;
     -webkit-background-size: 100% 100%; 
        -moz-background-size: 100% 100%;    
@@ -105,11 +106,47 @@ section.third-class .inside {
 
  *************************/
 
-
+/* Intro */
 section.intro .inside {
     color: black;
 }
 
+/* Video Cover */
 section.video .video-cover {
     background-image: url(../images/video-bg.jpg);
+    -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+}
+
+/* Video */
+section.video iframe {
+    display: none;
+}
+
+/*************************
+
+ * Edge case layouts
+ * (only one first-child, etc.)
+
+ *************************/
+
+.content section:first-child.active {
+    height: 81%; /* 75 + 4.5 + 1.5 */
+}
+
+.content section:first-child.second-class {
+    height: 6%; /* 4.5 + 1.5 */  
+}
+
+section:nth-last-child(2).active {
+    height: 76.5%;
+}
+
+section:nth-last-child(1).active {
+    height: 81%;
 }

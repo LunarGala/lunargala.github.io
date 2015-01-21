@@ -6,8 +6,21 @@
 
     /* Globals */
     var $sections,
-        $plqyer,
+        $player,
         active = 0;
+
+
+
+    /* Stops the video playing, covers it, hides the player */
+    var killVideo = function() {
+        var $video = $('section.video'),
+            $playerFrame = $video.find('iframe'),
+            $videoCover = $video.find('.video-cover');
+        
+        $player.api('pause');
+        $videoCover.show();
+        $playerFrame.hide();
+    };
 
     /* Makes the @idx-th element active, and adjusts the 
      * surrounding elements appropriately.
@@ -30,18 +43,24 @@
                 .addClass(ACTIVE_CLASS).end()
             .eq(active + 1)
                 .addClass(SECOND_CLASS).end()
-            .eq(active - 1)
+            .eq(active - 1 < 0 ? undefined : active - 1)
                 .addClass(SECOND_CLASS).end()
             .eq(active + 2)
                 .addClass(THIRD_CLASS).end()
-            .eq(active - 2)
+            .eq(active - 2 < 0 ? undefined : active - 2)
                 .addClass(THIRD_CLASS).end();
     };
 
     /* Let people scroll with arrow keys */
     var initializeArrowHandlers = function() {
-        // TODO: Make sure this fires at most once every .3 seconds
+        // _.throttle prevents key events happening faster than css animations
         var keyhandler = _.throttle(function(e) {
+            
+            // Pause the video if we're leaving it.
+            if (active === 0) { 
+                killVideo();
+            }
+
             switch(e.which) {
                 case 37: // left
                 case 38: // up
@@ -57,10 +76,12 @@
                     }
                 break;
 
-                default: return; // exit this handler for other keys
+                // Ignore other keys
+                default: return; 
             }
-            e.preventDefault(); // prevent the default action (scroll / move caret)
+            e.preventDefault(); // prevent the default action
         }, 350);
+
         $(document).keydown(keyhandler);
     };
 
@@ -76,7 +97,23 @@
 
     /* Handle play/pause video events */
     var initializeVideoHandlers = function() {
+        // TODO: Make video cover fade in and out on play/pause
+        var $video = $('section.video'),
+            $playerFrame = $video.find('iframe'),
+            $videoCover = $video.find('.video-cover');
 
+        // Make the video appear and play when you click the cover.
+        $videoCover.click(function() {
+            // Don't do anything if it's not active
+            if(!$video.hasClass('active')) {
+                return;
+            }
+
+            $playerFrame.show();
+            $videoCover.fadeOut(1000, function() {
+                $player.api('play');
+            });
+        });
     };
 
     /* Initialize on page load */
@@ -89,6 +126,7 @@
 
         // Initialize vimeo player
         $player = $f( $('.video iframe')[0] );
+        window.$player = $player;
 
         // Starting state
         updateActive(active);
@@ -96,6 +134,7 @@
         // Bind handlers
         initializeArrowHandlers();
         initializeClickHandlers();
+        initializeVideoHandlers();
        
         console.log('good to go');
     });
