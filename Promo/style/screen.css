@@ -1315,7 +1315,7 @@ body {
   height: 5000vh;
   font-size: 10pt;
   font-family: arialLawlSmallBody;
-  font-size: 9pt;
+  font-size: 1rem;
 }
 /* line 106, ../sass/screen.scss */
 body > section.content {
@@ -1382,7 +1382,7 @@ body > section.content > section.human {
   display: block;
   -webkit-filter: none;
   font-family: arialLawlHeader;
-  font-size: 72pt;
+  font-size: 8rem;
   font-size: 2em;
 }
 /* line 173, ../sass/screen.scss */
@@ -1413,7 +1413,7 @@ body > section.content > section.human .inside h1:last-child:after, body > secti
 /* line 210, ../sass/screen.scss */
 body > section.content > section.human .inside h2, body > section.content > section.human .inside p {
   font-family: arialLawlLargeBody;
-  font-size: 18pt;
+  font-size: 2rem;
   font-size: .4em;
 }
 /* line 217, ../sass/screen.scss */

@@ -70,22 +70,22 @@
 
 @mixin smallBodyType {
     font-family: arialLawlSmallBody;
-    font-size: 9pt;
+    font-size: 1rem;
 }
 
 @mixin largeBodyType {
     font-family: arialLawlLargeBody;
-    font-size: 18pt;
+    font-size: 2rem;
 }
 
 @mixin subHeaderType {
     font-family: arialLawlSubheader;
-    font-size: 36pt;
+    font-size: 4rem;
 }
 
 @mixin headerType {
     font-family: arialLawlHeader;
-    font-size: 72pt;
+    font-size: 8rem;
 }
 
 html {
