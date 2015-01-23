@@ -83,15 +83,43 @@
 }
 
 body {
-    color: white; 
+    color: black; 
     @include smallBodyType;
+    
+    h1 {
+        @include largeBodyType;
+    }
     
     .content {
         
         section {
+        
+            &.header {
+                min-height: 10vh !important;
+            
+                &.people {
+                    h1 {
+                        @include transform(scaleX(.765));
+                    }
+                }
+                
+                .inside {
+                    @include transform(none !important);
+                    
+                    h1 {
+                        font-size: 75vh;
+                        transform-origin: 0 0;
+                        -webkit-transform-origin: 0 0;
+                    }
+                }
+            }
             
             &.human {
-                @include headerType;
+                color: white;
+                
+                h1 {
+                    @include headerType;
+                }
                 
                 h2, p {
                     @include largeBodyType;

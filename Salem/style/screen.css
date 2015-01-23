@@ -102,18 +102,51 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 85, ../sass/_type.scss */
 body {
-  color: white;
+  color: black;
   font-family: arialLawlSmallBody;
   font-size: 18pt;
   letter-spacing: .0625em;
 }
-/* line 93, ../sass/_type.scss */
+/* line 89, ../sass/_type.scss */
+body h1 {
+  font-family: arialLawlLargeBody;
+  font-size: 18pt;
+}
+/* line 97, ../sass/_type.scss */
+body .content section.header {
+  min-height: 10vh !important;
+}
+/* line 101, ../sass/_type.scss */
+body .content section.header.people h1 {
+  -moz-transform: scaleX(0.765);
+  -ms-transform: scaleX(0.765);
+  -webkit-transform: scaleX(0.765);
+  transform: scaleX(0.765);
+}
+/* line 106, ../sass/_type.scss */
+body .content section.header .inside {
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+/* line 109, ../sass/_type.scss */
+body .content section.header .inside h1 {
+  font-size: 75vh;
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+/* line 117, ../sass/_type.scss */
 body .content section.human {
+  color: white;
+}
+/* line 120, ../sass/_type.scss */
+body .content section.human h1 {
   font-family: arialLawlHeader;
   font-size: 72pt;
   letter-spacing: .0625em;
 }
-/* line 96, ../sass/_type.scss */
+/* line 124, ../sass/_type.scss */
 body .content section.human h2, body .content section.human p {
   font-family: arialLawlLargeBody;
   font-size: 18pt;
