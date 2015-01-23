@@ -47,7 +47,7 @@ body{
     
             &.video {
                 .video-cover {
-                    background-image: url(../images/video-bg.jpg);
+                    background-image: url('graphics/vestige.png');
                     @include background-size(100% 100%);
                     position: absolute;
                     top: 0;

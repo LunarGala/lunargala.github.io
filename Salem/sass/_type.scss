@@ -95,13 +95,13 @@ body {
         section {
         
             &.header {
-                min-height: 10vh !important;
-            
-                &.people {
-                    h1 {
-                        @include transform(scaleX(.765));
-                    }
-                }
+                // min-height: 10vh !important;
+                // 
+                // &.people {
+                //     h1 {
+                //         @include transform(scaleX(.765));
+                //     }
+                // }
                 
                 .inside {
                     @include transform(none !important);
