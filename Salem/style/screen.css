@@ -316,6 +316,17 @@ body .content section .inside {
   /* .136742195 / 75 */
 }
 
+.header .people {
+  background-image: url(graphics/url.jpg);
+  -webkit-background-size: 100% 100%;
+  /* For WebKit*/
+  -moz-background-size: 100% 100%;
+  /* Mozilla*/
+  -o-background-size: 100% 100%;
+  /* Opera*/
+  background-size: 100% 100%;
+}
+
 /* line 8, ../sass/_humans.scss */
 .adeleyeIbukunFayo {
   background-image: url(../images/adeleyeIbukunFayo.jpg);
