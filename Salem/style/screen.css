@@ -1545,22 +1545,35 @@ body .content section {
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 /* line 25, ../sass/screen.scss */
+body .content section.header {
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 30, ../sass/screen.scss */
+body .content section.header.people {
+  background-image: url("graphics/people.svg");
+}
+/* line 35, ../sass/screen.scss */
 body .content section.human {
   -webkit-filter: brightness(1.1);
 }
-/* line 28, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 body .content section.human.active {
   -webkit-filter: brightness(1.1);
 }
-/* line 32, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 body .content section.human.active:hover, body .content section.human.active:active {
   -webkit-filter: brightness(1.1);
 }
-/* line 37, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 body .content section.human:hover {
   -webkit-filter: brightness(1.5);
 }
-/* line 41, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 body .content section.human:active {
   -webkit-filter: brightness(3);
 }
