@@ -155,7 +155,7 @@ body .content section.human h2, body .content section.human p {
 }
 /* line 1, ../sass/_scrolling.scss */
 body {
-  height: 10000vh;
+  height: 5000vh;
   /* To allow scrolling */
   display: none;
   /* Hide until loaded */
@@ -222,7 +222,7 @@ body .content section.intro .inside {
 }
 /* line 49, ../sass/_scrolling.scss */
 body .content section.video .video-cover {
-  background-image: url("graphics/vestige.png");
+  background-image: url("graphics/video.png");
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
@@ -1531,46 +1531,59 @@ body .content section.header {
   background-repeat: no-repeat;
 }
 /* line 30, ../sass/screen.scss */
+body .content section.header.title {
+  background-image: url("graphics/vestige.png");
+}
+/* line 34, ../sass/screen.scss */
 body .content section.header.logistics {
   background-image: url("graphics/logistics.png");
 }
-/* line 34, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 body .content section.header.tickets {
   background-image: url("graphics/tickets.png");
 }
-/* line 38, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 body .content section.header.people {
   background-image: url("graphics/people.png");
 }
-/* line 42, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 body .content section.header.about {
   background-image: url("graphics/about.png");
 }
-/* line 46, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 body .content section.header.sponsors {
   background-image: url("graphics/sponsors.png");
 }
-/* line 50, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 body .content section.header .inside {
   text-indent: -99999em;
 }
-/* line 55, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
+body .content section.divider video {
+  height: 100%;
+  width: 100%;
+  -moz-transform: scaleX(2);
+  -ms-transform: scaleX(2);
+  -webkit-transform: scaleX(2);
+  transform: scaleX(2);
+}
+/* line 67, ../sass/screen.scss */
 body .content section.human {
   -webkit-filter: brightness(1.1);
 }
-/* line 58, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 body .content section.human.active {
   -webkit-filter: brightness(1.1);
 }
-/* line 62, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 body .content section.human.active:hover, body .content section.human.active:active {
   -webkit-filter: brightness(1.1);
 }
-/* line 67, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 body .content section.human:hover {
   -webkit-filter: brightness(1.5);
 }
-/* line 71, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 body .content section.human:active {
   -webkit-filter: brightness(3);
 }

@@ -26,6 +26,10 @@ body {
                 // min-height: 5vh;
                 @include background-size(100% 100%);
                 background-repeat: no-repeat;
+                
+                &.title {
+                    background-image: url('graphics/vestige.png');
+                }
 
                 &.logistics {
                     background-image: url('graphics/logistics.png');
@@ -49,6 +53,14 @@ body {
                 
                 .inside {
                     text-indent: -99999em;
+                }
+            }
+            
+            &.divider {
+                video {
+                    height: 100%;
+                    width: 100%;
+                    @include transform(scaleX(2));
                 }
             }
             

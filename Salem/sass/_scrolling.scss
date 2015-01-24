@@ -1,5 +1,5 @@
 body{
-    height: 10000vh;            /* To allow scrolling */
+    height: 5000vh;            /* To allow scrolling */
     display: none;              /* Hide until loaded */
 
     /*************************
@@ -47,7 +47,7 @@ body{
     
             &.video {
                 .video-cover {
-                    background-image: url('graphics/vestige.png');
+                    background-image: url('graphics/video.png');
                     @include background-size(100% 100%);
                     position: absolute;
                     top: 0;
