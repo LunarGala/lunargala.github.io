@@ -22,8 +22,12 @@ body {
             cursor: pointer;
             @include transition(all $transitionDuration $transitionCurve);
             
+            &.active {
+                cursor: default;
+            }
+            
             &.header {
-                // min-height: 5vh;
+                // min-height: 2vh;
                 @include background-size(100% 100%);
                 background-repeat: no-repeat;
                 
@@ -37,18 +41,46 @@ body {
 
                 &.tickets {
                     background-image: url('graphics/tickets.png');
+                    
+                    &:hover {
+                        opacity: .75;
+                    }
+                    
+                    &.active, &.second-class {
+                        
+                        a {
+                            display: block;
+                            height: 100%;
+                            width: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
                 }
                 
                 &.people {
                     background-image: url('graphics/people.png');
                 }
-                
+
                 &.about {
                     background-image: url('graphics/about.png');
+                }
+                    
+                &.aboutText {
+                    background-image: url('graphics/aboutText.png');
+                }
+                
+                &.tagline {
+                    background-image: url('graphics/tagline.png');
                 }
 
                 &.sponsors {
                     background-image: url('graphics/sponsors.png');
+                }
+                
+                &.logo {
+                    background-image: url('graphics/lg.png');
                 }
                 
                 .inside {
@@ -60,26 +92,26 @@ body {
                 video {
                     height: 100%;
                     width: 100%;
-                    @include transform(scaleX(200));
+                    @include transform(scale3d(200.0, 1.0, 1.0));
                     @include transition($transitionDuration $transitionCurve);
                     @include transition-property(transform, -webkit-transform, -moz-transform)
                 }
                 
                 &.active {
                     video {
-                        @include transform(scaleX(2));
+                        @include transform(scale3d(2.0, 1.0, 1.0));
                     }
                 }
                 
                 &.second-class {
                     video {
-                        @include transform(scaleX(9));
+                        @include transform(scale3d(9.0, 1.0, 1.0));
                     }
                 }
                 
                 &.third-class {
                     video {
-                        @include transform(scaleX(54));
+                        @include transform(scale3d(54, 1.0, 1.0));
                     }
                 }
             }
