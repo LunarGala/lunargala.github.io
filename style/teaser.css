@@ -2,3 +2,7 @@
 body.teaser {
   height: 500vh !important;
 }
+/* line 4, ../sass/teaser.scss */
+body.teaser section {
+  height: 1.1vh;
+}
