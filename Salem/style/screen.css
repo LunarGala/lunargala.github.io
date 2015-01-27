@@ -155,6 +155,8 @@ body .content section.human h2, body .content section.human p {
 }
 /* line 1, ../sass/_scrolling.scss */
 body {
+  height: 5000vh;
+  /* To allow scrolling */
   display: none;
   /* Hide until loaded */
   /*************************
