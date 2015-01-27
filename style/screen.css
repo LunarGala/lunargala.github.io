@@ -1551,7 +1551,7 @@ body .content section.header.tickets:hover {
   opacity: .75;
 }
 /* line 51, ../sass/screen.scss */
-body .content section.header.tickets.active a {
+body .content section.header.tickets.active a, body .content section.header.tickets.second-class a {
   display: block;
   height: 100%;
   width: 100%;
