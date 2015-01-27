@@ -1,4 +1,4 @@
-/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -1362,6 +1362,18 @@ body .content section .inside {
 }
 
 /* line 449, ../sass/_humans.scss */
+.umNoel {
+  background-image: url(../images/umNoel.jpg);
+  -webkit-background-size: 100% 100%;
+  /* For WebKit*/
+  -moz-background-size: 100% 100%;
+  /* Mozilla*/
+  -o-background-size: 100% 100%;
+  /* Opera*/
+  background-size: 100% 100%;
+}
+
+/* line 454, ../sass/_humans.scss */
 .uphoffJessica {
   background-image: url(../images/uphoffJessica.jpg);
   -webkit-background-size: 100% 100%;
@@ -1373,7 +1385,7 @@ body .content section .inside {
   background-size: 100% 100%;
 }
 
-/* line 454, ../sass/_humans.scss */
+/* line 459, ../sass/_humans.scss */
 .walkerAlex {
   background-image: url(../images/walkerAlex.jpg);
   -webkit-background-size: 100% 100%;
@@ -1385,7 +1397,7 @@ body .content section .inside {
   background-size: 100% 100%;
 }
 
-/* line 459, ../sass/_humans.scss */
+/* line 464, ../sass/_humans.scss */
 .wangJason {
   background-image: url(../images/wangJason.jpg);
   -webkit-background-size: 100% 100%;
@@ -1397,7 +1409,7 @@ body .content section .inside {
   background-size: 100% 100%;
 }
 
-/* line 464, ../sass/_humans.scss */
+/* line 469, ../sass/_humans.scss */
 .winthrowJenna {
   background-image: url(../images/winthrowJenna.jpg);
   -webkit-background-size: 100% 100%;
@@ -1409,7 +1421,7 @@ body .content section .inside {
   background-size: 100% 100%;
 }
 
-/* line 469, ../sass/_humans.scss */
+/* line 474, ../sass/_humans.scss */
 .wolffNoa {
   background-image: url(../images/wolffNoa.jpg);
   -webkit-background-size: 100% 100%;
@@ -1421,7 +1433,7 @@ body .content section .inside {
   background-size: 100% 100%;
 }
 
-/* line 474, ../sass/_humans.scss */
+/* line 479, ../sass/_humans.scss */
 .wooSohee {
   background-image: url(../images/wooSohee.jpg);
   -webkit-background-size: 100% 100%;
@@ -1433,7 +1445,7 @@ body .content section .inside {
   background-size: 100% 100%;
 }
 
-/* line 479, ../sass/_humans.scss */
+/* line 484, ../sass/_humans.scss */
 .yeAlice {
   background-image: url(../images/yeAlice.jpg);
   -webkit-background-size: 100% 100%;
@@ -1445,7 +1457,7 @@ body .content section .inside {
   background-size: 100% 100%;
 }
 
-/* line 484, ../sass/_humans.scss */
+/* line 489, ../sass/_humans.scss */
 .yerlanDina {
   background-image: url(../images/yerlanDina.jpg);
   -webkit-background-size: 100% 100%;
@@ -1457,7 +1469,7 @@ body .content section .inside {
   background-size: 100% 100%;
 }
 
-/* line 489, ../sass/_humans.scss */
+/* line 494, ../sass/_humans.scss */
 .yoonJane {
   background-image: url(../images/yoonJane.jpg);
   -webkit-background-size: 100% 100%;
@@ -1469,7 +1481,7 @@ body .content section .inside {
   background-size: 100% 100%;
 }
 
-/* line 494, ../sass/_humans.scss */
+/* line 499, ../sass/_humans.scss */
 .zemeringLauren {
   background-image: url(../images/zemeringLauren.jpg);
   -webkit-background-size: 100% 100%;
@@ -1481,7 +1493,7 @@ body .content section .inside {
   background-size: 100% 100%;
 }
 
-/* line 499, ../sass/_humans.scss */
+/* line 504, ../sass/_humans.scss */
 .zhaoKatherine {
   background-image: url(../images/zhaoKatherine.jpg);
   -webkit-background-size: 100% 100%;
@@ -1493,7 +1505,7 @@ body .content section .inside {
   background-size: 100% 100%;
 }
 
-/* line 504, ../sass/_humans.scss */
+/* line 509, ../sass/_humans.scss */
 .zhengCatherine {
   background-image: url(../images/zhengCatherine.jpg);
   -webkit-background-size: 100% 100%;

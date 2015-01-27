@@ -446,6 +446,11 @@
   @include bgSizing;
 }
 
+.umNoel {
+  background-image: url(../images/umNoel.jpg);
+  @include bgSizing;
+}
+
 .uphoffJessica {
   background-image: url(../images/uphoffJessica.jpg);
   @include bgSizing;
