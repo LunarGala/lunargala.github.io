@@ -112,6 +112,13 @@
         $('.content section').click(function() {
             console.log('click', this);
             var idx = $(this).data('index');
+            var sectionCount = $('section').length;
+            var pageHeight = $(document).height();
+            var sectionPercent = idx/sectionCount;
+            var scrollTo = Math.round(pageHeight * sectionPercent);
+            $(window).scrollTop(scrollTo);
+            console.log('scrolling to', scrollTo, pageHeight, sectionPercent);
+            updateActive(idx);
             updateActive(idx);
         });
     };
