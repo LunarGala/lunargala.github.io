@@ -1,7 +1,7 @@
 /* Variables to make this math super flexible */
 
-$sections: 19;              // The number of scrolling sections
-$headers: 9;                // The number of always-visible headers
+$sections: 48;              // The number of scrolling sections
+$headers: 10;               // The number of always-visible headers
 $header-height: 2%;         // How tall a collapsed header should be
 $scroll-ratio: 3;           // How many full screen heights to scroll to advance a single slide
 $active-height: 60%;        // How tall the active section should be
@@ -48,6 +48,18 @@ body {
             width: 100%;
             text-align: justify;
             text-transform: lowercase;
+
+            &.hideme {
+                display: none;
+
+                &.header {
+                    display: block;
+                }
+            }
+
+            .inside {
+                display: none;
+            }
             
             @include transform(translate3d(0, 0, 0)); /* force hardware acceleration */
             @include backface-visibility(hidden); /* other hacky speed-up tricks */
@@ -98,6 +110,7 @@ body {
                 height: $active-height;
     
                 .inside {
+                    display: block;
                     @include transform(scale3d(1.0, 1.0, 1.0));         /* 75 / 75 */
                 }
             }   
@@ -106,6 +119,7 @@ body {
                 height: $second-class-height;
     
                 .inside {
+                    display: block;
                     @include transform(scale3d(1.0, 0.06, 1.0));        /* 4.5 / 75 */
                 }
             }

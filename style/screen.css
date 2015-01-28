@@ -156,7 +156,7 @@ body .content section.human h2, body .content section.human p {
 /* Variables to make this math super flexible */
 /* line 19, ../sass/_scrolling.scss */
 body {
-  height: 5700vh;
+  height: 14400vh;
   /* To allow scrolling */
   display: none;
   /* Hide until loaded */
@@ -180,7 +180,7 @@ body .content {
 }
 /* line 43, ../sass/_scrolling.scss */
 body .content section {
-  height: 1.875%;
+  height: 0.66667%;
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
@@ -216,11 +216,23 @@ body .content section {
 
          *************************/
 }
-/* line 70, ../sass/_scrolling.scss */
+/* line 52, ../sass/_scrolling.scss */
+body .content section.hideme {
+  display: none;
+}
+/* line 55, ../sass/_scrolling.scss */
+body .content section.hideme.header {
+  display: block;
+}
+/* line 60, ../sass/_scrolling.scss */
+body .content section .inside {
+  display: none;
+}
+/* line 82, ../sass/_scrolling.scss */
 body .content section.intro .inside {
   color: black;
 }
-/* line 76, ../sass/_scrolling.scss */
+/* line 88, ../sass/_scrolling.scss */
 body .content section.video .video-cover {
   background-image: url("graphics/video.png");
   -moz-background-size: 100% 100%;
@@ -233,39 +245,41 @@ body .content section.video .video-cover {
   left: 0;
   right: 0;
 }
-/* line 86, ../sass/_scrolling.scss */
+/* line 98, ../sass/_scrolling.scss */
 body .content section.video iframe {
   display: none;
 }
-/* line 97, ../sass/_scrolling.scss */
+/* line 109, ../sass/_scrolling.scss */
 body .content section.active {
   height: 60%;
 }
-/* line 100, ../sass/_scrolling.scss */
+/* line 112, ../sass/_scrolling.scss */
 body .content section.active .inside {
+  display: block;
   -moz-transform: scale3d(1, 1, 1);
   -ms-transform: scale3d(1, 1, 1);
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
   /* 75 / 75 */
 }
-/* line 105, ../sass/_scrolling.scss */
+/* line 118, ../sass/_scrolling.scss */
 body .content section.second-class {
   height: 5%;
 }
-/* line 108, ../sass/_scrolling.scss */
+/* line 121, ../sass/_scrolling.scss */
 body .content section.second-class .inside {
+  display: block;
   -moz-transform: scale3d(1, 0.06, 1);
   -ms-transform: scale3d(1, 0.06, 1);
   -webkit-transform: scale3d(1, 0.06, 1);
   transform: scale3d(1, 0.06, 1);
   /* 4.5 / 75 */
 }
-/* line 121, ../sass/_scrolling.scss */
+/* line 135, ../sass/_scrolling.scss */
 body .content section:first-child.active, body .content section:nth-last-child(1).active {
   height: 65%;
 }
-/* line 126, ../sass/_scrolling.scss */
+/* line 140, ../sass/_scrolling.scss */
 body .content section .inside {
   -webkit-transform-origin: 0 0;
   /* Keep text aligned properly */
@@ -354,1204 +368,512 @@ body.teaser.static .content section.divider video {
   display: none;
 }
 
-/* line 8, ../sass/_humans.scss */
+/* line 1, ../sass/_humans.scss */
+section.human {
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+/* line 5, ../sass/_humans.scss */
 .adeleyeIbukunFayo {
   background-image: url(../images/adeleyeIbukunFayo.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+}
+
+/* line 9, ../sass/_humans.scss */
+.adetolaLanre {
+  background-image: url(../images/adetolaLanre.jpg);
 }
 
 /* line 13, ../sass/_humans.scss */
-.adetolaLanre {
-  background-image: url(../images/adetolaLanre.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 18, ../sass/_humans.scss */
 .ahmedSam {
   background-image: url(../images/ahmedSam.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
 }
 
-/* line 23, ../sass/_humans.scss */
+/* line 17, ../sass/_humans.scss */
 .ajithArchana {
   background-image: url(../images/ajithArchana.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
 }
 
-/* line 28, ../sass/_humans.scss */
+/* line 21, ../sass/_humans.scss */
 .aliyuZai {
   background-image: url(../images/aliyuZai.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+}
+
+/* line 25, ../sass/_humans.scss */
+.anandSwathi {
+  background-image: url(../images/anandSwathi.jpg);
+}
+
+/* line 29, ../sass/_humans.scss */
+.aniJibby {
+  background-image: url(../images/aniJibby.jpg);
 }
 
 /* line 33, ../sass/_humans.scss */
-.anandSwathi {
-  background-image: url(../images/anandSwathi.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 38, ../sass/_humans.scss */
-.aniJibby {
-  background-image: url(../images/aniJibby.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 43, ../sass/_humans.scss */
 .auyeungAllison {
   background-image: url(../images/auyeungAllison.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
 }
 
-/* line 48, ../sass/_humans.scss */
+/* line 37, ../sass/_humans.scss */
 .baileyJordan {
   background-image: url(../images/baileyJordan.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+}
+
+/* line 41, ../sass/_humans.scss */
+.behlRemy {
+  background-image: url(../images/behlRemy.jpg);
+}
+
+/* line 45, ../sass/_humans.scss */
+.bergeronZach {
+  background-image: url(../images/bergeronZach.jpg);
+}
+
+/* line 49, ../sass/_humans.scss */
+.boruKeerthi {
+  background-image: url(../images/boruKeerthi.jpg);
 }
 
 /* line 53, ../sass/_humans.scss */
-.behlRemy {
-  background-image: url(../images/behlRemy.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 58, ../sass/_humans.scss */
-.bergeronZach {
-  background-image: url(../images/bergeronZach.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 63, ../sass/_humans.scss */
-.boruKeerthi {
-  background-image: url(../images/boruKeerthi.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 68, ../sass/_humans.scss */
 .bouraiAbdelwahab {
   background-image: url(../images/bouraiAbdelwahab.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+}
+
+/* line 57, ../sass/_humans.scss */
+.brahmBella {
+  background-image: url(../images/brahmBella.jpg);
+}
+
+/* line 61, ../sass/_humans.scss */
+.buchwaldMiriam {
+  background-image: url(../images/buchwaldMiriam.jpg);
+}
+
+/* line 65, ../sass/_humans.scss */
+.buttRehan {
+  background-image: url(../images/buttRehan.jpg);
+}
+
+/* line 69, ../sass/_humans.scss */
+.chambersDelaney {
+  background-image: url(../images/chambersDelaney.jpg);
 }
 
 /* line 73, ../sass/_humans.scss */
-.brahmBella {
-  background-image: url(../images/brahmBella.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.changSabrina {
+  background-image: url(../images/changSabrina.jpg);
 }
 
-/* line 78, ../sass/_humans.scss */
-.buchwaldMiriam {
-  background-image: url(../images/buchwaldMiriam.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 77, ../sass/_humans.scss */
+.chenAmy {
+  background-image: url(../images/chenAmy.jpg);
 }
 
-/* line 83, ../sass/_humans.scss */
-.buttRehan {
-  background-image: url(../images/buttRehan.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 81, ../sass/_humans.scss */
+.chenAngeline {
+  background-image: url(../images/chenAngeline.jpg);
 }
 
-/* line 88, ../sass/_humans.scss */
-.chambersDelaney {
-  background-image: url(../images/chambersDelaney.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 85, ../sass/_humans.scss */
+.chenYutong {
+  background-image: url(../images/chenYutong.jpg);
+}
+
+/* line 89, ../sass/_humans.scss */
+.chiuSamantha {
+  background-image: url(../images/chiuSamantha.jpg);
 }
 
 /* line 93, ../sass/_humans.scss */
-.changSabrina {
-  background-image: url(../images/changSabrina.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.choMichelle {
+  background-image: url(../images/choMichelle.jpg);
 }
 
-/* line 98, ../sass/_humans.scss */
-.chenAmy {
-  background-image: url(../images/chenAmy.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 97, ../sass/_humans.scss */
+.chouMolly {
+  background-image: url(../images/chouMolly.jpg);
 }
 
-/* line 103, ../sass/_humans.scss */
-.chenAngeline {
-  background-image: url(../images/chenAngeline.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 101, ../sass/_humans.scss */
+.chukwumaJess {
+  background-image: url(../images/chukwumaJess.jpg);
 }
 
-/* line 108, ../sass/_humans.scss */
-.chenYutong {
-  background-image: url(../images/chenYutong.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 105, ../sass/_humans.scss */
+.ciavarellaRachel {
+  background-image: url(../images/ciavarellaRachel.jpg);
+}
+
+/* line 109, ../sass/_humans.scss */
+.cliffordColleen {
+  background-image: url(../images/cliffordColleen.jpg);
 }
 
 /* line 113, ../sass/_humans.scss */
-.chiuSamantha {
-  background-image: url(../images/chiuSamantha.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.criglerAmelia {
+  background-image: url(../images/criglerAmelia.jpg);
 }
 
-/* line 118, ../sass/_humans.scss */
-.choMichelle {
-  background-image: url(../images/choMichelle.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 117, ../sass/_humans.scss */
+.delarosaAlexis {
+  background-image: url(../images/delarosaAlexis.jpg);
 }
 
-/* line 123, ../sass/_humans.scss */
-.chouMolly {
-  background-image: url(../images/chouMolly.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 121, ../sass/_humans.scss */
+.deleonLynzky {
+  background-image: url(../images/deleonLynzky.jpg);
 }
 
-/* line 128, ../sass/_humans.scss */
-.chukwumaJess {
-  background-image: url(../images/chukwumaJess.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 125, ../sass/_humans.scss */
+.demlerAya {
+  background-image: url(../images/demlerAya.jpg);
 }
 
-/* line 133, ../sass/_humans.scss */
-.ciavarellaRachel {
-  background-image: url(../images/ciavarellaRachel.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 129, ../sass/_humans.scss */
+.edmondsIsaiah {
+  background-image: url(../images/edmondsIsaiah.jpg);
+}
+
+/* line 134, ../sass/_humans.scss */
+.essexChristopher {
+  background-image: url(../images/essexChristopher.jpg);
 }
 
 /* line 138, ../sass/_humans.scss */
-.cliffordColleen {
-  background-image: url(../images/cliffordColleen.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.felbingerBrenan {
+  background-image: url(../images/felbingerBrenan.jpg);
 }
 
-/* line 143, ../sass/_humans.scss */
-.criglerAmelia {
-  background-image: url(../images/criglerAmelia.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 142, ../sass/_humans.scss */
+.fieldsSaraRemi {
+  background-image: url(../images/fieldsSaraRemi.jpg);
 }
 
-/* line 148, ../sass/_humans.scss */
-.delarosaAlexis {
-  background-image: url(../images/delarosaAlexis.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 146, ../sass/_humans.scss */
+.frazerKatherine {
+  background-image: url(../images/frazerKatherine.jpg);
 }
 
-/* line 153, ../sass/_humans.scss */
-.deleonLynzky {
-  background-image: url(../images/deleonLynzky.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 150, ../sass/_humans.scss */
+.fritzMorgan {
+  background-image: url(../images/fritzMorgan.jpg);
+}
+
+/* line 154, ../sass/_humans.scss */
+.gardnerDavid {
+  background-image: url(../images/gardnerDavid.jpg);
 }
 
 /* line 158, ../sass/_humans.scss */
-.demlerAya {
-  background-image: url(../images/demlerAya.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.gershunyAndrea {
+  background-image: url(../images/gershunyAndrea.jpg);
 }
 
-/* line 163, ../sass/_humans.scss */
-.edmondsIsaiah {
-  background-image: url(../images/edmondsIsaiah.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 162, ../sass/_humans.scss */
+.goldsteinLauren {
+  background-image: url(../images/goldsteinLauren.jpg);
 }
 
-/* line 169, ../sass/_humans.scss */
-.essexChristopher {
-  background-image: url(../images/essexChristopher.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 166, ../sass/_humans.scss */
+.hackerEmmy {
+  background-image: url(../images/hackerEmmy.jpg);
+}
+
+/* line 170, ../sass/_humans.scss */
+.hamiltonAlyssa {
+  background-image: url(../images/hamiltonAlyssa.jpg);
 }
 
 /* line 174, ../sass/_humans.scss */
-.felbingerBrenan {
-  background-image: url(../images/felbingerBrenan.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.heXuran {
+  background-image: url(../images/heXuran.jpg);
 }
 
-/* line 179, ../sass/_humans.scss */
-.fieldsSaraRemi {
-  background-image: url(../images/fieldsSaraRemi.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 178, ../sass/_humans.scss */
+.hoKendra {
+  background-image: url(../images/hoKendra.jpg);
 }
 
-/* line 184, ../sass/_humans.scss */
-.frazerKatherine {
-  background-image: url(../images/frazerKatherine.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 182, ../sass/_humans.scss */
+.huangEileen {
+  background-image: url(../images/huangEileen.jpg);
 }
 
-/* line 189, ../sass/_humans.scss */
-.fritzMorgan {
-  background-image: url(../images/fritzMorgan.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 186, ../sass/_humans.scss */
+.huangGina {
+  background-image: url(../images/huangGina.jpg);
+}
+
+/* line 190, ../sass/_humans.scss */
+.hwangJi {
+  background-image: url(../images/hwangJi.jpg);
 }
 
 /* line 194, ../sass/_humans.scss */
-.gardnerDavid {
-  background-image: url(../images/gardnerDavid.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.ideraSade {
+  background-image: url(../images/ideraSade.jpg);
 }
 
-/* line 199, ../sass/_humans.scss */
-.gershunyAndrea {
-  background-image: url(../images/gershunyAndrea.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 198, ../sass/_humans.scss */
+.iottAlicia {
+  background-image: url(../images/iottAlicia.jpg);
 }
 
-/* line 204, ../sass/_humans.scss */
-.goldsteinLauren {
-  background-image: url(../images/goldsteinLauren.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 202, ../sass/_humans.scss */
+.jeffsAJ {
+  background-image: url(../images/jeffsAJ.jpg);
 }
 
-/* line 209, ../sass/_humans.scss */
-.hackerEmmy {
-  background-image: url(../images/hackerEmmy.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 206, ../sass/_humans.scss */
+.jonesWesley {
+  background-image: url(../images/jonesWesley.jpg);
+}
+
+/* line 210, ../sass/_humans.scss */
+.josephKeith {
+  background-image: url(../images/josephKeith.jpg);
 }
 
 /* line 214, ../sass/_humans.scss */
-.hamiltonAlyssa {
-  background-image: url(../images/hamiltonAlyssa.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.kangSnow {
+  background-image: url(../images/kangSnow.jpg);
 }
 
-/* line 219, ../sass/_humans.scss */
-.heXuran {
-  background-image: url(../images/heXuran.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 218, ../sass/_humans.scss */
+.kellyKeith {
+  background-image: url(../images/kellyKeith.jpg);
 }
 
-/* line 224, ../sass/_humans.scss */
-.hoKendra {
-  background-image: url(../images/hoKendra.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 222, ../sass/_humans.scss */
+.kimDaniel {
+  background-image: url(../images/kimDaniel.jpg);
 }
 
-/* line 229, ../sass/_humans.scss */
-.huangEileen {
-  background-image: url(../images/huangEileen.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 226, ../sass/_humans.scss */
+.kimHannah {
+  background-image: url(../images/kimHannah.jpg);
+}
+
+/* line 230, ../sass/_humans.scss */
+.kimJay {
+  background-image: url(../images/kimJay.jpg);
 }
 
 /* line 234, ../sass/_humans.scss */
-.huangGina {
-  background-image: url(../images/huangGina.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.kimJohn {
+  background-image: url(../images/kimJohn.jpg);
 }
 
-/* line 239, ../sass/_humans.scss */
-.hwangJi {
-  background-image: url(../images/hwangJi.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 238, ../sass/_humans.scss */
+.kodiNeha {
+  background-image: url(../images/kodiNeha.jpg);
 }
 
-/* line 244, ../sass/_humans.scss */
-.ideraSade {
-  background-image: url(../images/ideraSade.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 242, ../sass/_humans.scss */
+.kongLiana {
+  background-image: url(../images/kongLiana.jpg);
 }
 
-/* line 249, ../sass/_humans.scss */
-.iottAlicia {
-  background-image: url(../images/iottAlicia.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 246, ../sass/_humans.scss */
+.liangAngela {
+  background-image: url(../images/liangAngela.jpg);
+}
+
+/* line 250, ../sass/_humans.scss */
+.liArissa {
+  background-image: url(../images/liArissa.jpg);
 }
 
 /* line 254, ../sass/_humans.scss */
-.jeffsAJ {
-  background-image: url(../images/jeffsAJ.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.linJarret {
+  background-image: url(../images/linJarret.jpg);
 }
 
-/* line 259, ../sass/_humans.scss */
-.jonesWesley {
-  background-image: url(../images/jonesWesley.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 258, ../sass/_humans.scss */
+.liuBecki {
+  background-image: url(../images/liuBecki.jpg);
 }
 
-/* line 264, ../sass/_humans.scss */
-.josephKeith {
-  background-image: url(../images/josephKeith.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 262, ../sass/_humans.scss */
+.merskiOshie {
+  background-image: url(../images/merskiOshie.jpg);
 }
 
-/* line 269, ../sass/_humans.scss */
-.kangSnow {
-  background-image: url(../images/kangSnow.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 266, ../sass/_humans.scss */
+.michelLaurel {
+  background-image: url(../images/michelLaurel.jpg);
+}
+
+/* line 270, ../sass/_humans.scss */
+.millermanAnna {
+  background-image: url(../images/millermanAnna.jpg);
 }
 
 /* line 274, ../sass/_humans.scss */
-.kellyKeith {
-  background-image: url(../images/kellyKeith.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.moiseStephane {
+  background-image: url(../images/moiseStephane.jpg);
 }
 
-/* line 279, ../sass/_humans.scss */
-.kimDaniel {
-  background-image: url(../images/kimDaniel.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 278, ../sass/_humans.scss */
+.nelsonJillian {
+  background-image: url(../images/nelsonJillian.jpg);
 }
 
-/* line 284, ../sass/_humans.scss */
-.kimHannah {
-  background-image: url(../images/kimHannah.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 282, ../sass/_humans.scss */
+.onoAntonio {
+  background-image: url(../images/onoAntonio.jpg);
 }
 
-/* line 289, ../sass/_humans.scss */
-.kimJay {
-  background-image: url(../images/kimJay.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 286, ../sass/_humans.scss */
+.paparisDanae {
+  background-image: url(../images/paparisDanae.jpg);
+}
+
+/* line 290, ../sass/_humans.scss */
+.parrinelloSophie {
+  background-image: url(../images/parrinelloSophie.jpg);
 }
 
 /* line 294, ../sass/_humans.scss */
-.kimJohn {
-  background-image: url(../images/kimJohn.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.patelChanda {
+  background-image: url(../images/patelChanda.jpg);
 }
 
-/* line 299, ../sass/_humans.scss */
-.kodiNeha {
-  background-image: url(../images/kodiNeha.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 298, ../sass/_humans.scss */
+.quadriFeyi {
+  background-image: url(../images/quadriFeyi.jpg);
 }
 
-/* line 304, ../sass/_humans.scss */
-.kongLiana {
-  background-image: url(../images/kongLiana.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 302, ../sass/_humans.scss */
+.ragazzoKira {
+  background-image: url(../images/ragazzoKira.jpg);
 }
 
-/* line 309, ../sass/_humans.scss */
-.liangAngela {
-  background-image: url(../images/liangAngela.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 306, ../sass/_humans.scss */
+.ratanalertChanamon {
+  background-image: url(../images/ratanalertChanamon.jpg);
+}
+
+/* line 310, ../sass/_humans.scss */
+.rayShalini {
+  background-image: url(../images/rayShalini.jpg);
 }
 
 /* line 314, ../sass/_humans.scss */
-.liArissa {
-  background-image: url(../images/liArissa.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.sandforthJolyn {
+  background-image: url(../images/sandforthJolyn.jpg);
 }
 
-/* line 319, ../sass/_humans.scss */
-.linJarret {
-  background-image: url(../images/linJarret.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 318, ../sass/_humans.scss */
+.shcloverNika {
+  background-image: url(../images/shcloverNika.jpg);
 }
 
-/* line 324, ../sass/_humans.scss */
-.liuBecki {
-  background-image: url(../images/liuBecki.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 322, ../sass/_humans.scss */
+.shenCecilia {
+  background-image: url(../images/shenCecilia.jpg);
 }
 
-/* line 329, ../sass/_humans.scss */
-.merskiOshie {
-  background-image: url(../images/merskiOshie.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 326, ../sass/_humans.scss */
+.shenJessica {
+  background-image: url(../images/shenJessica.jpg);
+}
+
+/* line 330, ../sass/_humans.scss */
+.singhShana {
+  background-image: url(../images/singhShana.jpg);
 }
 
 /* line 334, ../sass/_humans.scss */
-.michelLaurel {
-  background-image: url(../images/michelLaurel.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.songVictor {
+  background-image: url(../images/songVictor.jpg);
 }
 
-/* line 339, ../sass/_humans.scss */
-.millermanAnna {
-  background-image: url(../images/millermanAnna.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 338, ../sass/_humans.scss */
+.sunSteven {
+  background-image: url(../images/sunSteven.jpg);
 }
 
-/* line 344, ../sass/_humans.scss */
-.moiseStephane {
-  background-image: url(../images/moiseStephane.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 342, ../sass/_humans.scss */
+.tamayoCarolina {
+  background-image: url(../images/tamayoCarolina.jpg);
 }
 
-/* line 349, ../sass/_humans.scss */
-.nelsonJillian {
-  background-image: url(../images/nelsonJillian.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 346, ../sass/_humans.scss */
+.taylorAmaya {
+  background-image: url(../images/taylorAmaya.jpg);
+}
+
+/* line 350, ../sass/_humans.scss */
+.thomasLeila {
+  background-image: url(../images/thomasLeila.jpg);
 }
 
 /* line 354, ../sass/_humans.scss */
-.onoAntonio {
-  background-image: url(../images/onoAntonio.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.townsendCharlotte {
+  background-image: url(../images/townsendCharlotte.jpg);
 }
 
-/* line 359, ../sass/_humans.scss */
-.paparisDanae {
-  background-image: url(../images/paparisDanae.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 358, ../sass/_humans.scss */
+.uphoffJessica {
+  background-image: url(../images/uphoffJessica.jpg);
 }
 
-/* line 364, ../sass/_humans.scss */
-.parrinelloSophie {
-  background-image: url(../images/parrinelloSophie.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 362, ../sass/_humans.scss */
+.walkerAlex {
+  background-image: url(../images/walkerAlex.jpg);
 }
 
-/* line 369, ../sass/_humans.scss */
-.patelChanda {
-  background-image: url(../images/patelChanda.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 366, ../sass/_humans.scss */
+.wangJason {
+  background-image: url(../images/wangJason.jpg);
+}
+
+/* line 370, ../sass/_humans.scss */
+.winthrowJenna {
+  background-image: url(../images/winthrowJenna.jpg);
 }
 
 /* line 374, ../sass/_humans.scss */
-.quadriFeyi {
-  background-image: url(../images/quadriFeyi.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+.wolffNoa {
+  background-image: url(../images/wolffNoa.jpg);
 }
 
-/* line 379, ../sass/_humans.scss */
-.ragazzoKira {
-  background-image: url(../images/ragazzoKira.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 378, ../sass/_humans.scss */
+.wooSohee {
+  background-image: url(../images/wooSohee.jpg);
 }
 
-/* line 384, ../sass/_humans.scss */
-.ratanalertChanamon {
-  background-image: url(../images/ratanalertChanamon.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 382, ../sass/_humans.scss */
+.yeAlice {
+  background-image: url(../images/yeAlice.jpg);
 }
 
-/* line 389, ../sass/_humans.scss */
-.rayShalini {
-  background-image: url(../images/rayShalini.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
+/* line 386, ../sass/_humans.scss */
+.yerlanDina {
+  background-image: url(../images/yerlanDina.jpg);
+}
+
+/* line 390, ../sass/_humans.scss */
+.yoonJane {
+  background-image: url(../images/yoonJane.jpg);
 }
 
 /* line 394, ../sass/_humans.scss */
-.sandforthJolyn {
-  background-image: url(../images/sandforthJolyn.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 399, ../sass/_humans.scss */
-.shcloverNika {
-  background-image: url(../images/shcloverNika.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 404, ../sass/_humans.scss */
-.shenCecilia {
-  background-image: url(../images/shenCecilia.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 409, ../sass/_humans.scss */
-.shenJessica {
-  background-image: url(../images/shenJessica.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 414, ../sass/_humans.scss */
-.singhShana {
-  background-image: url(../images/singhShana.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 419, ../sass/_humans.scss */
-.songVictor {
-  background-image: url(../images/songVictor.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 424, ../sass/_humans.scss */
-.sunSteven {
-  background-image: url(../images/sunSteven.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 429, ../sass/_humans.scss */
-.tamayoCarolina {
-  background-image: url(../images/tamayoCarolina.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 434, ../sass/_humans.scss */
-.taylorAmaya {
-  background-image: url(../images/taylorAmaya.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 439, ../sass/_humans.scss */
-.thomasLeila {
-  background-image: url(../images/thomasLeila.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 444, ../sass/_humans.scss */
-.townsendCharlotte {
-  background-image: url(../images/townsendCharlotte.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 449, ../sass/_humans.scss */
-.uphoffJessica {
-  background-image: url(../images/uphoffJessica.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 454, ../sass/_humans.scss */
-.walkerAlex {
-  background-image: url(../images/walkerAlex.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 459, ../sass/_humans.scss */
-.wangJason {
-  background-image: url(../images/wangJason.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 464, ../sass/_humans.scss */
-.winthrowJenna {
-  background-image: url(../images/winthrowJenna.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 469, ../sass/_humans.scss */
-.wolffNoa {
-  background-image: url(../images/wolffNoa.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 474, ../sass/_humans.scss */
-.wooSohee {
-  background-image: url(../images/wooSohee.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 479, ../sass/_humans.scss */
-.yeAlice {
-  background-image: url(../images/yeAlice.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 484, ../sass/_humans.scss */
-.yerlanDina {
-  background-image: url(../images/yerlanDina.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 489, ../sass/_humans.scss */
-.yoonJane {
-  background-image: url(../images/yoonJane.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
-}
-
-/* line 494, ../sass/_humans.scss */
 .zemeringLauren {
   background-image: url(../images/zemeringLauren.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
 }
 
-/* line 499, ../sass/_humans.scss */
+/* line 398, ../sass/_humans.scss */
 .zhaoKatherine {
   background-image: url(../images/zhaoKatherine.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
 }
 
-/* line 504, ../sass/_humans.scss */
+/* line 402, ../sass/_humans.scss */
 .zhengCatherine {
   background-image: url(../images/zhengCatherine.jpg);
-  -webkit-background-size: 100% 100%;
-  /* For WebKit*/
-  -moz-background-size: 100% 100%;
-  /* Mozilla*/
-  -o-background-size: 100% 100%;
-  /* Opera*/
-  background-size: 100% 100%;
 }
 
 /* line 12, ../sass/screen.scss */

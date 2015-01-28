@@ -12,7 +12,7 @@
     var ACTIVE_CLASS    = 'active',
         SECOND_CLASS    = 'second-class', 
         THIRD_CLASS     = 'third-class',
-        THROTTLE_RATE   = 350;
+        THROTTLE_RATE   = 400;
 
     /* Globals */
     var $sections,
@@ -53,17 +53,24 @@
 
         // Update classes
         $sections
-            .removeClass(ACTIVE_CLASS + ' ' + SECOND_CLASS + ' ' + THIRD_CLASS)
-            .eq(active)
-                .addClass(ACTIVE_CLASS).end()
-            .eq(active + 1)
-                .addClass(SECOND_CLASS).end()
-            .eq(active - 1 < 0 ? undefined : active - 1)
-                .addClass(SECOND_CLASS).end()
-            .eq(active + 2)
-                .addClass(THIRD_CLASS).end()
-            .eq(active - 2 < 0 ? undefined : active - 2)
-                .addClass(THIRD_CLASS).end();
+            .removeClass(ACTIVE_CLASS + ' ' + SECOND_CLASS + ' ' + THIRD_CLASS);
+        $active = $sections.eq(active)
+                .addClass(ACTIVE_CLASS);
+
+
+        // if($active.hasClass('human')) {
+            console.log('removing hideme');
+            $sections.removeClass(' hideme');
+
+            // Can't find another obvious efficient way to get all after/before the immediate 7.
+            $active.next().next().next().next().next().next().next().next().next().next().next().next().next().next().nextAll().addClass('hideme');
+            $active.prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prevAll().addClass('hideme');
+        // }
+
+        $active.next().addClass(SECOND_CLASS);
+        $active.prev().addClass(SECOND_CLASS);
+
+                
     };
 
 
@@ -112,7 +119,14 @@
         $('.content section').click(function() {
             console.log('click', this);
             var idx = $(this).data('index');
+            var sectionCount = $('section').length;
+            var pageHeight = $(document).height();
+            var sectionPercent = idx/sectionCount;
+            var scrollTo = Math.round(pageHeight * sectionPercent);
+            $(window).scrollTop(scrollTo);
+            console.log('scrolling to', scrollTo, pageHeight, sectionPercent);
             updateActive(idx);
+
         });
     };
 
@@ -124,11 +138,12 @@
         var updateScroll = _.throttle(updateActive, THROTTLE_RATE);
 
         $(window).scroll(function() {
+            var $sections = $('section');
             // Figure out how far the user has scrolled
             var scrollPercent = ($(window).scrollTop() / $(document).height());
 
             // Figure out which section should be active
-            var newActive = Math.floor(scrollPercent * $sections.length);
+            var newActive = Math.round(scrollPercent * $sections.length);
 
             // Update the screen
             updateScroll(newActive);
@@ -161,6 +176,7 @@
      * Initialize on page load 
      */
     $(document).ready(function() {
+        $('section.human').addClass('hideme').slice(0,14).removeClass('hideme');
 
         // Add 'static' class to page on mobile. 
         if ( window.mobilecheck() ) {
