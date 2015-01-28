@@ -1625,6 +1625,24 @@ body .content section.header.tickets.active a, body .content section.header.tick
   top: 0;
   left: 0;
 }
+
+body .content section.header.blog {
+  background-image: url("graphics/blog.png");
+}
+/* line 47, ../sass/screen.scss */
+body .content section.header.blog:hover {
+  opacity: .75;
+}
+/* line 53, ../sass/screen.scss */
+body .content section.header.blog.active a, body .content section.header.blog.second-class a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* line 64, ../sass/screen.scss */
 body .content section.header.people {
   background-image: url("graphics/people.png");
