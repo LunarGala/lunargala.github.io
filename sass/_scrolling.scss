@@ -9,8 +9,8 @@ $second-class-height: 5%;
 
 // Don't touch these
 
-$remainder: 100% - $active-height - $second-class-height*2 - $header-height*$headers;
-$splinters: ($sections - $headers - 5);
+$remainder: 100% - $active-height - $second-class-height*2;
+$splinters: ($sections - 3);
 $splinter-height: $remainder / $splinters;
 
 
@@ -41,7 +41,7 @@ body {
          *************************/
     
          section {
-            height: $splinter-height; /* 13% / 95 sections */
+            height: $splinter-height;
             overflow: hidden;
             box-sizing: border-box;
             position: relative;
@@ -55,10 +55,10 @@ body {
     
 
             &.header {
-                height: $header-height;
+                // min-height: $header-height;
 
-                &.active { height: $header-height + $active-height; }
-                &.second-class { height: $header-height + $second-class-height; }
+                // &.active { height: $header-height + $active-height; }
+                // &.second-class { height: $header-height + $second-class-height; }
             }
             /*************************
     
@@ -118,10 +118,10 @@ body {
     
              *************************/
     
-            // &:first-child.active,
-            // &:nth-last-child(1).active {
-            //     height: $active-height + $second-class-height;
-            // }
+            &:first-child.active,
+            &:nth-last-child(1).active {
+                height: $active-height + $second-class-height;
+            }
     
             .inside {
                 -webkit-transform-origin: 0 0; /* Keep text aligned properly */

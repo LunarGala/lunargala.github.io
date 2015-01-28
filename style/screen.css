@@ -180,8 +180,7 @@ body .content {
 }
 /* line 43, ../sass/_scrolling.scss */
 body .content section {
-  height: 2.4%;
-  /* 13% / 95 sections */
+  height: 1.875%;
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
@@ -216,18 +215,6 @@ body .content section {
          * (only one first-child, etc.)
 
          *************************/
-}
-/* line 57, ../sass/_scrolling.scss */
-body .content section.header {
-  height: 2%;
-}
-/* line 60, ../sass/_scrolling.scss */
-body .content section.header.active {
-  height: 62%;
-}
-/* line 61, ../sass/_scrolling.scss */
-body .content section.header.second-class {
-  height: 7%;
 }
 /* line 70, ../sass/_scrolling.scss */
 body .content section.intro .inside {
@@ -273,6 +260,10 @@ body .content section.second-class .inside {
   -webkit-transform: scale3d(1, 0.06, 1);
   transform: scale3d(1, 0.06, 1);
   /* 4.5 / 75 */
+}
+/* line 121, ../sass/_scrolling.scss */
+body .content section:first-child.active, body .content section:nth-last-child(1).active {
+  height: 65%;
 }
 /* line 126, ../sass/_scrolling.scss */
 body .content section .inside {
