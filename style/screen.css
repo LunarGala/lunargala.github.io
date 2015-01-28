@@ -156,7 +156,7 @@ body .content section.human h2, body .content section.human p {
 /* Variables to make this math super flexible */
 /* line 19, ../sass/_scrolling.scss */
 body {
-  height: 3800vh;
+  height: 5700vh;
   /* To allow scrolling */
   display: none;
   /* Hide until loaded */
@@ -171,6 +171,7 @@ body .content {
   position: fixed;
   width: 100%;
   top: 0;
+  height: 100vh;
     /*************************
 
      * General section layout
@@ -272,10 +273,6 @@ body .content section.second-class .inside {
   -webkit-transform: scale3d(1, 0.06, 1);
   transform: scale3d(1, 0.06, 1);
   /* 4.5 / 75 */
-}
-/* line 121, ../sass/_scrolling.scss */
-body .content section:first-child.active, body .content section:nth-last-child(1).active {
-  height: 65%;
 }
 /* line 126, ../sass/_scrolling.scss */
 body .content section .inside {

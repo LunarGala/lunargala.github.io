@@ -3,7 +3,7 @@
 $sections: 19;              // The number of scrolling sections
 $headers: 9;                // The number of always-visible headers
 $header-height: 2%;         // How tall a collapsed header should be
-$scroll-ratio: 2;           // How many full screen heights to scroll to advance a single slide
+$scroll-ratio: 3;           // How many full screen heights to scroll to advance a single slide
 $active-height: 60%;        // How tall the active section should be
 $second-class-height: 5%;
 
@@ -30,7 +30,7 @@ body {
         position: fixed;
         width: 100%;
         top: 0;
-        // height: 90vh;
+        height: 100vh;
         // border: 10px solid red;
         // box-sizing: border-box;
     
@@ -118,10 +118,10 @@ body {
     
              *************************/
     
-            &:first-child.active,
-            &:nth-last-child(1).active {
-                height: $active-height + $second-class-height;
-            }
+            // &:first-child.active,
+            // &:nth-last-child(1).active {
+            //     height: $active-height + $second-class-height;
+            // }
     
             .inside {
                 -webkit-transform-origin: 0 0; /* Keep text aligned properly */
