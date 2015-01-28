@@ -1,8 +1,0 @@
-/* line 1, ../sass/teaser.scss */
-body.teaser {
-  height: 1000vh !important;
-}
-/* line 4, ../sass/teaser.scss */
-body.teaser section {
-  height: 1.1vh;
-}
