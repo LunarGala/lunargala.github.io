@@ -59,7 +59,6 @@
 
 
         // if($active.hasClass('human')) {
-            console.log('removing hideme');
             $sections.removeClass(' hideme');
 
             // Can't find another obvious efficient way to get all after/before the immediate 7.
@@ -91,6 +90,7 @@
                 case 37: // left
                 case 38: // up
                     if (active > 0) {
+                        fixScroll(active-1);
                         updateActive(active - 1);
                     }
                 break;
@@ -98,6 +98,7 @@
                 case 39: // right
                 case 40: // down
                     if (active < $sections.length - 1) {
+                        fixScroll(active+1);
                         updateActive(active + 1);
                     }
                 break;
@@ -113,18 +114,25 @@
 
 
     /* 
+     * Fixes page scroll whenever we jump to another section without scrolling.
+     */
+     var fixScroll = function(idx) {
+        var sectionCount = $('section').length,
+            pageHeight = $(document).height(),
+            sectionPercent = idx/sectionCount,
+            scrollTo = Math.round(pageHeight * sectionPercent);
+
+        $(window).scrollTop(scrollTo);
+     };
+
+    /* 
      * Let people set an active element by clicking 
      */
     var initializeClickHandlers = function() {
         $('.content section').click(function() {
             console.log('click', this);
             var idx = $(this).data('index');
-            var sectionCount = $('section').length;
-            var pageHeight = $(document).height();
-            var sectionPercent = idx/sectionCount;
-            var scrollTo = Math.round(pageHeight * sectionPercent);
-            $(window).scrollTop(scrollTo);
-            console.log('scrolling to', scrollTo, pageHeight, sectionPercent);
+            fixScroll(idx);
             updateActive(idx);
 
         });
