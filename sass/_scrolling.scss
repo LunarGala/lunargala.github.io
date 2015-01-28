@@ -13,9 +13,6 @@ $remainder: 100% - $active-height - $second-class-height*2;
 $splinters: ($sections - 3);
 $splinter-height: $remainder / $splinters;
 
-
-    
-
 body {
     height: $sections * $scroll-ratio * 100vh;            /* To allow scrolling */
     display: none;                                        /* Hide until loaded */
