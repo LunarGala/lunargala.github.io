@@ -160,16 +160,14 @@ body {
   /* To allow scrolling */
   display: none;
   /* Hide until loaded */
-  padding-top: 12%;
   /*************************
   
    * Scroll control code
   
    *************************/
 }
-/* line 30, ../sass/_scrolling.scss */
+/* line 29, ../sass/_scrolling.scss */
 body .content {
-  height: 90vh;
   position: fixed;
   width: 100%;
   top: 0;
@@ -179,7 +177,7 @@ body .content {
 
      *************************/
 }
-/* line 44, ../sass/_scrolling.scss */
+/* line 43, ../sass/_scrolling.scss */
 body .content section {
   height: 2.4%;
   /* 13% / 95 sections */
@@ -218,23 +216,23 @@ body .content section {
 
          *************************/
 }
-/* line 58, ../sass/_scrolling.scss */
+/* line 57, ../sass/_scrolling.scss */
 body .content section.header {
   height: 2%;
 }
-/* line 61, ../sass/_scrolling.scss */
+/* line 60, ../sass/_scrolling.scss */
 body .content section.header.active {
   height: 62%;
 }
-/* line 62, ../sass/_scrolling.scss */
+/* line 61, ../sass/_scrolling.scss */
 body .content section.header.second-class {
   height: 7%;
 }
-/* line 71, ../sass/_scrolling.scss */
+/* line 70, ../sass/_scrolling.scss */
 body .content section.intro .inside {
   color: black;
 }
-/* line 77, ../sass/_scrolling.scss */
+/* line 76, ../sass/_scrolling.scss */
 body .content section.video .video-cover {
   background-image: url("graphics/video.png");
   -moz-background-size: 100% 100%;
@@ -247,15 +245,15 @@ body .content section.video .video-cover {
   left: 0;
   right: 0;
 }
-/* line 87, ../sass/_scrolling.scss */
+/* line 86, ../sass/_scrolling.scss */
 body .content section.video iframe {
   display: none;
 }
-/* line 98, ../sass/_scrolling.scss */
+/* line 97, ../sass/_scrolling.scss */
 body .content section.active {
   height: 60%;
 }
-/* line 101, ../sass/_scrolling.scss */
+/* line 100, ../sass/_scrolling.scss */
 body .content section.active .inside {
   -moz-transform: scale3d(1, 1, 1);
   -ms-transform: scale3d(1, 1, 1);
@@ -263,11 +261,11 @@ body .content section.active .inside {
   transform: scale3d(1, 1, 1);
   /* 75 / 75 */
 }
-/* line 106, ../sass/_scrolling.scss */
+/* line 105, ../sass/_scrolling.scss */
 body .content section.second-class {
   height: 5%;
 }
-/* line 109, ../sass/_scrolling.scss */
+/* line 108, ../sass/_scrolling.scss */
 body .content section.second-class .inside {
   -moz-transform: scale3d(1, 0.06, 1);
   -ms-transform: scale3d(1, 0.06, 1);
@@ -275,11 +273,11 @@ body .content section.second-class .inside {
   transform: scale3d(1, 0.06, 1);
   /* 4.5 / 75 */
 }
-/* line 122, ../sass/_scrolling.scss */
+/* line 121, ../sass/_scrolling.scss */
 body .content section:first-child.active, body .content section:nth-last-child(1).active {
   height: 65%;
 }
-/* line 127, ../sass/_scrolling.scss */
+/* line 126, ../sass/_scrolling.scss */
 body .content section .inside {
   -webkit-transform-origin: 0 0;
   /* Keep text aligned properly */
@@ -297,44 +295,48 @@ body .content section .inside {
 body.teaser.static {
   height: auto !important;
 }
-/* line 6, ../sass/_static.scss */
+/* line 4, ../sass/_static.scss */
+body.teaser.static .content {
+  position: relative !important;
+}
+/* line 7, ../sass/_static.scss */
 body.teaser.static .content section {
   height: 4em;
 }
-/* line 9, ../sass/_static.scss */
+/* line 10, ../sass/_static.scss */
 body.teaser.static .content section.header {
   height: 4em;
 }
-/* line 12, ../sass/_static.scss */
+/* line 13, ../sass/_static.scss */
 body.teaser.static .content section.header.vestige {
   height: 20em;
 }
-/* line 16, ../sass/_static.scss */
+/* line 17, ../sass/_static.scss */
 body.teaser.static .content section.header.tagline {
   height: .5em;
   display: none;
 }
-/* line 21, ../sass/_static.scss */
+/* line 22, ../sass/_static.scss */
 body.teaser.static .content section.header.tickets {
   height: 8em;
 }
-/* line 25, ../sass/_static.scss */
+/* line 26, ../sass/_static.scss */
 body.teaser.static .content section.header.logistics {
   height: 12em;
 }
-/* line 29, ../sass/_static.scss */
+/* line 30, ../sass/_static.scss */
 body.teaser.static .content section.header.aboutText {
   height: 12em;
 }
-/* line 33, ../sass/_static.scss */
+/* line 34, ../sass/_static.scss */
 body.teaser.static .content section.header.sponsors {
   height: 8em;
 }
-/* line 38, ../sass/_static.scss */
+/* line 39, ../sass/_static.scss */
 body.teaser.static .content section.video {
   height: 12em;
 }
-/* line 42, ../sass/_static.scss */
+/* line 43, ../sass/_static.scss */
 body.teaser.static .content section.divider {
   height: 2em;
   -moz-background-size: 150% 150%;
@@ -343,23 +345,23 @@ body.teaser.static .content section.divider {
   background-size: 150% 150%;
   background-position: 25% 25%;
 }
-/* line 47, ../sass/_static.scss */
+/* line 48, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(4n+1) {
   height: 1em;
 }
-/* line 51, ../sass/_static.scss */
+/* line 52, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(odd) {
   height: 2em;
 }
-/* line 55, ../sass/_static.scss */
+/* line 56, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(3n+2) {
   height: 3em;
 }
-/* line 58, ../sass/_static.scss */
+/* line 59, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(4n+2) {
   height: 5em;
 }
-/* line 62, ../sass/_static.scss */
+/* line 63, ../sass/_static.scss */
 body.teaser.static .content section.divider video {
   display: none;
 }

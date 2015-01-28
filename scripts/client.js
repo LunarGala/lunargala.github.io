@@ -164,7 +164,7 @@
 
         // Add 'static' class to page on mobile. 
         if ( window.mobilecheck() ) {
-            $(body).addClass('static');
+            $('body').addClass('static');
             console.log('static site');
         } else {
             console.log('not static site');

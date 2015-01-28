@@ -19,7 +19,6 @@ $splinter-height: $remainder / $splinters;
 body {
     height: $sections * $scroll-ratio * 100vh;            /* To allow scrolling */
     display: none;                                        /* Hide until loaded */
-    padding-top: $remainder;
 
     /*************************
     
@@ -28,10 +27,10 @@ body {
      *************************/
     
     .content { 
-        height: 90vh;
         position: fixed;
         width: 100%;
         top: 0;
+        // height: 90vh;
         // border: 10px solid red;
         // box-sizing: border-box;
     
