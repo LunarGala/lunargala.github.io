@@ -4,6 +4,7 @@
 @import "_type.scss";
 @import "_animation.scss";
 @import "_scrolling.scss";
+@import "_static.scss";
 @import "_humans.scss";
 
 $defaultBrightness: 1.1;
@@ -75,7 +76,7 @@ body {
                     background-image: url('graphics/tagline.png');
                 }
 
-                &.sponsoredBy {
+                &.sponsorsHeader {
                     background-image: url('graphics/sponsors.png');
                 }
                 

@@ -1,6 +1,24 @@
-body{
-    height: 5000vh;            /* To allow scrolling */
-    display: none;              /* Hide until loaded */
+/* Variables to make this math super flexible */
+
+$sections: 19;              // The number of scrolling sections
+$headers: 9;                // The number of always-visible headers
+$header-height: 2%;         // How tall a collapsed header should be
+$scroll-ratio: 3;           // How many full screen heights to scroll to advance a single slide
+$active-height: 60%;        // How tall the active section should be
+$second-class-height: 5%;
+
+// Don't touch these
+
+$remainder: 100% - $active-height - $second-class-height*2;
+$splinters: ($sections - 3);
+$splinter-height: $remainder / $splinters;
+
+
+    
+
+body {
+    height: $sections * $scroll-ratio * 10vh;            /* To allow scrolling */
+    display: none;                                        /* Hide until loaded */
 
     /*************************
     
@@ -9,10 +27,12 @@ body{
      *************************/
     
     .content { 
-        height: 100vh;
         position: fixed;
         width: 100%;
         top: 0;
+        height: 100vh;
+        // border: 10px solid red;
+        // box-sizing: border-box;
     
         /*************************
     
@@ -21,7 +41,7 @@ body{
          *************************/
     
          section {
-            height: .136842105%; /* 13% / 95 sections */
+            height: $splinter-height;
             overflow: hidden;
             box-sizing: border-box;
             position: relative;
@@ -33,6 +53,13 @@ body{
             @include backface-visibility(hidden); /* other hacky speed-up tricks */
             @include perspective(1000);
     
+
+            &.header {
+                // min-height: $header-height;
+
+                // &.active { height: $header-height + $active-height; }
+                // &.second-class { height: $header-height + $second-class-height; }
+            }
             /*************************
     
             * Specific section layout
@@ -68,7 +95,7 @@ body{
             *************************/    
     
             &.active {
-                height: 66%;
+                height: $active-height;
     
                 .inside {
                     @include transform(scale3d(1.0, 1.0, 1.0));         /* 75 / 75 */
@@ -76,20 +103,13 @@ body{
             }   
     
             &.second-class {
-                height: 9%;
+                height: $second-class-height;
     
                 .inside {
                     @include transform(scale3d(1.0, 0.06, 1.0));        /* 4.5 / 75 */
                 }
             }
     
-            &.third-class { 
-                height: 1.5%;
-    
-                .inside {
-                    @include transform(scale3d(1.0, 0.02, 1.0));        /* 1.5 / 75 */
-                }
-            }
     
             /*************************
     
@@ -98,20 +118,9 @@ body{
     
              *************************/
     
-            &:first-child.active {
-                height: 81%; /* 75 + 4.5 + 1.5 */
-            }
-    
-            &:first-child.second-class {
-                height: 6%; /* 4.5 + 1.5 */  
-            }
-    
-            &:nth-last-child(2).active {
-                height: 76.5%;
-            }
-    
+            &:first-child.active,
             &:nth-last-child(1).active {
-                height: 81%;
+                height: $active-height + $second-class-height;
             }
     
             .inside {
