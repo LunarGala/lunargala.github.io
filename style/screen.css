@@ -112,30 +112,30 @@ body h1 {
   font-family: arialLawlLargeBody;
   font-size: 18pt;
 }
-/* line 106, ../sass/_type.scss */
+/* line 99, ../sass/_type.scss */
 body .content section.header .inside {
   -moz-transform: none !important;
   -ms-transform: none !important;
   -webkit-transform: none !important;
   transform: none !important;
 }
-/* line 109, ../sass/_type.scss */
+/* line 102, ../sass/_type.scss */
 body .content section.header .inside h1 {
   font-size: 75vh;
   transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
 }
-/* line 117, ../sass/_type.scss */
+/* line 110, ../sass/_type.scss */
 body .content section.human {
   color: white;
 }
-/* line 120, ../sass/_type.scss */
+/* line 113, ../sass/_type.scss */
 body .content section.human h1 {
   font-family: arialLawlHeader;
   font-size: 72pt;
   letter-spacing: .0625em;
 }
-/* line 124, ../sass/_type.scss */
+/* line 117, ../sass/_type.scss */
 body .content section.human h2, body .content section.human p {
   font-family: arialLawlLargeBody;
   font-size: 18pt;
@@ -227,11 +227,11 @@ body .content section.hideme.header {
 body .content section .inside {
   display: none;
 }
-/* line 84, ../sass/_scrolling.scss */
+/* line 78, ../sass/_scrolling.scss */
 body .content section.intro .inside {
   color: black;
 }
-/* line 90, ../sass/_scrolling.scss */
+/* line 84, ../sass/_scrolling.scss */
 body .content section.video .video-cover {
   background-image: url("graphics/video.png");
   -moz-background-size: 100% 100%;
@@ -244,15 +244,15 @@ body .content section.video .video-cover {
   left: 0;
   right: 0;
 }
-/* line 100, ../sass/_scrolling.scss */
+/* line 94, ../sass/_scrolling.scss */
 body .content section.video iframe {
   display: none;
 }
-/* line 111, ../sass/_scrolling.scss */
+/* line 105, ../sass/_scrolling.scss */
 body .content section.active {
   height: 50%;
 }
-/* line 114, ../sass/_scrolling.scss */
+/* line 108, ../sass/_scrolling.scss */
 body .content section.active .inside {
   display: block;
   -moz-transform: scale3d(1, 1, 1);
@@ -261,7 +261,7 @@ body .content section.active .inside {
   transform: scale3d(1, 1, 1);
   /* 75 / 75 */
 }
-/* line 123, ../sass/_scrolling.scss */
+/* line 117, ../sass/_scrolling.scss */
 body .content section.second-class .inside {
   display: block;
   -moz-transform: scale3d(1, 0.06, 1);
@@ -270,11 +270,11 @@ body .content section.second-class .inside {
   transform: scale3d(1, 0.06, 1);
   /* 4.5 / 75 */
 }
-/* line 137, ../sass/_scrolling.scss */
+/* line 131, ../sass/_scrolling.scss */
 body .content section:first-child.active, body .content section:nth-last-child(1).active {
   height: 55%;
 }
-/* line 142, ../sass/_scrolling.scss */
+/* line 136, ../sass/_scrolling.scss */
 body .content section .inside {
   -webkit-transform-origin: 0 0;
   /* Keep text aligned properly */
@@ -301,39 +301,47 @@ body.teaser.static .content section {
   height: 4em;
 }
 /* line 10, ../sass/_static.scss */
+body.teaser.static .content section .inside {
+  display: block;
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+}
+/* line 15, ../sass/_static.scss */
 body.teaser.static .content section.header {
   height: 4em;
 }
-/* line 13, ../sass/_static.scss */
+/* line 18, ../sass/_static.scss */
 body.teaser.static .content section.header.vestige {
   height: 20em;
 }
-/* line 17, ../sass/_static.scss */
+/* line 22, ../sass/_static.scss */
 body.teaser.static .content section.header.tagline {
   height: .5em;
   display: none;
 }
-/* line 22, ../sass/_static.scss */
+/* line 27, ../sass/_static.scss */
 body.teaser.static .content section.header.tickets {
   height: 8em;
 }
-/* line 26, ../sass/_static.scss */
+/* line 31, ../sass/_static.scss */
 body.teaser.static .content section.header.logistics {
   height: 12em;
 }
-/* line 30, ../sass/_static.scss */
+/* line 35, ../sass/_static.scss */
 body.teaser.static .content section.header.aboutText {
   height: 12em;
 }
-/* line 34, ../sass/_static.scss */
+/* line 39, ../sass/_static.scss */
 body.teaser.static .content section.header.sponsors {
   height: 8em;
 }
-/* line 39, ../sass/_static.scss */
+/* line 44, ../sass/_static.scss */
 body.teaser.static .content section.video {
   height: 12em;
 }
-/* line 43, ../sass/_static.scss */
+/* line 48, ../sass/_static.scss */
 body.teaser.static .content section.divider {
   height: 2em;
   -moz-background-size: 150% 150%;
@@ -342,23 +350,23 @@ body.teaser.static .content section.divider {
   background-size: 150% 150%;
   background-position: 25% 25%;
 }
-/* line 48, ../sass/_static.scss */
+/* line 53, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(4n+1) {
   height: 1em;
 }
-/* line 52, ../sass/_static.scss */
+/* line 57, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(odd) {
   height: 2em;
 }
-/* line 56, ../sass/_static.scss */
+/* line 61, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(3n+2) {
   height: 3em;
 }
-/* line 59, ../sass/_static.scss */
+/* line 64, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(4n+2) {
   height: 5em;
 }
-/* line 63, ../sass/_static.scss */
+/* line 68, ../sass/_static.scss */
 body.teaser.static .content section.divider video {
   display: none;
 }

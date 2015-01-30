@@ -68,12 +68,6 @@ body {
             @include perspective(1000);
     
 
-            &.header {
-                // min-height: $header-height;
-
-                // &.active { height: $header-height + $active-height; }
-                // &.second-class { height: $header-height + $second-class-height; }
-            }
             /*************************
     
             * Specific section layout
