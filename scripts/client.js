@@ -12,7 +12,7 @@
     var ACTIVE_CLASS    = 'active',
         SECOND_CLASS    = 'second-class', 
         THIRD_CLASS     = 'third-class',
-        THROTTLE_RATE   = 400;
+        THROTTLE_RATE   = 500;
 
     /* Globals */
     var $sections,
@@ -41,6 +41,8 @@
      * surrounding elements appropriately.
      */
     var updateActive = function(idx) {
+        var $sections = $('.content section');
+
         // Sanity check
         if(idx >= $sections.length || idx < 0) {
             console.log($sections);
@@ -52,24 +54,49 @@
         active = idx;
 
         // Update classes
-        $sections
-            .removeClass(ACTIVE_CLASS + ' ' + SECOND_CLASS + ' ' + THIRD_CLASS);
-        $active = $sections.eq(active)
-                .addClass(ACTIVE_CLASS);
+        // TODO: do we need second/third class anymore? 
+        $sections.removeClass(ACTIVE_CLASS + ' ' + SECOND_CLASS + ' ' + THIRD_CLASS);
+        var $active = $sections.eq(active).addClass(ACTIVE_CLASS);
 
+        $sections.removeClass('hideme');
 
-        // if($active.hasClass('human')) {
-            $sections.removeClass(' hideme');
+        // TODO: find another non-obvious efficient way to get all after/before the immediate 7.
+        $active.next().next().next().next().next().next().next().next().next().next().next().next().next().next().nextAll().addClass('hideme');
+        $active.prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prevAll().addClass('hideme');
 
-            // Can't find another obvious efficient way to get all after/before the immediate 7.
-            $active.next().next().next().next().next().next().next().next().next().next().next().next().next().next().nextAll().addClass('hideme');
-            $active.prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prevAll().addClass('hideme');
-        // }
-
+        // TODO: I think we can remove this
         $active.next().addClass(SECOND_CLASS);
         $active.prev().addClass(SECOND_CLASS);
 
-                
+        var splinterHeight = 0.5,
+            headerHeight   = 4,
+            activeHeight   = 50,
+            hidemeHeight   = 0;
+
+        var activeHeader = $active.hasClass('header'),
+            siblingTotal = Math.max($active.next().length + $active.prev().length, 1);
+
+        var $headers = $sections.filter('.header'),
+            $hideme = $sections.filter('.hideme:not(.header)'),
+            $splinters = $sections.filter(':not(.header, .hideme)'),
+            splinterCount = $splinters.length - $headers.length - (activeHeader ? 0 : 1),
+            headerCount = $headers.length - (activeHeader ? 1 : 0),
+            secondClassHeight = (100 - activeHeight - headerHeight*headerCount - splinterHeight*splinterCount)/2;
+
+        activeHeight = activeHeight + (siblingTotal == 1 ? secondClassHeight : 0);
+
+        // Splinters
+        $splinters.height(splinterHeight + '%');
+        // Headers
+        $headers.height(headerHeight + '%');
+        // Active
+        $active.height(activeHeight + '%');
+        // Second class
+        $active.next().height(secondClassHeight + '%');
+        $active.prev().height(secondClassHeight + '%');
+        // Hideme
+        $hideme.height(hidemeHeight + '%');
+
     };
 
 
@@ -78,6 +105,7 @@
      * Useful for testing.
      */
     var initializeArrowHandlers = function() {
+        var $sections = $('.content section');
         // _.throttle prevents key events happening faster than css animations
         var keyhandler = _.throttle(function(e) {
             
@@ -195,7 +223,7 @@
         }
 
         // Get all sections
-        $sections = $('.content section');
+        var $sections = $('.content section');
         $sections.each(function(idx, elem) {
             $(elem).data('index', idx);
         });

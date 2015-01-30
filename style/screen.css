@@ -154,7 +154,7 @@ body .content section.human h2, body .content section.human p {
   }
 }
 /* Variables to make this math super flexible */
-/* line 16, ../sass/_scrolling.scss */
+/* line 17, ../sass/_scrolling.scss */
 body {
   height: 14400vh;
   /* To allow scrolling */
@@ -166,7 +166,7 @@ body {
   
    *************************/
 }
-/* line 26, ../sass/_scrolling.scss */
+/* line 27, ../sass/_scrolling.scss */
 body .content {
   position: fixed;
   width: 100%;
@@ -178,9 +178,8 @@ body .content {
 
      *************************/
 }
-/* line 40, ../sass/_scrolling.scss */
+/* line 41, ../sass/_scrolling.scss */
 body .content section {
-  height: 0.88889%;
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
@@ -216,27 +215,23 @@ body .content section {
 
          *************************/
 }
-/* line 49, ../sass/_scrolling.scss */
-body .content section.header {
-  min-height: 4%;
-}
-/* line 53, ../sass/_scrolling.scss */
+/* line 54, ../sass/_scrolling.scss */
 body .content section.hideme {
   height: 0%;
 }
-/* line 56, ../sass/_scrolling.scss */
+/* line 57, ../sass/_scrolling.scss */
 body .content section.hideme.header {
   height: 4%;
 }
-/* line 61, ../sass/_scrolling.scss */
+/* line 62, ../sass/_scrolling.scss */
 body .content section .inside {
   display: none;
 }
-/* line 83, ../sass/_scrolling.scss */
+/* line 84, ../sass/_scrolling.scss */
 body .content section.intro .inside {
   color: black;
 }
-/* line 89, ../sass/_scrolling.scss */
+/* line 90, ../sass/_scrolling.scss */
 body .content section.video .video-cover {
   background-image: url("graphics/video.png");
   -moz-background-size: 100% 100%;
@@ -249,15 +244,15 @@ body .content section.video .video-cover {
   left: 0;
   right: 0;
 }
-/* line 99, ../sass/_scrolling.scss */
+/* line 100, ../sass/_scrolling.scss */
 body .content section.video iframe {
   display: none;
 }
-/* line 110, ../sass/_scrolling.scss */
+/* line 111, ../sass/_scrolling.scss */
 body .content section.active {
   height: 50%;
 }
-/* line 113, ../sass/_scrolling.scss */
+/* line 114, ../sass/_scrolling.scss */
 body .content section.active .inside {
   display: block;
   -moz-transform: scale3d(1, 1, 1);
@@ -266,11 +261,7 @@ body .content section.active .inside {
   transform: scale3d(1, 1, 1);
   /* 75 / 75 */
 }
-/* line 119, ../sass/_scrolling.scss */
-body .content section.second-class {
-  height: 5%;
-}
-/* line 122, ../sass/_scrolling.scss */
+/* line 123, ../sass/_scrolling.scss */
 body .content section.second-class .inside {
   display: block;
   -moz-transform: scale3d(1, 0.06, 1);
@@ -279,11 +270,11 @@ body .content section.second-class .inside {
   transform: scale3d(1, 0.06, 1);
   /* 4.5 / 75 */
 }
-/* line 136, ../sass/_scrolling.scss */
+/* line 137, ../sass/_scrolling.scss */
 body .content section:first-child.active, body .content section:nth-last-child(1).active {
   height: 55%;
 }
-/* line 141, ../sass/_scrolling.scss */
+/* line 142, ../sass/_scrolling.scss */
 body .content section .inside {
   -webkit-transform-origin: 0 0;
   /* Keep text aligned properly */

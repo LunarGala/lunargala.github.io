@@ -11,7 +11,8 @@ $second-class-height: 5%;
 
 $remainder: 100% - $active-height - $second-class-height*2;
 $splinters: ($sections - 3);
-$splinter-height: $remainder / $splinters;
+// $splinter-height: $remainder / $splinters;
+$splinter-height: 0.5%;
 
 body {
     height: $sections * $scroll-ratio * 100vh;            /* To allow scrolling */
@@ -38,7 +39,7 @@ body {
          *************************/
     
          section {
-            height: $splinter-height;
+            // height: $splinter-height;
             overflow: hidden;
             box-sizing: border-box;
             position: relative;
@@ -47,7 +48,7 @@ body {
             text-transform: lowercase;
 
             &.header {
-                min-height: $header-height
+                // min-height: $header-height
             }
 
             &.hideme {
@@ -117,7 +118,7 @@ body {
             }   
     
             &.second-class {
-                height: $second-class-height;
+                // height: $second-class-height;
     
                 .inside {
                     display: block;
