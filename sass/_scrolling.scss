@@ -1,18 +1,8 @@
-/* Variables to make this math super flexible */
+/* Constants */
 
-$sections: 48;              // The number of scrolling sections
-$headers: 10;               // The number of always-visible headers
-$header-height: 4%;         // How tall a collapsed header should be
-$scroll-ratio: 3;           // How many full screen heights to scroll to advance a single slide
-$active-height: 50%;        // How tall the active section should be
-$second-class-height: 5%;
+$sections: 119;              // The number of scrolling sections
+$scroll-ratio: 3;            // How many full screen heights to scroll to advance a single slide
 
-// Don't touch these
-
-$remainder: 100% - $active-height - $second-class-height*2;
-$splinters: ($sections - 3);
-// $splinter-height: $remainder / $splinters;
-$splinter-height: 0.5%;
 
 body {
     height: $sections * $scroll-ratio * 10vh;            /* To allow scrolling */
@@ -29,8 +19,6 @@ body {
         width: 100%;
         top: 0;
         height: 100vh;
-        // border: 10px solid red;
-        // box-sizing: border-box;
     
         /*************************
     
@@ -39,7 +27,6 @@ body {
          *************************/
     
          section {
-            // height: $splinter-height;
             overflow: hidden;
             box-sizing: border-box;
             position: relative;
@@ -47,16 +34,8 @@ body {
             text-align: justify;
             text-transform: lowercase;
 
-            &.header {
-                // min-height: $header-height
-            }
-
             &.hideme {
                 height: 0%;
-
-                &.header {
-                    height: $header-height;
-                }
             }
 
             .inside {
@@ -103,7 +82,6 @@ body {
             *************************/    
     
             &.active {
-                height: $active-height;
     
                 .inside {
                     display: block;
@@ -112,7 +90,6 @@ body {
             }   
     
             &.second-class {
-                // height: $second-class-height;
     
                 .inside {
                     display: block;
@@ -128,10 +105,6 @@ body {
     
              *************************/
     
-            &:first-child.active,
-            &:nth-last-child(1).active {
-                height: $active-height + $second-class-height;
-            }
     
             .inside {
                 -webkit-transform-origin: 0 0; /* Keep text aligned properly */

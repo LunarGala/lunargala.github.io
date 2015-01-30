@@ -132,9 +132,9 @@
      */
      var fixScroll = function(idx) {
         var sectionCount = $('section').length,
-            pageHeight = $(document).height(),
+            scrollHeight = $(document).height() - window.innerHeight,
             sectionPercent = idx/sectionCount,
-            scrollTo = Math.round(pageHeight * sectionPercent);
+            scrollTo = Math.round(scrollHeight * sectionPercent);
 
         $(window).scrollTop(scrollTo);
      };
@@ -162,10 +162,10 @@
             var $sections = $('section');
 
             // Figure out how far the user has scrolled
-            var scrollPercent = ($(window).scrollTop() / $(document).height());
+            var scrollPercent = ($(window).scrollTop() / ($(document).height() - window.innerHeight));
 
             // Figure out which section should be active
-            var newActive = Math.round(scrollPercent * $sections.length);
+            var newActive = Math.round(scrollPercent * ($sections.length - 1));
 
             // Update the screen
             updateScroll(newActive);
