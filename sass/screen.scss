@@ -132,12 +132,6 @@ body {
                         @include transform(scale3d(20.0, 1.0, 1.0));
                     }
                 }
-                
-                &.third-class {
-                    video {
-                        @include transform(scale3d(48.0, 1.0, 1.0));
-                    }
-                }
             }
             
             // &.human {

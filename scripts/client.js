@@ -1,6 +1,7 @@
 
 (function (window, document, $) {
 
+    // Determines if the browser is mobile or not.
     // http://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
     window.mobilecheck = (function() {
         var check = false;
@@ -11,13 +12,14 @@
     /* Constants */
     var ACTIVE_CLASS    = 'active',
         SECOND_CLASS    = 'second-class', 
-        THIRD_CLASS     = 'third-class',
-        THROTTLE_RATE   = 700;
+        THROTTLE_RATE   = 700,
+        SPLINTER_HEIGHT = 0.5,
+        HEADER_HEIGHT   = 4,
+        ACTIVE_HEIGHT   = 50,
+        HIDEME_HEIGHT   = 0;
 
     /* Globals */
-    // TODO: Remove these. 
-    var $sections,
-        $player,
+    var $player,
         active = 0; 
 
     /* 
@@ -34,69 +36,56 @@
         $playerFrame.hide();
     };
 
-
     /* 
      * Makes the @idx-th element active, and adjusts the 
      * surrounding elements appropriately.
      */
     var updateActive = function(idx) {
-        var $sections = $('.content section');
+        // Selectors
+        var $sections = $('.content section'),
+            $active = $sections.eq(idx),
+            $prevSecondClass = $active.prev(),
+            $nextSecondClass = $active.next();
 
-        // Sanity check
-        if(idx >= $sections.length || idx < 0) {
-            console.log($sections);
-            console.log($sections.length);
-            return console.log('Update index out of bounds', idx);
-        }
-
-        // Adjust state
-        // TODO: Remove this
+        // Sanity check, adjust state
+        idx = idx % $sections.length;
         active = idx;
 
         // Update classes
-        // TODO: do we need second/third class anymore? 
-        $sections.removeClass(ACTIVE_CLASS + ' ' + SECOND_CLASS + ' ' + THIRD_CLASS);
-        var $active = $sections.eq(active).addClass(ACTIVE_CLASS);
+        $sections.removeClass(ACTIVE_CLASS + ' ' + SECOND_CLASS);   // Remove old active/second class
+        $sections.removeClass('hideme');                            // Remove old hidden classes
+        $active.addClass(ACTIVE_CLASS);                             // Add new active class
+        $nextSecondClass.addClass(SECOND_CLASS);                    // Add new second classes
+        $prevSecondClass.addClass(SECOND_CLASS);
 
-        $sections.removeClass('hideme');
-
+        // Update hidden sections
         // TODO: find another non-obvious efficient way to get all after/before the immediate 7.
-        $active.next().next().next().next().next().next().next().next().next().next().next().next().next().next().nextAll().addClass('hideme');
-        $active.prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prevAll().addClass('hideme');
+        $nextSecondClass.next().next().next().next().next().next().next().next().next().next().next().next().next().nextAll().addClass('hideme');
+        $prevSecondClass.prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prevAll().addClass('hideme');
 
-        // TODO: I think we can remove this
-        $active.next().addClass(SECOND_CLASS);
-        $active.prev().addClass(SECOND_CLASS);
-
-        var splinterHeight = 0.5,
-            headerHeight   = 4,
-            activeHeight   = 50,
-            hidemeHeight   = 0;
-
-        var activeHeader = $active.hasClass('header'),
-            siblingTotal = Math.max($active.next().length + $active.prev().length, 1);
-
-        var $headers = $sections.filter('.header'),
+        // Get headers, hidden, splinters
+        var $headers = $sections.filter('.header:not(.' + ACTIVE_CLASS + ', .' + SECOND_CLASS + ')'),
             $hideme = $sections.filter('.hideme:not(.header)'),
-            $splinters = $sections.filter(':not(.header, .hideme)'),
-            splinterCount = $splinters.length - $headers.length - (activeHeader ? 0 : 1),
-            headerCount = $headers.length - (activeHeader ? 1 : 0),
-            secondClassHeight = (100 - activeHeight - headerHeight*headerCount - splinterHeight*splinterCount)/2;
+            $splinters = $sections.filter(':not(.header, .hideme, .' + ACTIVE_CLASS + ', .' + SECOND_CLASS + ')');
 
-        activeHeight = activeHeight + (siblingTotal == 1 ? secondClassHeight : 0);
+        // Calculate the new heights. 
+        var activeHeader = $active.hasClass('header'),
+            prevHeader = $prevSecondClass.hasClass('header'),
+            nextHeader = $nextSecondClass.hasClass('header'),
+            siblingTotal = Math.max($active.next().length + $active.prev().length, 1),
+            splinterCount = $splinters.length,
+            headerCount = $headers.length,
+            secondClassHeight = (100 - ACTIVE_HEIGHT - HEADER_HEIGHT*headerCount - SPLINTER_HEIGHT*splinterCount)/2,
+            activeHeight = ACTIVE_HEIGHT + (siblingTotal == 1 ? secondClassHeight : 0);
 
-        // Splinters
-        $splinters.height(splinterHeight + '%');
-        // Headers
-        $headers.height(headerHeight + '%');
-        // Active
-        $active.height(activeHeight + '%');
-        // Second class
-        $active.next().height(secondClassHeight + '%');
-        $active.prev().height(secondClassHeight + '%');
-        // Hideme
-        $hideme.height(hidemeHeight + '%');
 
+        // Update heights
+        $splinters.height(SPLINTER_HEIGHT + '%');           // Splinters
+        $headers.height(HEADER_HEIGHT + '%');               // Headers
+        $active.height(activeHeight + '%');                 // Active
+        $nextSecondClass.height(secondClassHeight + '%');   // Second classes
+        $prevSecondClass.height(secondClassHeight + '%');
+        $hideme.height(HIDEME_HEIGHT + '%');                // Hideme
     };
 
 
@@ -110,25 +99,22 @@
         var keyhandler = _.throttle(function(e) {
             
             // Pause the video if we're leaving it.
-            if (active === 0) { 
-                killVideo();
-            }
+            if ($sections.eq(active).hasClass('.video')) { killVideo(); }
 
+            var newIdx; 
             switch(e.which) {
                 case 37: // left
                 case 38: // up
-                    if (active > 0) {
-                        fixScroll(active-1);
-                        updateActive(active - 1);
-                    }
+                    newIdx = (active - 1 + $sections.length) % $sections.length;
+                    fixScroll(newIdx);
+                    updateActive(newIdx);
                 break;
 
                 case 39: // right
                 case 40: // down
-                    if (active < $sections.length - 1) {
-                        fixScroll(active+1);
-                        updateActive(active + 1);
-                    }
+                    newIdx = (active+1) % $sections.length;
+                    fixScroll(newIdx);
+                    updateActive(newIdx);
                 break;
 
                 // Ignore other keys
@@ -175,6 +161,7 @@
 
         $(window).scroll(function() {
             var $sections = $('section');
+
             // Figure out how far the user has scrolled
             var scrollPercent = ($(window).scrollTop() / $(document).height());
 
@@ -215,7 +202,7 @@
 
         // Defer showing body 
         setTimeout(function() {
-            $('body').fadeIn(200);    
+            $('body').fadeIn(500);    
         }, 50);
         
 
@@ -241,7 +228,8 @@
         $player = $f( $('.video iframe')[0] );
         window.$player = $player;
 
-        // Starting state
+        // Starting state (always start at first slide)
+        $(window).scrollTop(0);
         updateActive(active);
 
         // Bind handlers

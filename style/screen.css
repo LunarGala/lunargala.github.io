@@ -1025,10 +1025,3 @@ body .content section.divider.second-class video {
   -webkit-transform: scale3d(20, 1, 1);
   transform: scale3d(20, 1, 1);
 }
-/* line 137, ../sass/screen.scss */
-body .content section.divider.third-class video {
-  -moz-transform: scale3d(48, 1, 1);
-  -ms-transform: scale3d(48, 1, 1);
-  -webkit-transform: scale3d(48, 1, 1);
-  transform: scale3d(48, 1, 1);
-}
