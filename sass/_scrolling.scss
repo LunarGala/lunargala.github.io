@@ -15,7 +15,7 @@ $splinters: ($sections - 3);
 $splinter-height: 0.5%;
 
 body {
-    height: $sections * $scroll-ratio * 100vh;            /* To allow scrolling */
+    height: $sections * $scroll-ratio * 10vh;            /* To allow scrolling */
     display: none;                                        /* Hide until loaded */
 
     /*************************
