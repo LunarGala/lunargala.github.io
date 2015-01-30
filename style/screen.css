@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* line 5, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> master
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +24,77 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+<<<<<<< HEAD
 /* line 22, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> master
 html {
   line-height: 1;
 }
 
+<<<<<<< HEAD
 /* line 24, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> master
 ol, ul {
   list-style: none;
 }
 
+<<<<<<< HEAD
 /* line 26, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> master
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+<<<<<<< HEAD
 /* line 28, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> master
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
+<<<<<<< HEAD
 /* line 30, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
 /* line 103, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> master
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
+<<<<<<< HEAD
 /* line 32, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> master
 a img {
   border: none;
 }
 
+<<<<<<< HEAD
 /* line 116, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> master
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -819,62 +855,122 @@ section.human {
   background-image: url(../images/townsendCharlotte.jpg);
 }
 
+<<<<<<< HEAD
 /* line 358, ../sass/_humans.scss */
+=======
+/* line 449, ../sass/_humans.scss */
+.umNoel {
+  background-image: url(../images/umNoel.jpg);
+  -webkit-background-size: 100% 100%;
+  /* For WebKit*/
+  -moz-background-size: 100% 100%;
+  /* Mozilla*/
+  -o-background-size: 100% 100%;
+  /* Opera*/
+  background-size: 100% 100%;
+}
+
+/* line 454, ../sass/_humans.scss */
+>>>>>>> master
 .uphoffJessica {
   background-image: url(../images/uphoffJessica.jpg);
 }
 
+<<<<<<< HEAD
 /* line 362, ../sass/_humans.scss */
+=======
+/* line 459, ../sass/_humans.scss */
+>>>>>>> master
 .walkerAlex {
   background-image: url(../images/walkerAlex.jpg);
 }
 
+<<<<<<< HEAD
 /* line 366, ../sass/_humans.scss */
+=======
+/* line 464, ../sass/_humans.scss */
+>>>>>>> master
 .wangJason {
   background-image: url(../images/wangJason.jpg);
 }
 
+<<<<<<< HEAD
 /* line 370, ../sass/_humans.scss */
+=======
+/* line 469, ../sass/_humans.scss */
+>>>>>>> master
 .winthrowJenna {
   background-image: url(../images/winthrowJenna.jpg);
 }
 
+<<<<<<< HEAD
 /* line 374, ../sass/_humans.scss */
+=======
+/* line 474, ../sass/_humans.scss */
+>>>>>>> master
 .wolffNoa {
   background-image: url(../images/wolffNoa.jpg);
 }
 
+<<<<<<< HEAD
 /* line 378, ../sass/_humans.scss */
+=======
+/* line 479, ../sass/_humans.scss */
+>>>>>>> master
 .wooSohee {
   background-image: url(../images/wooSohee.jpg);
 }
 
+<<<<<<< HEAD
 /* line 382, ../sass/_humans.scss */
+=======
+/* line 484, ../sass/_humans.scss */
+>>>>>>> master
 .yeAlice {
   background-image: url(../images/yeAlice.jpg);
 }
 
+<<<<<<< HEAD
 /* line 386, ../sass/_humans.scss */
+=======
+/* line 489, ../sass/_humans.scss */
+>>>>>>> master
 .yerlanDina {
   background-image: url(../images/yerlanDina.jpg);
 }
 
+<<<<<<< HEAD
 /* line 390, ../sass/_humans.scss */
+=======
+/* line 494, ../sass/_humans.scss */
+>>>>>>> master
 .yoonJane {
   background-image: url(../images/yoonJane.jpg);
 }
 
+<<<<<<< HEAD
 /* line 394, ../sass/_humans.scss */
+=======
+/* line 499, ../sass/_humans.scss */
+>>>>>>> master
 .zemeringLauren {
   background-image: url(../images/zemeringLauren.jpg);
 }
 
+<<<<<<< HEAD
 /* line 398, ../sass/_humans.scss */
+=======
+/* line 504, ../sass/_humans.scss */
+>>>>>>> master
 .zhaoKatherine {
   background-image: url(../images/zhaoKatherine.jpg);
 }
 
+<<<<<<< HEAD
 /* line 402, ../sass/_humans.scss */
+=======
+/* line 509, ../sass/_humans.scss */
+>>>>>>> master
 .zhengCatherine {
   background-image: url(../images/zhengCatherine.jpg);
 }
