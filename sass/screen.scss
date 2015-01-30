@@ -77,6 +77,14 @@ body {
                 &.logo {
                     background-image: url('graphics/lg.png');
                 }
+
+                &.blog {
+                    background-image: url('graphics/blog.png');
+                }
+
+                &.designs { 
+                    background-image: url('graphics/designs.png');
+                }
             }
             
             &.text { // like header, but doesn't stay visible when you scroll away

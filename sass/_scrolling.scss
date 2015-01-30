@@ -1,7 +1,7 @@
 /* Constants */
 
 $sections: 119;              // The number of scrolling sections
-$scroll-ratio: 3;            // How many full screen heights to scroll to advance a single slide
+$scroll-ratio: 5;            // How many full screen heights to scroll to advance a single slide
 
 
 body {
@@ -42,7 +42,7 @@ body {
                 display: none;
             }
 
-            &.divider img {
+            &.divider img, &.design img {
                 width: 100%;
                 height: 100%;
             }
