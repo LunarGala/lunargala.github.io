@@ -51,10 +51,10 @@ body {
             }
 
             &.hideme {
-                display: none;
+                height: 0%;
 
                 &.header {
-                    display: block;
+                    height: $header-height;
                 }
             }
 
