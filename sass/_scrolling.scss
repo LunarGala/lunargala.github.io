@@ -35,7 +35,12 @@ body {
             text-transform: lowercase;
 
             &.hideme {
-                height: 0%;
+                // height: 0%;
+                display: none;
+
+                &.header {
+                    display: block;
+                }
             }
 
             .inside {

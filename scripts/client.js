@@ -60,8 +60,8 @@
 
         // Update hidden sections
         // TODO: find another non-obvious efficient way to get all after/before the immediate 7.
-        $nextSecondClass.next().next().next().next().next().next().next().next().next().next().next().next().next().nextAll().addClass('hideme');
-        $prevSecondClass.prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prev().prevAll().addClass('hideme');
+        $nextSecondClass.next().next().next().next().next().next().next().nextAll().addClass('hideme');
+        $prevSecondClass.prev().prev().prev().prev().prev().prev().prev().prevAll().addClass('hideme');
 
         // Get headers, hidden, splinters
         var $headers = $sections.filter('.header:not(.' + ACTIVE_CLASS + ', .' + SECOND_CLASS + ')'),
@@ -215,7 +215,7 @@
         }
 
         // Hide all but the initial 14 non-header slides.
-        $('section.human').addClass('hideme').slice(0,14).removeClass('hideme');
+        $('section.human').addClass('hideme').slice(0,10).removeClass('hideme');
 
         // Get all sections
         var $sections = $('.content section');

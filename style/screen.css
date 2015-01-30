@@ -217,22 +217,26 @@ body .content section {
 }
 /* line 37, ../sass/_scrolling.scss */
 body .content section.hideme {
-  height: 0%;
+  display: none;
 }
 /* line 41, ../sass/_scrolling.scss */
+body .content section.hideme.header {
+  display: block;
+}
+/* line 46, ../sass/_scrolling.scss */
 body .content section .inside {
   display: none;
 }
-/* line 45, ../sass/_scrolling.scss */
+/* line 50, ../sass/_scrolling.scss */
 body .content section.divider img, body .content section.design img {
   width: 100%;
   height: 100%;
 }
-/* line 62, ../sass/_scrolling.scss */
+/* line 67, ../sass/_scrolling.scss */
 body .content section.intro .inside {
   color: black;
 }
-/* line 68, ../sass/_scrolling.scss */
+/* line 73, ../sass/_scrolling.scss */
 body .content section.video .video-cover {
   background-image: url("graphics/video.png");
   -moz-background-size: 100% 100%;
@@ -245,11 +249,11 @@ body .content section.video .video-cover {
   left: 0;
   right: 0;
 }
-/* line 78, ../sass/_scrolling.scss */
+/* line 83, ../sass/_scrolling.scss */
 body .content section.video iframe {
   display: none;
 }
-/* line 91, ../sass/_scrolling.scss */
+/* line 96, ../sass/_scrolling.scss */
 body .content section.active .inside {
   display: block;
   -moz-transform: scale3d(1, 1, 1);
@@ -258,7 +262,7 @@ body .content section.active .inside {
   transform: scale3d(1, 1, 1);
   /* 75 / 75 */
 }
-/* line 99, ../sass/_scrolling.scss */
+/* line 104, ../sass/_scrolling.scss */
 body .content section.second-class .inside {
   display: block;
   -moz-transform: scale3d(1, 0.06, 1);
@@ -267,7 +271,7 @@ body .content section.second-class .inside {
   transform: scale3d(1, 0.06, 1);
   /* 4.5 / 75 */
 }
-/* line 114, ../sass/_scrolling.scss */
+/* line 119, ../sass/_scrolling.scss */
 body .content section .inside {
   -webkit-transform-origin: 0 0;
   /* Keep text aligned properly */
