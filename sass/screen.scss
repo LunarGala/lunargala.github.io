@@ -28,17 +28,18 @@ body {
                 cursor: default;
             }
             
-            &.header {
-                // min-height: 2vh;
+            &.header, &.text {
                 @include background-size(100% 100%);
                 background-repeat: no-repeat;
                 
+                .inside {
+                    text-indent: -99999em;
+                }
+            }
+            
+            &.header {            
                 &.title {
                     background-image: url('graphics/vestige.png');
-                }
-
-                &.logistics {
-                    background-image: url('graphics/logistics.png');
                 }
 
                 &.tickets {
@@ -68,29 +69,39 @@ body {
                 &.about {
                     background-image: url('graphics/about.png');
                 }
-                    
-                &.aboutText {
+                
+                &.sponsors {
+                    background-image: url('graphics/sponsors.png');
+                }
+                
+                &.logo {
+                    background-image: url('graphics/lg.png');
+                }
+
+                &.blog {
+                    background-image: url('graphics/blog.png');
+                }
+
+                &.designs { 
+                    background-image: url('graphics/designs.png');
+                }
+            }
+            
+            &.text { // like header, but doesn't stay visible when you scroll away
+                &.about {
                     background-image: url('graphics/aboutText.png');
                 }
                 
                 &.tagline {
                     background-image: url('graphics/tagline.png');
                 }
-
-                &.sponsorsHeader {
-                    background-image: url('graphics/sponsors.png');
-                }
                 
                 &.sponsors {
                     background-image: url('graphics/sponsors/allSponsors.jpg');
                 }
                 
-                &.logo {
-                    background-image: url('graphics/lg.png');
-                }
-                
-                .inside {
-                    text-indent: -99999em;
+                &.logistics {
+                    background-image: url('graphics/logistics.png');
                 }
             }
             
@@ -128,12 +139,6 @@ body {
                 &.second-class {
                     video {
                         @include transform(scale3d(20.0, 1.0, 1.0));
-                    }
-                }
-                
-                &.third-class {
-                    video {
-                        @include transform(scale3d(48.0, 1.0, 1.0));
                     }
                 }
             }

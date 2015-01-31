@@ -1,20 +1,8 @@
-/* Variables to make this math super flexible */
+/* Constants */
 
-$sections: 19;              // The number of scrolling sections
-$headers: 9;                // The number of always-visible headers
-$header-height: 4%;         // How tall a collapsed header should be
-$scroll-ratio: 3;           // How many full screen heights to scroll to advance a single slide
-$active-height: 50%;        // How tall the active section should be
-$second-class-height: 18%;
+$sections: 119;              // The number of scrolling sections
+$scroll-ratio: 5;            // How many full screen heights to scroll to advance a single slide
 
-// Don't touch these
-
-$remainder: 100% - $active-height - $second-class-height*2;
-$splinters: ($sections - 3);
-$splinter-height: $remainder / $splinters;
-
-
-    
 
 body {
     height: $sections * $scroll-ratio * 10vh;            /* To allow scrolling */
@@ -31,8 +19,6 @@ body {
         width: 100%;
         top: 0;
         height: 100vh;
-        // border: 10px solid red;
-        // box-sizing: border-box;
     
         /*************************
     
@@ -41,25 +27,36 @@ body {
          *************************/
     
          section {
-            height: $splinter-height;
             overflow: hidden;
             box-sizing: border-box;
             position: relative;
             width: 100%;
             text-align: justify;
             text-transform: lowercase;
+
+            &.hideme {
+                // height: 0%;
+                display: none;
+
+                &.header {
+                    display: block;
+                }
+            }
+
+            .inside {
+                display: none;
+            }
+
+            &.divider img, &.design img {
+                width: 100%;
+                height: 100%;
+            }
             
             @include transform(translate3d(0, 0, 0)); /* force hardware acceleration */
             @include backface-visibility(hidden); /* other hacky speed-up tricks */
             @include perspective(1000);
     
 
-            &.header {
-                // min-height: $header-height;
-
-                // &.active { height: $header-height + $active-height; }
-                // &.second-class { height: $header-height + $second-class-height; }
-            }
             /*************************
     
             * Specific section layout
@@ -95,17 +92,17 @@ body {
             *************************/    
     
             &.active {
-                height: $active-height;
     
                 .inside {
+                    display: block;
                     @include transform(scale3d(1.0, 1.0, 1.0));         /* 75 / 75 */
                 }
             }   
     
             &.second-class {
-                height: $second-class-height;
     
                 .inside {
+                    display: block;
                     @include transform(scale3d(1.0, 0.06, 1.0));        /* 4.5 / 75 */
                 }
             }
@@ -118,10 +115,6 @@ body {
     
              *************************/
     
-            &:first-child.active,
-            &:nth-last-child(1).active {
-                height: $active-height + $second-class-height;
-            }
     
             .inside {
                 -webkit-transform-origin: 0 0; /* Keep text aligned properly */
