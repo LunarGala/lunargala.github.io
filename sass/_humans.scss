@@ -1,3 +1,7 @@
+section.human {
+  @include background-size(100% 100%);
+}
+
 .adeleyeIbukunFayo {
   background-image: url(../images/adeleyeIbukunFayo.jpg);
 }
@@ -284,7 +288,7 @@
 }
 
 .parrinelloSophie {
-  background-image: url(../images/parrinelloSophie.jpg);
+  background-image: url(../images/parrinelloSophie.jpg); 
 }
 
 .patelChanda {
@@ -349,6 +353,10 @@
 
 .townsendCharlotte {
   background-image: url(../images/townsendCharlotte.jpg);
+}
+
+.umNoel {
+  background-image: url(../images/umNoel.jpg);
 }
 
 .uphoffJessica {
