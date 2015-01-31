@@ -231,6 +231,17 @@
         $(window).scrollTop(0);
         updateActive(active);
 
+        // Start asynch loading of gifs
+        $('img').filter(function(i, elem) { 
+            return !!($(elem).attr('data-src')); 
+        }).map(function(i, elem) {
+            var gif = new Image(); 
+            gif.onload = function() {
+                $(elem).replaceWith(gif);
+            }; 
+            gif.src = $(elem).attr('data-src'); 
+        });
+
         // Bind handlers
         initializeArrowHandlers();
         initializeClickHandlers();
