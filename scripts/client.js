@@ -122,16 +122,14 @@
                 case 38: // up
                     newIdx = (active - 1 + $sections.length) % $sections.length;
                     fixScroll(newIdx);
-                    updateActive(newIdx);
-                    triggerPageAction();
+                    updateActive(newIdx, true);
                 break;
 
                 case 39: // right
                 case 40: // down
                     newIdx = (active+1) % $sections.length;
                     fixScroll(newIdx);
-                    updateActive(newIdx);
-                    triggerPageAction();
+                    updateActive(newIdx, true);
                 break;
 
                 // Ignore other keys
@@ -185,8 +183,7 @@
             var newActive = Math.round(scrollPercent * ($sections.length - 1));
 
             // Update the screen
-            updateScroll(newActive);
-            triggerPageAction();
+            updateScroll(newActive, true);
         });
     };
 
@@ -229,7 +226,8 @@
      * Hide titles whenever the mouse hasn't moved in a bit
      */
     var initializeMouseMoveHandler = function() {
-        $('body').mousemove(function() {
+        $('.content').mousemove(function() {
+            console.log('mousemove');
             triggerPageAction(); 
         });
     };
