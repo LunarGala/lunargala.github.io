@@ -13,7 +13,7 @@
     var ACTIVE_CLASS    = 'active',
         SECOND_CLASS    = 'second-class', 
         THROTTLE_RATE   = 700,
-        HIDE_RATE       = 2000,
+        HIDE_RATE       = 1000,
         SPLINTER_HEIGHT = 1.0,
         HEADER_HEIGHT   = 6,
         ACTIVE_HEIGHT   = 60,

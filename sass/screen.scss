@@ -18,6 +18,11 @@ body {
         background: #ff00ff;
     }
     
+    a {
+        -webkit-animation: sectionPulse 1s linear infinite;
+        opacity: .5;
+    }
+    
     .content {
         
         section {
@@ -44,10 +49,6 @@ body {
 
                 &.tickets {
                     background-image: url('graphics/tickets.png');
-                    
-                    &:hover {
-                        opacity: .75;
-                    }
                     
                     &.active, &.second-class {
                         

@@ -144,13 +144,13 @@ body .content section.human h2, body .content section.human p {
 
 @-webkit-keyframes sectionPulse {
   0% {
-    -webkit-filter: brightness(1.5);
+    -webkit-filter: brightness(1);
   }
   50% {
-    -webkit-filter: brightness(1.7);
+    -webkit-filter: brightness(5);
   }
   100% {
-    -webkit-filter: brightness(1.5);
+    -webkit-filter: brightness(1);
   }
 }
 /* Constants */
@@ -892,7 +892,12 @@ body {
 body ::selection {
   background: #ff00ff;
 }
-/* line 23, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
+body a {
+  -webkit-animation: sectionPulse 1s linear infinite;
+  opacity: .5;
+}
+/* line 28, ../sass/screen.scss */
 body .content section {
   cursor: pointer;
   -moz-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -900,11 +905,11 @@ body .content section {
   -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
-/* line 27, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 body .content section.active {
   cursor: default;
 }
-/* line 31, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 body .content section.header, body .content section.text {
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
@@ -912,23 +917,19 @@ body .content section.header, body .content section.text {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-/* line 35, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 body .content section.header .inside, body .content section.text .inside {
   text-indent: -99999em;
 }
-/* line 41, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 body .content section.header.title {
   background-image: url("graphics/vestige.png");
 }
-/* line 45, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 body .content section.header.tickets {
   background-image: url("graphics/tickets.png");
 }
-/* line 48, ../sass/screen.scss */
-body .content section.header.tickets:hover {
-  opacity: .75;
-}
-/* line 54, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 body .content section.header.tickets.active a, body .content section.header.tickets.second-class a {
   display: block;
   height: 100%;
@@ -937,54 +938,54 @@ body .content section.header.tickets.active a, body .content section.header.tick
   top: 0;
   left: 0;
 }
-/* line 65, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 body .content section.header.people {
   background-image: url("graphics/people.png");
 }
-/* line 69, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 body .content section.header.about {
   background-image: url("graphics/about.png");
 }
-/* line 73, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 body .content section.header.designs {
   background-image: url("graphics/designs.png");
 }
-/* line 79, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 body .content section.text.about {
   background-image: url("graphics/aboutText.png");
 }
-/* line 83, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 body .content section.text.tagline {
   background-image: url("graphics/tagline.png");
 }
-/* line 87, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 body .content section.text.sponsors {
   background-image: url("graphics/sponsors/allSponsors.jpg");
 }
-/* line 91, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 body .content section.text.logistics {
   background-image: url("graphics/logistics.png");
 }
-/* line 95, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 body .content section.text.logo {
   background-image: url("graphics/lg.png");
 }
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 body .content section.text.blog {
   background-image: url("graphics/blog.png");
 }
-/* line 103, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 body .content section.text.sponsors {
   background-image: url("graphics/sponsors.png");
 }
-/* line 108, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 body .content section.divider {
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
-/* line 111, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 body .content section.divider video {
   width: 100%;
   height: 100%;
@@ -1002,19 +1003,19 @@ body .content section.divider video {
   transition-property: transform, -webkit-transform, -moz-transform;
 }
 @media screen and (max-aspect-ratio: 16 / 9) {
-  /* line 111, ../sass/screen.scss */
+  /* line 112, ../sass/screen.scss */
   body .content section.divider video {
     width: auto;
     height: 100%;
   }
 }
 @media screen and (max-width: 48em) {
-  /* line 111, ../sass/screen.scss */
+  /* line 112, ../sass/screen.scss */
   body .content section.divider video {
     display: none;
   }
 }
-/* line 130, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 body .content section.divider.active video {
   -moz-transform: scale3d(8, 1, 1);
   -ms-transform: scale3d(8, 1, 1);
@@ -1022,7 +1023,7 @@ body .content section.divider.active video {
   transform: scale3d(8, 1, 1);
 }
 @media screen and (max-aspect-ratio: 16 / 9) {
-  /* line 130, ../sass/screen.scss */
+  /* line 131, ../sass/screen.scss */
   body .content section.divider.active video {
     -moz-transform: scale3d(4, 1, 1);
     -ms-transform: scale3d(4, 1, 1);
@@ -1030,7 +1031,7 @@ body .content section.divider.active video {
     transform: scale3d(4, 1, 1);
   }
 }
-/* line 140, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 body .content section.divider.second-class video {
   -moz-transform: scale3d(20, 1, 1);
   -ms-transform: scale3d(20, 1, 1);
