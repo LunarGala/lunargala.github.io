@@ -946,36 +946,36 @@ body .content section.header.about {
   background-image: url("graphics/about.png");
 }
 /* line 73, ../sass/screen.scss */
-body .content section.header.sponsors {
-  background-image: url("graphics/sponsors.png");
-}
-/* line 77, ../sass/screen.scss */
-body .content section.header.logo {
-  background-image: url("graphics/lg.png");
-}
-/* line 81, ../sass/screen.scss */
-body .content section.header.blog {
-  background-image: url("graphics/blog.png");
-}
-/* line 85, ../sass/screen.scss */
 body .content section.header.designs {
   background-image: url("graphics/designs.png");
 }
-/* line 91, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 body .content section.text.about {
   background-image: url("graphics/aboutText.png");
 }
-/* line 95, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 body .content section.text.tagline {
   background-image: url("graphics/tagline.png");
 }
-/* line 99, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 body .content section.text.sponsors {
   background-image: url("graphics/sponsors/allSponsors.jpg");
 }
-/* line 103, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 body .content section.text.logistics {
   background-image: url("graphics/logistics.png");
+}
+/* line 95, ../sass/screen.scss */
+body .content section.text.logo {
+  background-image: url("graphics/lg.png");
+}
+/* line 99, ../sass/screen.scss */
+body .content section.text.blog {
+  background-image: url("graphics/blog.png");
+}
+/* line 103, ../sass/screen.scss */
+body .content section.text.sponsors {
+  background-image: url("graphics/sponsors.png");
 }
 /* line 108, ../sass/screen.scss */
 body .content section.divider {

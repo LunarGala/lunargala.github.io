@@ -69,18 +69,6 @@ body {
                 &.about {
                     background-image: url('graphics/about.png');
                 }
-                
-                &.sponsors {
-                    background-image: url('graphics/sponsors.png');
-                }
-                
-                &.logo {
-                    background-image: url('graphics/lg.png');
-                }
-
-                &.blog {
-                    background-image: url('graphics/blog.png');
-                }
 
                 &.designs { 
                     background-image: url('graphics/designs.png');
@@ -102,6 +90,18 @@ body {
                 
                 &.logistics {
                     background-image: url('graphics/logistics.png');
+                }
+
+                &.logo {
+                    background-image: url('graphics/lg.png');
+                }
+
+                &.blog {
+                    background-image: url('graphics/blog.png');
+                }
+                
+                &.sponsors {
+                    background-image: url('graphics/sponsors.png');
                 }
             }
             

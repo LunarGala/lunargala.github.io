@@ -13,14 +13,16 @@
     var ACTIVE_CLASS    = 'active',
         SECOND_CLASS    = 'second-class', 
         THROTTLE_RATE   = 700,
+        HIDE_RATE       = 1000,
         SPLINTER_HEIGHT = 0.5,
-        HEADER_HEIGHT   = 4,
-        ACTIVE_HEIGHT   = 50,
+        HEADER_HEIGHT   = 3,
+        ACTIVE_HEIGHT   = 60,
         HIDEME_HEIGHT   = 0;
 
     /* Globals */
     var $player,
-        active = 0; 
+        active = 0,
+        hidden = false; 
 
     /* 
      * Stops the video playing, covers it, hides the player.
@@ -40,7 +42,7 @@
      * Makes the @idx-th element active, and adjusts the 
      * surrounding elements appropriately.
      */
-    var updateActive = function(idx) {
+    var updateActive = function(idx, hideHeaders) {
         // Selectors
         var $sections = $('.content section'),
             $active = $sections.eq(idx),
@@ -60,32 +62,45 @@
 
         // Update hidden sections
         // TODO: find another non-obvious efficient way to get all after/before the immediate 7.
-        $nextSecondClass.next().next().next().next().next().next().next().nextAll().addClass('hideme');
-        $prevSecondClass.prev().prev().prev().prev().prev().prev().prev().prevAll().addClass('hideme');
+        $nextSecondClass.next().next().next().next().next().nextAll().addClass('hideme');
+        $prevSecondClass.prev().prev().prev().prev().prev().prevAll().addClass('hideme');
 
         // Get headers, hidden, splinters
         var $headers = $sections.filter('.header:not(.' + ACTIVE_CLASS + ', .' + SECOND_CLASS + ')'),
             $hideme = $sections.filter('.hideme:not(.header)'),
-            $splinters = $sections.filter(':not(.header, .hideme, .' + ACTIVE_CLASS + ', .' + SECOND_CLASS + ')');
-
-        // Calculate the new heights. 
-        var activeHeader = $active.hasClass('header'),
+            $splinters = $sections.filter(':not(.header, .hideme, .' + ACTIVE_CLASS + ', .' + SECOND_CLASS + ')'),
+            activeHeader = $active.hasClass('header'),
             prevHeader = $prevSecondClass.hasClass('header'),
             nextHeader = $nextSecondClass.hasClass('header'),
             siblingTotal = Math.max($active.next().length + $active.prev().length, 1),
             splinterCount = $splinters.length,
-            headerCount = $headers.length,
-            secondClassHeight = (100 - ACTIVE_HEIGHT - HEADER_HEIGHT*headerCount - SPLINTER_HEIGHT*splinterCount)/2,
-            activeHeight = ACTIVE_HEIGHT + (siblingTotal == 1 ? secondClassHeight : 0);
+            headerCount = $headers.length;
 
+        var activeHeight, secondClassHeight, headerHeight;
+
+        if (!hideHeaders) {
+
+            // Calculate the new heights. 
+            secondClassHeight = (100 - ACTIVE_HEIGHT - HEADER_HEIGHT*headerCount - SPLINTER_HEIGHT*splinterCount)/2;
+            activeHeight = ACTIVE_HEIGHT + (siblingTotal == 1 ? secondClassHeight : 0);
+            headerHeight = HEADER_HEIGHT;
+
+        } else {
+            var remainder = (headerCount * (HEADER_HEIGHT - SPLINTER_HEIGHT));
+            headerHeight = SPLINTER_HEIGHT;
+            secondClassHeight = (100 - ACTIVE_HEIGHT - HEADER_HEIGHT*headerCount - SPLINTER_HEIGHT*splinterCount)/2 + (remainder / 3);
+            activeHeight = ACTIVE_HEIGHT + (siblingTotal == 1 ? secondClassHeight : 0) + (remainder / 3);
+        }
 
         // Update heights
         $splinters.height(SPLINTER_HEIGHT + '%');           // Splinters
-        $headers.height(HEADER_HEIGHT + '%');               // Headers
+        $headers.height(headerHeight + '%');                // Headers
         $active.height(activeHeight + '%');                 // Active
         $nextSecondClass.height(secondClassHeight + '%');   // Second classes
         $prevSecondClass.height(secondClassHeight + '%');
         $hideme.height(HIDEME_HEIGHT + '%');                // Hideme
+
+        hidden = !!hideHeaders;
     };
 
 
@@ -108,6 +123,7 @@
                     newIdx = (active - 1 + $sections.length) % $sections.length;
                     fixScroll(newIdx);
                     updateActive(newIdx);
+                    triggerPageAction();
                 break;
 
                 case 39: // right
@@ -115,6 +131,7 @@
                     newIdx = (active+1) % $sections.length;
                     fixScroll(newIdx);
                     updateActive(newIdx);
+                    triggerPageAction();
                 break;
 
                 // Ignore other keys
@@ -169,6 +186,7 @@
 
             // Update the screen
             updateScroll(newActive);
+            triggerPageAction();
         });
     };
 
@@ -194,6 +212,28 @@
         });
     };
 
+    var triggerPageAction = (function() {
+        var timeoutId = -1;
+        return function () {
+            clearTimeout(timeoutId);
+            if (hidden) {
+                updateActive(active); 
+            }
+            timeoutId = setTimeout(function() {
+                updateActive(active, true);
+            }, HIDE_RATE);
+        };
+    })();
+
+    /* 
+     * Hide titles whenever the mouse hasn't moved in a bit
+     */
+    var initializeMouseMoveHandler = function() {
+        $('body').mousemove(function() {
+            triggerPageAction(); 
+        });
+    };
+
     /* 
      * Initialize on page load 
      */
@@ -208,10 +248,7 @@
         // Add 'static' class to page on mobile. 
         if ( window.mobilecheck ) {
             $('body').addClass('static');
-            console.log('static site');
             return;
-        } else {
-            console.log('not static site');
         }
 
         // Hide all but the initial 14 non-header slides.
@@ -247,6 +284,7 @@
         initializeClickHandlers();
         initializeVideoHandlers();
         initializeScrollHandler();
+        initializeMouseMoveHandler();
        
         // Prevent some of the flash of unloaded content.
         console.log('good to go');
