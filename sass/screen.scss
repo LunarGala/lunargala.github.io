@@ -18,6 +18,11 @@ body {
         background: #ff00ff;
     }
     
+    a {
+        -webkit-animation: sectionPulse 1s linear infinite;
+        opacity: .5;
+    }
+    
     .content {
         
         section {
@@ -28,25 +33,22 @@ body {
                 cursor: default;
             }
             
-            &.header {
-                // min-height: 2vh;
+            &.header, &.text {
                 @include background-size(100% 100%);
                 background-repeat: no-repeat;
                 
+                .inside {
+                    text-indent: -99999em;
+                }
+            }
+            
+            &.header {            
                 &.title {
                     background-image: url('graphics/vestige.png');
                 }
 
-                &.logistics {
-                    background-image: url('graphics/logistics.png');
-                }
-
                 &.tickets {
                     background-image: url('graphics/tickets.png');
-                    
-                    &:hover {
-                        opacity: .75;
-                    }
                     
                     &.active, &.second-class {
                         
@@ -68,29 +70,39 @@ body {
                 &.about {
                     background-image: url('graphics/about.png');
                 }
-                    
-                &.aboutText {
+
+                &.designs { 
+                    background-image: url('graphics/designs.png');
+                }
+            }
+            
+            &.text { // like header, but doesn't stay visible when you scroll away
+                &.about {
                     background-image: url('graphics/aboutText.png');
                 }
                 
                 &.tagline {
                     background-image: url('graphics/tagline.png');
                 }
-
-                &.sponsorsHeader {
-                    background-image: url('graphics/sponsors.png');
-                }
                 
                 &.sponsors {
                     background-image: url('graphics/sponsors/allSponsors.jpg');
                 }
                 
+                &.logistics {
+                    background-image: url('graphics/logistics.png');
+                }
+
                 &.logo {
                     background-image: url('graphics/lg.png');
                 }
+
+                &.blog {
+                    background-image: url('graphics/blog.png');
+                }
                 
-                .inside {
-                    text-indent: -99999em;
+                &.sponsors {
+                    background-image: url('graphics/sponsors.png');
                 }
             }
             
@@ -128,12 +140,6 @@ body {
                 &.second-class {
                     video {
                         @include transform(scale3d(20.0, 1.0, 1.0));
-                    }
-                }
-                
-                &.third-class {
-                    video {
-                        @include transform(scale3d(48.0, 1.0, 1.0));
                     }
                 }
             }
