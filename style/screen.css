@@ -957,7 +957,7 @@ body .content section.header.blog {
 }
 /* line 85, ../sass/screen.scss */
 body .content section.header.designs {
-  background-image: url("graphics/designs.png");
+  background-image: url("graphics/collections.png");
 }
 /* line names */
 body .content section.header.designs.intension{
@@ -1011,8 +1011,8 @@ body .content section.header.designs.cleen{
 body .content section.header.designs.tact{
   background-image: url("lines/17-tact.png");
 }
-body .content section.header.designs.estefania{
-  background-image: url("lines/18-estefania.png");
+body .content section.header.designs.beora{
+  background-image: url("lines/18-beora.png");
 }
 body .content section.header.designs.sinew{
   background-image: url("lines/19sinew.png");
@@ -1020,8 +1020,8 @@ body .content section.header.designs.sinew{
 body .content section.header.designs.menagerie{
   background-image: url("lines/20-menagerie.png");
 }
-body .content section.header.designs.phobia{
-  background-image: url("lines/21-phobia.png");
+body .content section.header.designs.rift{
+  background-image: url("lines/21-rift.png");
 }
 /* line 91, ../sass/screen.scss */
 body .content section.text.about {
