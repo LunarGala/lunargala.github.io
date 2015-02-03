@@ -1,13 +1,13 @@
 @-webkit-keyframes sectionPulse {
     0% {
-        -webkit-filter: brightness(1);
+        -webkit-filter: brightness(1.5);
     }
     
     50% {
-        -webkit-filter: brightness(5.0);
+        -webkit-filter: brightness(1.7);
     }
     
     100% {
-        -webkit-filter: brightness(1);
+        -webkit-filter: brightness(1.5);
     }
 }
