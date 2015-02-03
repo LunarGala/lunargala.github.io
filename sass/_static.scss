@@ -7,6 +7,11 @@ body.teaser.static {
         section {
             height: 4em;
             
+            .inside {
+                display: block;
+                @include transform(none);
+            }
+
             &.header {
                 height: 4em;
                 
