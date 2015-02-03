@@ -14,8 +14,8 @@
         SECOND_CLASS    = 'second-class', 
         THROTTLE_RATE   = 700,
         HIDE_RATE       = 1000,
-        SPLINTER_HEIGHT = 0.5,
-        HEADER_HEIGHT   = 3,
+        SPLINTER_HEIGHT = 1.0,
+        HEADER_HEIGHT   = 6,
         ACTIVE_HEIGHT   = 60,
         HIDEME_HEIGHT   = 0;
 
