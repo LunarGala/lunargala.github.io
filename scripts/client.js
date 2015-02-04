@@ -15,7 +15,7 @@
         THROTTLE_RATE   = 700,
         HIDE_RATE       = 1000,
         SPLINTER_HEIGHT = .5,
-        HEADER_HEIGHT   = 6,
+        HEADER_HEIGHT   = 8,
         ACTIVE_HEIGHT   = 60,
         HIDEME_HEIGHT   = 0;
 
