@@ -229,16 +229,18 @@ body .content section .inside {
   display: none;
 }
 /* line 51, ../sass/_scrolling.scss */
-body .content section.divider img, body .content section.design img {
+body .content section.divider img, body .content section.design img, body .content section.designers img {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
 }
-/* line 69, ../sass/_scrolling.scss */
+/* line 71, ../sass/_scrolling.scss */
 body .content section.intro .inside {
   color: black;
 }
-/* line 75, ../sass/_scrolling.scss */
+/* line 77, ../sass/_scrolling.scss */
 body .content section.video .video-cover {
   background-image: url("graphics/video.png");
   -moz-background-size: 100% 100%;
@@ -251,11 +253,11 @@ body .content section.video .video-cover {
   left: 0;
   right: 0;
 }
-/* line 85, ../sass/_scrolling.scss */
+/* line 87, ../sass/_scrolling.scss */
 body .content section.video iframe {
   display: none;
 }
-/* line 98, ../sass/_scrolling.scss */
+/* line 100, ../sass/_scrolling.scss */
 body .content section.active .inside {
   display: block;
   -moz-transform: scale3d(1, 1, 1);
@@ -264,7 +266,7 @@ body .content section.active .inside {
   transform: scale3d(1, 1, 1);
   /* 75 / 75 */
 }
-/* line 106, ../sass/_scrolling.scss */
+/* line 108, ../sass/_scrolling.scss */
 body .content section.second-class .inside {
   display: block;
   -moz-transform: scale3d(1, 0.06, 1);
@@ -273,7 +275,7 @@ body .content section.second-class .inside {
   transform: scale3d(1, 0.06, 1);
   /* 4.5 / 75 */
 }
-/* line 121, ../sass/_scrolling.scss */
+/* line 123, ../sass/_scrolling.scss */
 body .content section .inside {
   -webkit-transform-origin: 0 0;
   /* Keep text aligned properly */
