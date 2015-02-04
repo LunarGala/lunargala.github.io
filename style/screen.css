@@ -1,4 +1,4 @@
-/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -156,7 +156,7 @@ body .content section.human h2, body .content section.human p {
 /* Constants */
 /* line 7, ../sass/_scrolling.scss */
 body {
-  height: 11900vh;
+  height: 5950vh;
   /* To allow scrolling */
   display: none;
   /* Hide until loaded */
@@ -231,16 +231,20 @@ body .content section .inside {
 /* line 51, ../sass/_scrolling.scss */
 body .content section.divider img, body .content section.design img, body .content section.designers img {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
-  left: 0;
+  left: -50%;
+  -moz-background-size: 200% 100%;
+  -o-background-size: 200% 100%;
+  -webkit-background-size: 200% 100%;
+  background-size: 200% 100%;
+  width: 200%;
+  height: 100%;
 }
-/* line 71, ../sass/_scrolling.scss */
+/* line 72, ../sass/_scrolling.scss */
 body .content section.intro .inside {
   color: black;
 }
-/* line 77, ../sass/_scrolling.scss */
+/* line 78, ../sass/_scrolling.scss */
 body .content section.video .video-cover {
   background-image: url("graphics/video.png");
   -moz-background-size: 100% 100%;
@@ -253,11 +257,11 @@ body .content section.video .video-cover {
   left: 0;
   right: 0;
 }
-/* line 87, ../sass/_scrolling.scss */
+/* line 88, ../sass/_scrolling.scss */
 body .content section.video iframe {
   display: none;
 }
-/* line 100, ../sass/_scrolling.scss */
+/* line 101, ../sass/_scrolling.scss */
 body .content section.active .inside {
   display: block;
   -moz-transform: scale3d(1, 1, 1);
@@ -266,7 +270,7 @@ body .content section.active .inside {
   transform: scale3d(1, 1, 1);
   /* 75 / 75 */
 }
-/* line 108, ../sass/_scrolling.scss */
+/* line 109, ../sass/_scrolling.scss */
 body .content section.second-class .inside {
   display: block;
   -moz-transform: scale3d(1, 0.06, 1);
@@ -275,13 +279,13 @@ body .content section.second-class .inside {
   transform: scale3d(1, 0.06, 1);
   /* 4.5 / 75 */
 }
-/* line 123, ../sass/_scrolling.scss */
+/* line 124, ../sass/_scrolling.scss */
 body .content section .inside {
   -webkit-transform-origin: 0 0;
   /* Keep text aligned properly */
   transform-origin: 0 0;
-  -webkit-transition: -webkit-transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: transform 1.5s -webkit-transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
   -moz-transform: scaleY(0.00182);
   -ms-transform: scaleY(0.00182);
   -webkit-transform: scaleY(0.00182);
@@ -1002,28 +1006,16 @@ body ::selection {
 /* line 30, ../sass/screen.scss */
 body .content section {
   cursor: pointer;
-  -moz-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
-  -o-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
-  -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 /* line 34, ../sass/screen.scss */
-body .content section:hover {
-  -webkit-animation: sectionPulse .001s linear infinite;
-  -moz-animation: sectionPulse .001s linear infinite;
-  animation: sectionPulse .001s linear infinite;
-}
-/* line 37, ../sass/screen.scss */
-body .content section:hover.active {
-  -webkit-animation: none;
-  -moz-animation: none;
-  animation: none;
-}
-/* line 44, ../sass/screen.scss */
 body .content section.active {
   cursor: default;
 }
-/* line 48, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 body .content section.header, body .content section.text {
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
@@ -1031,17 +1023,17 @@ body .content section.header, body .content section.text {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-/* line 52, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 body .content section.header .inside, body .content section.text .inside {
   text-indent: -99999em;
 }
-/* line 58, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 body .content section.tickets.active, body .content section.tickets.second-class, body .content section.blog.active, body .content section.blog.second-class {
   -webkit-animation: sectionPulse .001s linear infinite;
   -moz-animation: sectionPulse .001s linear infinite;
   animation: sectionPulse .001s linear infinite;
 }
-/* line 61, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 body .content section.tickets.active a, body .content section.tickets.second-class a, body .content section.blog.active a, body .content section.blog.second-class a {
   display: block;
   height: 100%;
@@ -1050,283 +1042,235 @@ body .content section.tickets.active a, body .content section.tickets.second-cla
   top: 0;
   left: 0;
 }
-/* line 73, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
+body .content section.header:hover {
+  -webkit-animation: sectionPulse .001s linear infinite;
+  -moz-animation: sectionPulse .001s linear infinite;
+  animation: sectionPulse .001s linear infinite;
+}
+/* line 67, ../sass/screen.scss */
+body .content section.header:hover.active {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+/* line 74, ../sass/screen.scss */
 body .content section.header.title {
   background-image: url("graphics/vestige.png");
 }
-/* line 77, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 body .content section.header.tickets {
   background-image: url("graphics/tickets.png");
 }
-/* line 81, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 body .content section.header.people {
   background-image: url("graphics/people.png");
 }
-/* line 85, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 body .content section.header.about {
   background-image: url("graphics/about.png");
 }
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 body .content section.header.designs {
   background-image: url("graphics/collections.png");
 }
-/* line 94, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 body .content section.text {
   text-indent: -9999em;
 }
-/* line 98, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 body .content section.text.about {
   background-image: url("graphics/aboutText.png");
 }
-/* line 102, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 body .content section.text.tagline {
   background-image: url("graphics/tagline.png");
 }
-/* line 106, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 body .content section.text.sponsors {
   background-image: url("graphics/sponsors/allSponsors.jpg");
 }
-/* line 110, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 body .content section.text.logistics {
   background-image: url("graphics/logistics.png");
 }
-/* line 114, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 body .content section.text.logo {
   background-image: url("graphics/lg.png");
 }
-/* line 118, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 body .content section.text.blog {
   background-image: url("graphics/blog.png");
 }
-/* line 122, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 body .content section.text.sponsors {
   background-image: url("graphics/sponsors.png");
 }
-/* line 128, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 body .content section.text.names.beora {
   background-image: url("graphics/lines/beora/name.png");
 }
-/* line 132, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 body .content section.text.names.bound {
   background-image: url("graphics/lines/bound/name.png");
 }
-/* line 136, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 body .content section.text.names.cakery {
   background-image: url("graphics/lines/cakery/name.png");
 }
-/* line 140, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 body .content section.text.names.cleen {
   background-image: url("graphics/lines/cleen/name.png");
 }
-/* line 144, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 body .content section.text.names.dressedToKill {
   background-image: url("graphics/lines/dressedToKill/name.png");
 }
-/* line 148, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 body .content section.text.names.exoskeleton {
   background-image: url("graphics/lines/exoskeleton/name.png");
 }
-/* line 152, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 body .content section.text.names.intension {
   background-image: url("graphics/lines/intension/name.png");
 }
-/* line 156, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 body .content section.text.names.letsPlay {
   background-image: url("graphics/lines/letsplay/name.png");
 }
-/* line 160, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 body .content section.text.names.lustre {
   background-image: url("graphics/lines/lustre/name.png");
 }
-/* line 164, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 body .content section.text.names.mas-querade {
   background-image: url("graphics/lines/mas-querade/name.png");
 }
-/* line 168, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 body .content section.text.names.mashinka {
   background-image: url("graphics/lines/mashinka/name.png");
 }
-/* line 172, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 body .content section.text.names.menagerie {
   background-image: url("graphics/lines/menagerie/name.png");
 }
-/* line 176, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 body .content section.text.names.morph {
   background-image: url("graphics/lines/morph/name.png");
 }
-/* line 180, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 body .content section.text.names.revive {
   background-image: url("graphics/lines/revive/name.png");
 }
-/* line 184, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 body .content section.text.names.rift {
   background-image: url("graphics/lines/rift/name.png");
 }
-/* line 188, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 body .content section.text.names.sinew {
   background-image: url("graphics/lines/sinew/name.png");
 }
-/* line 192, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 body .content section.text.names.tact {
   background-image: url("graphics/lines/tact/name.png");
 }
-/* line 196, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 body .content section.text.names.theWealthySlums {
   background-image: url("graphics/lines/theWealthySlums/name.png");
 }
-/* line 200, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 body .content section.text.names.till {
   background-image: url("graphics/lines/till/name.png");
 }
-/* line 204, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 body .content section.text.names.totsiens {
   background-image: url("graphics/lines/totsiens/name.png");
 }
-/* line 208, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 body .content section.text.names.uncover {
   background-image: url("graphics/lines/uncover/name.png");
 }
-/* line 215, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 body .content section.text.description.beora {
   background-image: url("graphics/lines/beora/description.png");
 }
-/* line 219, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 body .content section.text.description.bound {
   background-image: url("graphics/lines/bound/description.png");
 }
-/* line 223, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 body .content section.text.description.cakery {
   background-image: url("graphics/lines/cakery/description.png");
 }
-/* line 227, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 body .content section.text.description.cleen {
   background-image: url("graphics/lines/cleen/description.png");
 }
-/* line 231, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 body .content section.text.description.dressedToKill {
   background-image: url("graphics/lines/dressedToKill/description.png");
 }
-/* line 235, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 body .content section.text.description.exoskeleton {
   background-image: url("graphics/lines/exoskeleton/description.png");
 }
-/* line 239, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 body .content section.text.description.intension {
   background-image: url("graphics/lines/intension/description.png");
 }
-/* line 243, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 body .content section.text.description.letsPlay {
   background-image: url("graphics/lines/letsplay/description.png");
 }
-/* line 247, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 body .content section.text.description.lustre {
   background-image: url("graphics/lines/lustre/description.png");
 }
-/* line 251, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 body .content section.text.description.mas-querade {
   background-image: url("graphics/lines/mas-querade/description.png");
 }
-/* line 255, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 body .content section.text.description.mashinka {
   background-image: url("graphics/lines/mashinka/description.png");
 }
-/* line 259, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 body .content section.text.description.menagerie {
   background-image: url("graphics/lines/menagerie/description.png");
 }
-/* line 263, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 body .content section.text.description.morph {
   background-image: url("graphics/lines/morph/description.png");
 }
-/* line 267, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 body .content section.text.description.revive {
   background-image: url("graphics/lines/revive/description.png");
 }
-/* line 271, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 body .content section.text.description.rift {
   background-image: url("graphics/lines/rift/description.png");
 }
-/* line 275, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 body .content section.text.description.sinew {
   background-image: url("graphics/lines/sinew/description.png");
 }
-/* line 279, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 body .content section.text.description.tact {
   background-image: url("graphics/lines/tact/description.png");
 }
-/* line 283, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 body .content section.text.description.theWealthySlums {
   background-image: url("graphics/lines/theWealthySlums/description.png");
 }
-/* line 287, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 body .content section.text.description.till {
   background-image: url("graphics/lines/till/description.png");
 }
-/* line 291, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 body .content section.text.description.totsiens {
   background-image: url("graphics/lines/totsiens/description.png");
 }
-/* line 295, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 body .content section.text.description.uncover {
   background-image: url("graphics/lines/uncover/description.png");
-}
-/* line 301, ../sass/screen.scss */
-body .content section.divider {
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-}
-/* line 304, ../sass/screen.scss */
-body .content section.divider video {
-  width: 100%;
-  height: 100%;
-  -moz-transform: scale3d(200, 1, 1);
-  -ms-transform: scale3d(200, 1, 1);
-  -webkit-transform: scale3d(200, 1, 1);
-  transform: scale3d(200, 1, 1);
-  -moz-transition: cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
-  -o-transition: cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
-  -webkit-transition: cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
-  transition: cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
-  -moz-transition-property: -moz-transform, -webkit-transform, -moz-transform;
-  -o-transition-property: -o-transform, -webkit-transform, -moz-transform;
-  -webkit-transition-property: -webkit-transform, -webkit-transform, -moz-transform;
-  transition-property: transform, -webkit-transform, -moz-transform;
-}
-@media screen and (max-aspect-ratio: 16 / 9) {
-  /* line 304, ../sass/screen.scss */
-  body .content section.divider video {
-    width: auto;
-    height: 100%;
-  }
-}
-@media screen and (max-width: 48em) {
-  /* line 304, ../sass/screen.scss */
-  body .content section.divider video {
-    display: none;
-  }
-}
-/* line 323, ../sass/screen.scss */
-body .content section.divider.active video {
-  -moz-transform: scale3d(8, 1, 1);
-  -ms-transform: scale3d(8, 1, 1);
-  -webkit-transform: scale3d(8, 1, 1);
-  transform: scale3d(8, 1, 1);
-}
-@media screen and (max-aspect-ratio: 16 / 9) {
-  /* line 323, ../sass/screen.scss */
-  body .content section.divider.active video {
-    -moz-transform: scale3d(4, 1, 1);
-    -ms-transform: scale3d(4, 1, 1);
-    -webkit-transform: scale3d(4, 1, 1);
-    transform: scale3d(4, 1, 1);
-  }
-}
-/* line 333, ../sass/screen.scss */
-body .content section.divider.second-class video {
-  -moz-transform: scale3d(20, 1, 1);
-  -ms-transform: scale3d(20, 1, 1);
-  -webkit-transform: scale3d(20, 1, 1);
-  transform: scale3d(20, 1, 1);
 }
