@@ -1,4 +1,4 @@
-/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -156,7 +156,7 @@ body .content section.human h2, body .content section.human p {
 /* Constants */
 /* line 7, ../sass/_scrolling.scss */
 body {
-  height: 5950vh;
+  height: 11900vh;
   /* To allow scrolling */
   display: none;
   /* Hide until loaded */
@@ -896,7 +896,7 @@ body .content section.designs.lustre {
 }
 
 /* line 7, ../sass/_collections.scss */
-body .content section.designs.wealthoftheslums {
+body .content section.designs.theWealthySlums {
   background-image: url("lines/3-wealthoftheslums.png");
 }
 
@@ -911,7 +911,7 @@ body .content section.designs.cakery {
 }
 
 /* line 16, ../sass/_collections.scss */
-body .content section.designs.letsplay {
+body .content section.designs.letsPlay {
   background-image: url("lines/6-letsplay.png");
 }
 
@@ -931,12 +931,12 @@ body .content section.designs.bound {
 }
 
 /* line 28, ../sass/_collections.scss */
-body .content section.designs.masquerade {
+body .content section.designs.mas-querade {
   background-image: url("lines/10-masquerade.png");
 }
 
 /* line 31, ../sass/_collections.scss */
-body .content section.designs.dressedtokill {
+body .content section.designs.dressedToKill {
   background-image: url("lines/11-dressedtokill.png");
 }
 
@@ -1070,42 +1070,214 @@ body .content section.header.about {
 body .content section.header.designs {
   background-image: url("graphics/collections.png");
 }
-/* line 95, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
+body .content section.text {
+  text-indent: -9999em;
+}
+/* line 98, ../sass/screen.scss */
 body .content section.text.about {
   background-image: url("graphics/aboutText.png");
 }
-/* line 99, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 body .content section.text.tagline {
   background-image: url("graphics/tagline.png");
 }
-/* line 103, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 body .content section.text.sponsors {
   background-image: url("graphics/sponsors/allSponsors.jpg");
 }
-/* line 107, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 body .content section.text.logistics {
   background-image: url("graphics/logistics.png");
 }
-/* line 111, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 body .content section.text.logo {
   background-image: url("graphics/lg.png");
 }
-/* line 115, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 body .content section.text.blog {
   background-image: url("graphics/blog.png");
 }
-/* line 119, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 body .content section.text.sponsors {
   background-image: url("graphics/sponsors.png");
 }
-/* line 124, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
+body .content section.text.names.beora {
+  background-image: url("graphics/lines/beora/name.png");
+}
+/* line 132, ../sass/screen.scss */
+body .content section.text.names.bound {
+  background-image: url("graphics/lines/bound/name.png");
+}
+/* line 136, ../sass/screen.scss */
+body .content section.text.names.cakery {
+  background-image: url("graphics/lines/cakery/name.png");
+}
+/* line 140, ../sass/screen.scss */
+body .content section.text.names.cleen {
+  background-image: url("graphics/lines/cleen/name.png");
+}
+/* line 144, ../sass/screen.scss */
+body .content section.text.names.dressedToKill {
+  background-image: url("graphics/lines/dressedToKill/name.png");
+}
+/* line 148, ../sass/screen.scss */
+body .content section.text.names.exoskeleton {
+  background-image: url("graphics/lines/exoskeleton/name.png");
+}
+/* line 152, ../sass/screen.scss */
+body .content section.text.names.intension {
+  background-image: url("graphics/lines/intension/name.png");
+}
+/* line 156, ../sass/screen.scss */
+body .content section.text.names.letsPlay {
+  background-image: url("graphics/lines/letsplay/name.png");
+}
+/* line 160, ../sass/screen.scss */
+body .content section.text.names.lustre {
+  background-image: url("graphics/lines/lustre/name.png");
+}
+/* line 164, ../sass/screen.scss */
+body .content section.text.names.mas-querade {
+  background-image: url("graphics/lines/mas-querade/name.png");
+}
+/* line 168, ../sass/screen.scss */
+body .content section.text.names.mashinka {
+  background-image: url("graphics/lines/mashinka/name.png");
+}
+/* line 172, ../sass/screen.scss */
+body .content section.text.names.menagerie {
+  background-image: url("graphics/lines/menagerie/name.png");
+}
+/* line 176, ../sass/screen.scss */
+body .content section.text.names.morph {
+  background-image: url("graphics/lines/morph/name.png");
+}
+/* line 180, ../sass/screen.scss */
+body .content section.text.names.revive {
+  background-image: url("graphics/lines/revive/name.png");
+}
+/* line 184, ../sass/screen.scss */
+body .content section.text.names.rift {
+  background-image: url("graphics/lines/rift/name.png");
+}
+/* line 188, ../sass/screen.scss */
+body .content section.text.names.sinew {
+  background-image: url("graphics/lines/sinew/name.png");
+}
+/* line 192, ../sass/screen.scss */
+body .content section.text.names.tact {
+  background-image: url("graphics/lines/tact/name.png");
+}
+/* line 196, ../sass/screen.scss */
+body .content section.text.names.theWealthySlums {
+  background-image: url("graphics/lines/theWealthySlums/name.png");
+}
+/* line 200, ../sass/screen.scss */
+body .content section.text.names.till {
+  background-image: url("graphics/lines/till/name.png");
+}
+/* line 204, ../sass/screen.scss */
+body .content section.text.names.totsiens {
+  background-image: url("graphics/lines/totsiens/name.png");
+}
+/* line 208, ../sass/screen.scss */
+body .content section.text.names.uncover {
+  background-image: url("graphics/lines/uncover/name.png");
+}
+/* line 215, ../sass/screen.scss */
+body .content section.text.description.beora {
+  background-image: url("graphics/lines/beora/description.png");
+}
+/* line 219, ../sass/screen.scss */
+body .content section.text.description.bound {
+  background-image: url("graphics/lines/bound/description.png");
+}
+/* line 223, ../sass/screen.scss */
+body .content section.text.description.cakery {
+  background-image: url("graphics/lines/cakery/description.png");
+}
+/* line 227, ../sass/screen.scss */
+body .content section.text.description.cleen {
+  background-image: url("graphics/lines/cleen/description.png");
+}
+/* line 231, ../sass/screen.scss */
+body .content section.text.description.dressedToKill {
+  background-image: url("graphics/lines/dressedToKill/description.png");
+}
+/* line 235, ../sass/screen.scss */
+body .content section.text.description.exoskeleton {
+  background-image: url("graphics/lines/exoskeleton/description.png");
+}
+/* line 239, ../sass/screen.scss */
+body .content section.text.description.intension {
+  background-image: url("graphics/lines/intension/description.png");
+}
+/* line 243, ../sass/screen.scss */
+body .content section.text.description.letsPlay {
+  background-image: url("graphics/lines/letsplay/description.png");
+}
+/* line 247, ../sass/screen.scss */
+body .content section.text.description.lustre {
+  background-image: url("graphics/lines/lustre/description.png");
+}
+/* line 251, ../sass/screen.scss */
+body .content section.text.description.mas-querade {
+  background-image: url("graphics/lines/mas-querade/description.png");
+}
+/* line 255, ../sass/screen.scss */
+body .content section.text.description.mashinka {
+  background-image: url("graphics/lines/mashinka/description.png");
+}
+/* line 259, ../sass/screen.scss */
+body .content section.text.description.menagerie {
+  background-image: url("graphics/lines/menagerie/description.png");
+}
+/* line 263, ../sass/screen.scss */
+body .content section.text.description.morph {
+  background-image: url("graphics/lines/morph/description.png");
+}
+/* line 267, ../sass/screen.scss */
+body .content section.text.description.revive {
+  background-image: url("graphics/lines/revive/description.png");
+}
+/* line 271, ../sass/screen.scss */
+body .content section.text.description.rift {
+  background-image: url("graphics/lines/rift/description.png");
+}
+/* line 275, ../sass/screen.scss */
+body .content section.text.description.sinew {
+  background-image: url("graphics/lines/sinew/description.png");
+}
+/* line 279, ../sass/screen.scss */
+body .content section.text.description.tact {
+  background-image: url("graphics/lines/tact/description.png");
+}
+/* line 283, ../sass/screen.scss */
+body .content section.text.description.theWealthySlums {
+  background-image: url("graphics/lines/theWealthySlums/description.png");
+}
+/* line 287, ../sass/screen.scss */
+body .content section.text.description.till {
+  background-image: url("graphics/lines/till/description.png");
+}
+/* line 291, ../sass/screen.scss */
+body .content section.text.description.totsiens {
+  background-image: url("graphics/lines/totsiens/description.png");
+}
+/* line 295, ../sass/screen.scss */
+body .content section.text.description.uncover {
+  background-image: url("graphics/lines/uncover/description.png");
+}
+/* line 301, ../sass/screen.scss */
 body .content section.divider {
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
-/* line 127, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 body .content section.divider video {
   width: 100%;
   height: 100%;
@@ -1123,19 +1295,19 @@ body .content section.divider video {
   transition-property: transform, -webkit-transform, -moz-transform;
 }
 @media screen and (max-aspect-ratio: 16 / 9) {
-  /* line 127, ../sass/screen.scss */
+  /* line 304, ../sass/screen.scss */
   body .content section.divider video {
     width: auto;
     height: 100%;
   }
 }
 @media screen and (max-width: 48em) {
-  /* line 127, ../sass/screen.scss */
+  /* line 304, ../sass/screen.scss */
   body .content section.divider video {
     display: none;
   }
 }
-/* line 146, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 body .content section.divider.active video {
   -moz-transform: scale3d(8, 1, 1);
   -ms-transform: scale3d(8, 1, 1);
@@ -1143,7 +1315,7 @@ body .content section.divider.active video {
   transform: scale3d(8, 1, 1);
 }
 @media screen and (max-aspect-ratio: 16 / 9) {
-  /* line 146, ../sass/screen.scss */
+  /* line 323, ../sass/screen.scss */
   body .content section.divider.active video {
     -moz-transform: scale3d(4, 1, 1);
     -ms-transform: scale3d(4, 1, 1);
@@ -1151,7 +1323,7 @@ body .content section.divider.active video {
     transform: scale3d(4, 1, 1);
   }
 }
-/* line 156, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 body .content section.divider.second-class video {
   -moz-transform: scale3d(20, 1, 1);
   -ms-transform: scale3d(20, 1, 1);
