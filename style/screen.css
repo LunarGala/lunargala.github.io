@@ -156,7 +156,7 @@ body .content section.human h2, body .content section.human p {
 /* Constants */
 /* line 7, ../sass/_scrolling.scss */
 body {
-  height: 5950vh;
+  height: 11900vh;
   /* To allow scrolling */
   display: none;
   /* Hide until loaded */
@@ -229,16 +229,18 @@ body .content section .inside {
   display: none;
 }
 /* line 51, ../sass/_scrolling.scss */
-body .content section.divider img, body .content section.design img {
+body .content section.divider img, body .content section.design img, body .content section.designers img {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
 }
-/* line 69, ../sass/_scrolling.scss */
+/* line 71, ../sass/_scrolling.scss */
 body .content section.intro .inside {
   color: black;
 }
-/* line 75, ../sass/_scrolling.scss */
+/* line 77, ../sass/_scrolling.scss */
 body .content section.video .video-cover {
   background-image: url("graphics/video.png");
   -moz-background-size: 100% 100%;
@@ -251,11 +253,11 @@ body .content section.video .video-cover {
   left: 0;
   right: 0;
 }
-/* line 85, ../sass/_scrolling.scss */
+/* line 87, ../sass/_scrolling.scss */
 body .content section.video iframe {
   display: none;
 }
-/* line 98, ../sass/_scrolling.scss */
+/* line 100, ../sass/_scrolling.scss */
 body .content section.active .inside {
   display: block;
   -moz-transform: scale3d(1, 1, 1);
@@ -264,7 +266,7 @@ body .content section.active .inside {
   transform: scale3d(1, 1, 1);
   /* 75 / 75 */
 }
-/* line 106, ../sass/_scrolling.scss */
+/* line 108, ../sass/_scrolling.scss */
 body .content section.second-class .inside {
   display: block;
   -moz-transform: scale3d(1, 0.06, 1);
@@ -273,7 +275,7 @@ body .content section.second-class .inside {
   transform: scale3d(1, 0.06, 1);
   /* 4.5 / 75 */
 }
-/* line 121, ../sass/_scrolling.scss */
+/* line 123, ../sass/_scrolling.scss */
 body .content section .inside {
   -webkit-transform-origin: 0 0;
   /* Keep text aligned properly */
@@ -1096,14 +1098,182 @@ body .content section.text.blog {
 body .content section.text.sponsors {
   background-image: url("graphics/sponsors.png");
 }
-/* line 124, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
+body .content section.text.names.beora {
+  background-image: url("graphics/lines/beora/name.png");
+}
+/* line 129, ../sass/screen.scss */
+body .content section.text.names.bound {
+  background-image: url("graphics/lines/bound/name.png");
+}
+/* line 133, ../sass/screen.scss */
+body .content section.text.names.cakery {
+  background-image: url("graphics/lines/cakery/name.png");
+}
+/* line 137, ../sass/screen.scss */
+body .content section.text.names.cleen {
+  background-image: url("graphics/lines/cleen/name.png");
+}
+/* line 141, ../sass/screen.scss */
+body .content section.text.names.dressedToKill {
+  background-image: url("graphics/lines/dressedToKill/name.png");
+}
+/* line 145, ../sass/screen.scss */
+body .content section.text.names.exoskeleton {
+  background-image: url("graphics/lines/exoskeleton/name.png");
+}
+/* line 149, ../sass/screen.scss */
+body .content section.text.names.intension {
+  background-image: url("graphics/lines/intension/name.png");
+}
+/* line 153, ../sass/screen.scss */
+body .content section.text.names.letsplay {
+  background-image: url("graphics/lines/letsplay/name.png");
+}
+/* line 157, ../sass/screen.scss */
+body .content section.text.names.lustre {
+  background-image: url("graphics/lines/lustre/name.png");
+}
+/* line 161, ../sass/screen.scss */
+body .content section.text.names.mas-querade {
+  background-image: url("graphics/lines/mas-querade/name.png");
+}
+/* line 165, ../sass/screen.scss */
+body .content section.text.names.mashinka {
+  background-image: url("graphics/lines/mashinka/name.png");
+}
+/* line 169, ../sass/screen.scss */
+body .content section.text.names.menagerie {
+  background-image: url("graphics/lines/menagerie/name.png");
+}
+/* line 173, ../sass/screen.scss */
+body .content section.text.names.morph {
+  background-image: url("graphics/lines/morph/name.png");
+}
+/* line 177, ../sass/screen.scss */
+body .content section.text.names.revive {
+  background-image: url("graphics/lines/revive/name.png");
+}
+/* line 181, ../sass/screen.scss */
+body .content section.text.names.rift {
+  background-image: url("graphics/lines/rift/name.png");
+}
+/* line 185, ../sass/screen.scss */
+body .content section.text.names.sinew {
+  background-image: url("graphics/lines/sinew/name.png");
+}
+/* line 189, ../sass/screen.scss */
+body .content section.text.names.tact {
+  background-image: url("graphics/lines/tact/name.png");
+}
+/* line 193, ../sass/screen.scss */
+body .content section.text.names.theWealthySlums {
+  background-image: url("graphics/lines/theWealthySlums/name.png");
+}
+/* line 197, ../sass/screen.scss */
+body .content section.text.names.till {
+  background-image: url("graphics/lines/till/name.png");
+}
+/* line 201, ../sass/screen.scss */
+body .content section.text.names.totsiens {
+  background-image: url("graphics/lines/totsiens/name.png");
+}
+/* line 205, ../sass/screen.scss */
+body .content section.text.names.uncover {
+  background-image: url("graphics/lines/uncover/name.png");
+}
+/* line 212, ../sass/screen.scss */
+body .content section.text.description.beora {
+  background-image: url("graphics/lines/beora/description.png");
+}
+/* line 216, ../sass/screen.scss */
+body .content section.text.description.bound {
+  background-image: url("graphics/lines/bound/description.png");
+}
+/* line 220, ../sass/screen.scss */
+body .content section.text.description.cakery {
+  background-image: url("graphics/lines/cakery/description.png");
+}
+/* line 224, ../sass/screen.scss */
+body .content section.text.description.cleen {
+  background-image: url("graphics/lines/cleen/description.png");
+}
+/* line 228, ../sass/screen.scss */
+body .content section.text.description.dressedToKill {
+  background-image: url("graphics/lines/dressedToKill/description.png");
+}
+/* line 232, ../sass/screen.scss */
+body .content section.text.description.exoskeleton {
+  background-image: url("graphics/lines/exoskeleton/description.png");
+}
+/* line 236, ../sass/screen.scss */
+body .content section.text.description.intension {
+  background-image: url("graphics/lines/intension/description.png");
+}
+/* line 240, ../sass/screen.scss */
+body .content section.text.description.letsplay {
+  background-image: url("graphics/lines/letsplay/description.png");
+}
+/* line 244, ../sass/screen.scss */
+body .content section.text.description.lustre {
+  background-image: url("graphics/lines/lustre/description.png");
+}
+/* line 248, ../sass/screen.scss */
+body .content section.text.description.mas-querade {
+  background-image: url("graphics/lines/mas-querade/description.png");
+}
+/* line 252, ../sass/screen.scss */
+body .content section.text.description.mashinka {
+  background-image: url("graphics/lines/mashinka/description.png");
+}
+/* line 256, ../sass/screen.scss */
+body .content section.text.description.menagerie {
+  background-image: url("graphics/lines/menagerie/description.png");
+}
+/* line 260, ../sass/screen.scss */
+body .content section.text.description.morph {
+  background-image: url("graphics/lines/morph/description.png");
+}
+/* line 264, ../sass/screen.scss */
+body .content section.text.description.revive {
+  background-image: url("graphics/lines/revive/description.png");
+}
+/* line 268, ../sass/screen.scss */
+body .content section.text.description.rift {
+  background-image: url("graphics/lines/rift/description.png");
+}
+/* line 272, ../sass/screen.scss */
+body .content section.text.description.sinew {
+  background-image: url("graphics/lines/sinew/description.png");
+}
+/* line 276, ../sass/screen.scss */
+body .content section.text.description.tact {
+  background-image: url("graphics/lines/tact/description.png");
+}
+/* line 280, ../sass/screen.scss */
+body .content section.text.description.theWealthySlums {
+  background-image: url("graphics/lines/theWealthySlums/description.png");
+}
+/* line 284, ../sass/screen.scss */
+body .content section.text.description.till {
+  background-image: url("graphics/lines/till/description.png");
+}
+/* line 288, ../sass/screen.scss */
+body .content section.text.description.totsiens {
+  background-image: url("graphics/lines/totsiens/description.png");
+}
+/* line 292, ../sass/screen.scss */
+body .content section.text.description.uncover {
+  background-image: url("graphics/lines/uncover/description.png");
+}
+/* line 298, ../sass/screen.scss */
 body .content section.divider {
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
-/* line 127, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 body .content section.divider video {
   width: 100%;
   height: 100%;
@@ -1121,19 +1291,19 @@ body .content section.divider video {
   transition-property: transform, -webkit-transform, -moz-transform;
 }
 @media screen and (max-aspect-ratio: 16 / 9) {
-  /* line 127, ../sass/screen.scss */
+  /* line 301, ../sass/screen.scss */
   body .content section.divider video {
     width: auto;
     height: 100%;
   }
 }
 @media screen and (max-width: 48em) {
-  /* line 127, ../sass/screen.scss */
+  /* line 301, ../sass/screen.scss */
   body .content section.divider video {
     display: none;
   }
 }
-/* line 146, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 body .content section.divider.active video {
   -moz-transform: scale3d(8, 1, 1);
   -ms-transform: scale3d(8, 1, 1);
@@ -1141,7 +1311,7 @@ body .content section.divider.active video {
   transform: scale3d(8, 1, 1);
 }
 @media screen and (max-aspect-ratio: 16 / 9) {
-  /* line 146, ../sass/screen.scss */
+  /* line 320, ../sass/screen.scss */
   body .content section.divider.active video {
     -moz-transform: scale3d(4, 1, 1);
     -ms-transform: scale3d(4, 1, 1);
@@ -1149,7 +1319,7 @@ body .content section.divider.active video {
     transform: scale3d(4, 1, 1);
   }
 }
-/* line 156, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 body .content section.divider.second-class video {
   -moz-transform: scale3d(20, 1, 1);
   -ms-transform: scale3d(20, 1, 1);
