@@ -144,13 +144,13 @@ body .content section.human h2, body .content section.human p {
 
 @-webkit-keyframes sectionPulse {
   0% {
-    opacity: .75;
+    opacity: 0;
   }
   50% {
     opacity: 1;
   }
   100% {
-    opacity: .75;
+    opacity: .0;
   }
 }
 /* Constants */
@@ -883,16 +883,16 @@ section.human {
   background-image: url(../images/zhengCatherine.jpg);
 }
 
-/* line 13, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 body {
   text-rendering: optimizeLegibility;
   -webkit-touch-callout: none;
 }
-/* line 17, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 body ::selection {
   background: #ff00ff;
 }
-/* line 23, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 body .content section {
   cursor: pointer;
   -moz-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -900,11 +900,23 @@ body .content section {
   -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
-/* line 27, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
+body .content section:hover {
+  -webkit-animation: sectionPulse .001s linear infinite;
+  -moz-animation: sectionPulse .001s linear infinite;
+  animation: sectionPulse .001s linear infinite;
+}
+/* line 36, ../sass/screen.scss */
+body .content section:hover.active {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+/* line 43, ../sass/screen.scss */
 body .content section.active {
   cursor: default;
 }
-/* line 31, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 body .content section.header, body .content section.text {
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
@@ -912,15 +924,17 @@ body .content section.header, body .content section.text {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-/* line 35, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 body .content section.header .inside, body .content section.text .inside {
   text-indent: -99999em;
 }
-/* line 41, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 body .content section.tickets.active, body .content section.tickets.second-class, body .content section.blog.active, body .content section.blog.second-class {
   -webkit-animation: sectionPulse .001s linear infinite;
+  -moz-animation: sectionPulse .001s linear infinite;
+  animation: sectionPulse .001s linear infinite;
 }
-/* line 44, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 body .content section.tickets.active a, body .content section.tickets.second-class a, body .content section.blog.active a, body .content section.blog.second-class a {
   display: block;
   height: 100%;
@@ -929,62 +943,62 @@ body .content section.tickets.active a, body .content section.tickets.second-cla
   top: 0;
   left: 0;
 }
-/* line 56, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 body .content section.header.title {
   background-image: url("graphics/vestige.png");
 }
-/* line 60, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 body .content section.header.tickets {
   background-image: url("graphics/tickets.png");
 }
-/* line 64, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 body .content section.header.people {
   background-image: url("graphics/people.png");
 }
-/* line 68, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 body .content section.header.about {
   background-image: url("graphics/about.png");
 }
-/* line 72, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 body .content section.header.designs {
   background-image: url("graphics/designs.png");
 }
-/* line 78, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 body .content section.text.about {
   background-image: url("graphics/aboutText.png");
 }
-/* line 82, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 body .content section.text.tagline {
   background-image: url("graphics/tagline.png");
 }
-/* line 86, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 body .content section.text.sponsors {
   background-image: url("graphics/sponsors/allSponsors.jpg");
 }
-/* line 90, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 body .content section.text.logistics {
   background-image: url("graphics/logistics.png");
 }
-/* line 94, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 body .content section.text.logo {
   background-image: url("graphics/lg.png");
 }
-/* line 98, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 body .content section.text.blog {
   background-image: url("graphics/blog.png");
 }
-/* line 102, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 body .content section.text.sponsors {
   background-image: url("graphics/sponsors.png");
 }
-/* line 107, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 body .content section.divider {
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
-/* line 110, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 body .content section.divider video {
   width: 100%;
   height: 100%;
@@ -1002,19 +1016,19 @@ body .content section.divider video {
   transition-property: transform, -webkit-transform, -moz-transform;
 }
 @media screen and (max-aspect-ratio: 16 / 9) {
-  /* line 110, ../sass/screen.scss */
+  /* line 126, ../sass/screen.scss */
   body .content section.divider video {
     width: auto;
     height: 100%;
   }
 }
 @media screen and (max-width: 48em) {
-  /* line 110, ../sass/screen.scss */
+  /* line 126, ../sass/screen.scss */
   body .content section.divider video {
     display: none;
   }
 }
-/* line 129, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 body .content section.divider.active video {
   -moz-transform: scale3d(8, 1, 1);
   -ms-transform: scale3d(8, 1, 1);
@@ -1022,7 +1036,7 @@ body .content section.divider.active video {
   transform: scale3d(8, 1, 1);
 }
 @media screen and (max-aspect-ratio: 16 / 9) {
-  /* line 129, ../sass/screen.scss */
+  /* line 145, ../sass/screen.scss */
   body .content section.divider.active video {
     -moz-transform: scale3d(4, 1, 1);
     -ms-transform: scale3d(4, 1, 1);
@@ -1030,7 +1044,7 @@ body .content section.divider.active video {
     transform: scale3d(4, 1, 1);
   }
 }
-/* line 139, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 body .content section.divider.second-class video {
   -moz-transform: scale3d(20, 1, 1);
   -ms-transform: scale3d(20, 1, 1);

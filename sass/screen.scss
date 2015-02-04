@@ -10,6 +10,12 @@
 
 $defaultBrightness: 1.1;
 
+@mixin sectionFlicker {
+    -webkit-animation: sectionPulse .001s linear infinite;
+       -moz-animation: sectionPulse .001s linear infinite;
+            animation: sectionPulse .001s linear infinite;
+}
+
 body {
     text-rendering:         optimizeLegibility;
     -webkit-touch-callout:  none;
@@ -23,6 +29,16 @@ body {
         section {
             cursor: pointer;
             @include transition(all $transitionDuration $transitionCurve);
+            
+            &:hover {
+                @include sectionFlicker;
+                
+                &.active {
+                    -webkit-animation: none;
+                       -moz-animation: none;
+                            animation: none;
+                }
+            }
             
             &.active {
                 cursor: default;
@@ -39,7 +55,7 @@ body {
 
             &.tickets, &.blog {
                 &.active, &.second-class {
-                    -webkit-animation: sectionPulse .001s linear infinite;
+                    @include sectionFlicker;
                     
                     a {
                         display: block;
