@@ -16,7 +16,7 @@
         HIDE_RATE       = 1000,
         SPLINTER_HEIGHT = 1,
         HEADER_HEIGHT   = 8,
-        ACTIVE_HEIGHT   = 40,
+        ACTIVE_HEIGHT   = 50,
         HIDEME_HEIGHT   = 0;
 
     /* Globals */
