@@ -7,6 +7,7 @@
 @import "_static.scss";
 @import "_teaser.scss";
 @import "_humans.scss";
+@import "_collections.scss";
 
 $defaultBrightness: 1.1;
 
@@ -86,7 +87,7 @@ body {
                 }
 
                 &.designs { 
-                    background-image: url('graphics/designs.png');
+                    background-image: url('graphics/collections.png');
                 }
             }
             
