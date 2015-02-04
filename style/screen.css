@@ -1027,14 +1027,14 @@ body .content section.header, body .content section.text {
 body .content section.header .inside, body .content section.text .inside {
   text-indent: -99999em;
 }
-/* line 48, ../sass/screen.scss */
-body .content section.tickets.active, body .content section.tickets.second-class, body .content section.blog.active, body .content section.blog.second-class {
+/* line 47, ../sass/screen.scss */
+body .content section.tickets, body .content section.blog {
   -webkit-animation: sectionPulse .001s linear infinite;
   -moz-animation: sectionPulse .001s linear infinite;
   animation: sectionPulse .001s linear infinite;
 }
 /* line 51, ../sass/screen.scss */
-body .content section.tickets.active a, body .content section.tickets.second-class a, body .content section.blog.active a, body .content section.blog.second-class a {
+body .content section.tickets a, body .content section.blog a {
   display: block;
   height: 100%;
   width: 100%;
