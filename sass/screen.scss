@@ -92,6 +92,9 @@ body {
             }
             
             &.text { // like header, but doesn't stay visible when you scroll away
+                
+                text-indent: -9999em;
+                
                 &.about {
                     background-image: url('graphics/aboutText.png');
                 }
@@ -150,7 +153,7 @@ body {
                         background-image: url('graphics/lines/intension/name.png');
                     }
                     
-                    &.letsplay {
+                    &.letsPlay {
                         background-image: url('graphics/lines/letsplay/name.png');
                     }
                     
@@ -237,7 +240,7 @@ body {
                         background-image: url('graphics/lines/intension/description.png');
                     }
                     
-                    &.letsplay {
+                    &.letsPlay {
                         background-image: url('graphics/lines/letsplay/description.png');
                     }
                     
