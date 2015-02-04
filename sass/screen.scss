@@ -7,8 +7,15 @@
 @import "_static.scss";
 @import "_teaser.scss";
 @import "_humans.scss";
+@import "_collections.scss";
 
 $defaultBrightness: 1.1;
+
+@mixin sectionFlicker {
+    -webkit-animation: sectionPulse .001s linear infinite;
+       -moz-animation: sectionPulse .001s linear infinite;
+            animation: sectionPulse .001s linear infinite;
+}
 
 body {
     text-rendering:         optimizeLegibility;
@@ -24,41 +31,51 @@ body {
             cursor: pointer;
             @include transition(all $transitionDuration $transitionCurve);
             
+            &:hover {
+                @include sectionFlicker;
+                
+                &.active {
+                    -webkit-animation: none;
+                       -moz-animation: none;
+                            animation: none;
+                }
+            }
+            
             &.active {
                 cursor: default;
             }
             
-            &.header {
-                // min-height: 2vh;
+            &.header, &.text {
                 @include background-size(100% 100%);
                 background-repeat: no-repeat;
                 
+                .inside {
+                    text-indent: -99999em;
+                }
+            }
+
+            &.tickets, &.blog {
+                &.active, &.second-class {
+                    @include sectionFlicker;
+                    
+                    a {
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+            
+            &.header {            
                 &.title {
                     background-image: url('graphics/vestige.png');
                 }
 
-                &.logistics {
-                    background-image: url('graphics/logistics.png');
-                }
-
                 &.tickets {
                     background-image: url('graphics/tickets.png');
-                    
-                    &:hover {
-                        opacity: .75;
-                    }
-                    
-                    &.active, &.second-class {
-                        
-                        a {
-                            display: block;
-                            height: 100%;
-                            width: 100%;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                        }
-                    }
                 }
                 
                 &.people {
@@ -68,29 +85,39 @@ body {
                 &.about {
                     background-image: url('graphics/about.png');
                 }
-                    
-                &.aboutText {
+
+                &.designs { 
+                    background-image: url('graphics/collections.png');
+                }
+            }
+            
+            &.text { // like header, but doesn't stay visible when you scroll away
+                &.about {
                     background-image: url('graphics/aboutText.png');
                 }
                 
                 &.tagline {
                     background-image: url('graphics/tagline.png');
                 }
-
-                &.sponsorsHeader {
-                    background-image: url('graphics/sponsors.png');
-                }
                 
                 &.sponsors {
                     background-image: url('graphics/sponsors/allSponsors.jpg');
                 }
                 
+                &.logistics {
+                    background-image: url('graphics/logistics.png');
+                }
+
                 &.logo {
                     background-image: url('graphics/lg.png');
                 }
+
+                &.blog {
+                    background-image: url('graphics/blog.png');
+                }
                 
-                .inside {
-                    text-indent: -99999em;
+                &.sponsors {
+                    background-image: url('graphics/sponsors.png');
                 }
             }
             
@@ -128,12 +155,6 @@ body {
                 &.second-class {
                     video {
                         @include transform(scale3d(20.0, 1.0, 1.0));
-                    }
-                }
-                
-                &.third-class {
-                    video {
-                        @include transform(scale3d(48.0, 1.0, 1.0));
                     }
                 }
             }
