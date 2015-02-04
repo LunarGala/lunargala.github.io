@@ -1,93 +1,1332 @@
-/*
-Error: Invalid CSS after "...ion:   absolute": expected "{", was ";"
-        on line 53 of /Users/Victor/Github/lunargala.github.io/sass/_scrolling.scss
-        from line 6 of /Users/Victor/Github/lunargala.github.io/sass/screen.scss
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-48:                 display: none;
-49:             }
-50: 
-51:             &.divider img, &.design img, &.designers img {
-52: <<<<<<< HEAD
-53:                 position:   absolute;
-54:                 width:      100%;
-55:                 height:     100%;
-56: =======
-57:                 position: absolute;
-58:                 width: 100%;
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
 
-Backtrace:
-/Users/Victor/Github/lunargala.github.io/sass/_scrolling.scss:53
-/Users/Victor/Github/lunargala.github.io/sass/screen.scss:6
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:1163:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:1099:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:1094:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:641:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:661:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:650:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:642:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:661:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:653:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:642:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:661:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:653:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:642:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:661:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:653:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:642:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:635:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:660:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:653:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:42:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/engine.rb:393:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/engine.rb:299:in `to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:313:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/engine.rb:268:in `render'
-/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:491:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...ion:   absolute\": expected \"{\", was \";\"\A         on line 53 of /Users/Victor/Github/lunargala.github.io/sass/_scrolling.scss\A         from line 6 of /Users/Victor/Github/lunargala.github.io/sass/screen.scss\A \A 48:                 display: none;\A 49:             }\A 50: \A 51:             &.divider img, &.design img, &.designers img {\A 52: <<<<<<< HEAD\A 53:                 position:   absolute;\A 54:                 width:      100%;\A 55:                 height:     100%;\A 56: =======\A 57:                 position: absolute;\A 58:                 width: 100%;"; }
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'ArialLol';
+  src: url("type/ArialLol/compressed-arial-mono.eot");
+  src: url("type/ArialLol/compressed-arial-mono.eot?#iefix") format("embedded-opentype"), url("type/ArialLol/compressed-arial-mono.woff") format("woff"), url("type/ArialLol/compressed-arial-mono.ttf") format("truetype"), url("type/ArialLol/compressed-arial-mono.svg#compressed-arial-mono") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-201D;
+}
+@font-face {
+  font-family: 'arialLawlSmallBody';
+  src: url("type/arialLawl/ariallol1-webfont.eot");
+  src: url("type/arialLawl/ariallol1-webfont.eot?#iefix") format("embedded-opentype"), url("type/arialLawl/ariallol1-webfont.woff2") format("woff2"), url("type/arialLawl/ariallol1-webfont.woff") format("woff"), url("type/arialLawl/ariallol1-webfont.ttf") format("truetype"), url("type/arialLawl/ariallol1-webfont.svg#ariallol1regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'arialLawlHeader';
+  src: url("type/arialLawl/arial-lawl-header--webfont.eot");
+  src: url("type/arialLawl/arial-lawl-header--webfont.eot?#iefix") format("embedded-opentype"), url("type/arialLawl/arial-lawl-header--webfont.woff2") format("woff2"), url("type/arialLawl/arial-lawl-header--webfont.woff") format("woff"), url("type/arialLawl/arial-lawl-header--webfont.ttf") format("truetype"), url("type/arialLawl/arial-lawl-header--webfont.svg#arial_lawl_header_regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'arialLawlLargeBody';
+  src: url("type/arialLawl/arial-lawl-large-type-webfont.eot");
+  src: url("type/arialLawl/arial-lawl-large-type-webfont.eot?#iefix") format("embedded-opentype"), url("type/arialLawl/arial-lawl-large-type-webfont.woff2") format("woff2"), url("type/arialLawl/arial-lawl-large-type-webfont.woff") format("woff"), url("type/arialLawl/arial-lawl-large-type-webfont.ttf") format("truetype"), url("type/arialLawl/arial-lawl-large-type-webfont.svg#arial_lawl_large_typeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'arialLawlSubheader';
+  src: url("type/arialLawl/arial-lawl-subhead-webfont.eot");
+  src: url("type/arialLawl/arial-lawl-subhead-webfont.eot?#iefix") format("embedded-opentype"), url("type/arialLawl/arial-lawl-subhead-webfont.woff2") format("woff2"), url("type/arialLawl/arial-lawl-subhead-webfont.woff") format("woff"), url("type/arialLawl/arial-lawl-subhead-webfont.ttf") format("truetype"), url("type/arialLawl/arial-lawl-subhead-webfont.svg#arial_lawl_subheadregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 85, ../sass/_type.scss */
+body {
+  color: black;
+  font-family: arialLawlSmallBody;
+  font-size: 18pt;
+  letter-spacing: .0625em;
+}
+/* line 89, ../sass/_type.scss */
+body h1 {
+  font-family: arialLawlLargeBody;
+  font-size: 18pt;
+}
+/* line 99, ../sass/_type.scss */
+body .content section.header .inside {
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+/* line 102, ../sass/_type.scss */
+body .content section.header .inside h1 {
+  font-size: 75vh;
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+/* line 110, ../sass/_type.scss */
+body .content section.human {
+  color: white;
+}
+/* line 113, ../sass/_type.scss */
+body .content section.human h1 {
+  font-family: arialLawlHeader;
+  font-size: 72pt;
+  letter-spacing: .0625em;
+}
+/* line 117, ../sass/_type.scss */
+body .content section.human h2, body .content section.human p {
+  font-family: arialLawlLargeBody;
+  font-size: 18pt;
+  display: block;
+}
+
+@-webkit-keyframes sectionPulse {
+  0% {
+    opacity: .5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .5;
+  }
+}
+/* Constants */
+/* line 7, ../sass/_scrolling.scss */
+body {
+  height: 11900vh;
+  /* To allow scrolling */
+  display: none;
+  /* Hide until loaded */
+  /*************************
+  
+   * Scroll control code
+  
+   *************************/
+}
+/* line 17, ../sass/_scrolling.scss */
+body .content {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 100vh;
+    /*************************
+
+     * General section layout
+
+     *************************/
+}
+/* line 29, ../sass/_scrolling.scss */
+body .content section {
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  text-align: justify;
+  text-transform: lowercase;
+  position: relative;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  /* force hardware acceleration */
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* other hacky speed-up tricks */
+  -moz-perspective: 1000;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+        /*************************
+
+        * Specific section layout
+
+        *************************/
+        /*************************
+
+        * Section sizing
+
+        *************************/
+        /*************************
+
+         * Edge case layouts
+         * (only one first-child, etc.)
+
+         *************************/
+}
+/* line 38, ../sass/_scrolling.scss */
+body .content section.hideme {
+  display: none;
+}
+/* line 42, ../sass/_scrolling.scss */
+body .content section.hideme.header {
+  display: block;
+}
+/* line 47, ../sass/_scrolling.scss */
+body .content section .inside {
+  display: none;
+}
+/* line 51, ../sass/_scrolling.scss */
+body .content section.divider img, body .content section.design img, body .content section.designers img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 71, ../sass/_scrolling.scss */
+body .content section.intro .inside {
+  color: black;
+}
+/* line 77, ../sass/_scrolling.scss */
+body .content section.video .video-cover {
+  background-image: url("graphics/video.png");
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 87, ../sass/_scrolling.scss */
+body .content section.video iframe {
+  display: none;
+}
+/* line 100, ../sass/_scrolling.scss */
+body .content section.active .inside {
+  display: block;
+  -moz-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  /* 75 / 75 */
+}
+/* line 108, ../sass/_scrolling.scss */
+body .content section.second-class .inside {
+  display: block;
+  -moz-transform: scale3d(1, 0.06, 1);
+  -ms-transform: scale3d(1, 0.06, 1);
+  -webkit-transform: scale3d(1, 0.06, 1);
+  transform: scale3d(1, 0.06, 1);
+  /* 4.5 / 75 */
+}
+/* line 123, ../sass/_scrolling.scss */
+body .content section .inside {
+  -webkit-transform-origin: 0 0;
+  /* Keep text aligned properly */
+  transform-origin: 0 0;
+  -webkit-transition: -webkit-transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1.5s -webkit-transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transform: scaleY(0.00182);
+  -ms-transform: scaleY(0.00182);
+  -webkit-transform: scaleY(0.00182);
+  transform: scaleY(0.00182);
+  /* .136742195 / 75 */
+}
+
+/* line 1, ../sass/_static.scss */
+body.teaser.static {
+  height: auto !important;
+}
+/* line 4, ../sass/_static.scss */
+body.teaser.static .content {
+  position: relative !important;
+}
+/* line 7, ../sass/_static.scss */
+body.teaser.static .content section {
+  height: 4em;
+}
+/* line 10, ../sass/_static.scss */
+body.teaser.static .content section .inside {
+  display: block;
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+}
+/* line 15, ../sass/_static.scss */
+body.teaser.static .content section.header {
+  height: 4em;
+}
+/* line 18, ../sass/_static.scss */
+body.teaser.static .content section.header.vestige {
+  height: 20em;
+}
+/* line 22, ../sass/_static.scss */
+body.teaser.static .content section.header.tagline {
+  height: .5em;
+  display: none;
+}
+/* line 27, ../sass/_static.scss */
+body.teaser.static .content section.header.tickets {
+  height: 8em;
+}
+/* line 31, ../sass/_static.scss */
+body.teaser.static .content section.header.logistics {
+  height: 12em;
+}
+/* line 35, ../sass/_static.scss */
+body.teaser.static .content section.header.aboutText {
+  height: 12em;
+}
+/* line 39, ../sass/_static.scss */
+body.teaser.static .content section.header.sponsors {
+  height: 8em;
+}
+/* line 44, ../sass/_static.scss */
+body.teaser.static .content section.video {
+  height: 12em;
+}
+/* line 48, ../sass/_static.scss */
+body.teaser.static .content section.divider {
+  height: 2em;
+  -moz-background-size: 150% 150%;
+  -o-background-size: 150% 150%;
+  -webkit-background-size: 150% 150%;
+  background-size: 150% 150%;
+  background-position: 25% 25%;
+}
+/* line 53, ../sass/_static.scss */
+body.teaser.static .content section.divider:nth-child(4n+1) {
+  height: 1em;
+}
+/* line 57, ../sass/_static.scss */
+body.teaser.static .content section.divider:nth-child(odd) {
+  height: 2em;
+}
+/* line 61, ../sass/_static.scss */
+body.teaser.static .content section.divider:nth-child(3n+2) {
+  height: 3em;
+}
+/* line 64, ../sass/_static.scss */
+body.teaser.static .content section.divider:nth-child(4n+2) {
+  height: 5em;
+}
+/* line 68, ../sass/_static.scss */
+body.teaser.static .content section.divider video {
+  display: none;
+}
+
+/* line 1, ../sass/_humans.scss */
+section.human {
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+/* line 5, ../sass/_humans.scss */
+.adeleyeIbukunFayo {
+  background-image: url(../images/adeleyeIbukunFayo.jpg);
+}
+
+/* line 9, ../sass/_humans.scss */
+.adetolaLanre {
+  background-image: url(../images/adetolaLanre.jpg);
+}
+
+/* line 13, ../sass/_humans.scss */
+.ahmedSam {
+  background-image: url(../images/ahmedSam.jpg);
+}
+
+/* line 17, ../sass/_humans.scss */
+.ajithArchana {
+  background-image: url(../images/ajithArchana.jpg);
+}
+
+/* line 21, ../sass/_humans.scss */
+.aliyuZai {
+  background-image: url(../images/aliyuZai.jpg);
+}
+
+/* line 25, ../sass/_humans.scss */
+.anandSwathi {
+  background-image: url(../images/anandSwathi.jpg);
+}
+
+/* line 29, ../sass/_humans.scss */
+.aniJibby {
+  background-image: url(../images/aniJibby.jpg);
+}
+
+/* line 33, ../sass/_humans.scss */
+.auyeungAllison {
+  background-image: url(../images/auyeungAllison.jpg);
+}
+
+/* line 37, ../sass/_humans.scss */
+.baileyJordan {
+  background-image: url(../images/baileyJordan.jpg);
+}
+
+/* line 41, ../sass/_humans.scss */
+.behlRemy {
+  background-image: url(../images/behlRemy.jpg);
+}
+
+/* line 45, ../sass/_humans.scss */
+.bergeronZach {
+  background-image: url(../images/bergeronZach.jpg);
+}
+
+/* line 49, ../sass/_humans.scss */
+.boruKeerthi {
+  background-image: url(../images/boruKeerthi.jpg);
+}
+
+/* line 53, ../sass/_humans.scss */
+.bouraiAbdelwahab {
+  background-image: url(../images/bouraiAbdelwahab.jpg);
+}
+
+/* line 57, ../sass/_humans.scss */
+.brahmBella {
+  background-image: url(../images/brahmBella.jpg);
+}
+
+/* line 61, ../sass/_humans.scss */
+.buchwaldMiriam {
+  background-image: url(../images/buchwaldMiriam.jpg);
+}
+
+/* line 65, ../sass/_humans.scss */
+.buttRehan {
+  background-image: url(../images/buttRehan.jpg);
+}
+
+/* line 69, ../sass/_humans.scss */
+.chambersDelaney {
+  background-image: url(../images/chambersDelaney.jpg);
+}
+
+/* line 73, ../sass/_humans.scss */
+.changSabrina {
+  background-image: url(../images/changSabrina.jpg);
+}
+
+/* line 77, ../sass/_humans.scss */
+.chenAmy {
+  background-image: url(../images/chenAmy.jpg);
+}
+
+/* line 81, ../sass/_humans.scss */
+.chenAngeline {
+  background-image: url(../images/chenAngeline.jpg);
+}
+
+/* line 85, ../sass/_humans.scss */
+.chenYutong {
+  background-image: url(../images/chenYutong.jpg);
+}
+
+/* line 89, ../sass/_humans.scss */
+.chiuSamantha {
+  background-image: url(../images/chiuSamantha.jpg);
+}
+
+/* line 93, ../sass/_humans.scss */
+.choMichelle {
+  background-image: url(../images/choMichelle.jpg);
+}
+
+/* line 97, ../sass/_humans.scss */
+.chouMolly {
+  background-image: url(../images/chouMolly.jpg);
+}
+
+/* line 101, ../sass/_humans.scss */
+.chukwumaJess {
+  background-image: url(../images/chukwumaJess.jpg);
+}
+
+/* line 105, ../sass/_humans.scss */
+.ciavarellaRachel {
+  background-image: url(../images/ciavarellaRachel.jpg);
+}
+
+/* line 109, ../sass/_humans.scss */
+.cliffordColleen {
+  background-image: url(../images/cliffordColleen.jpg);
+}
+
+/* line 113, ../sass/_humans.scss */
+.criglerAmelia {
+  background-image: url(../images/criglerAmelia.jpg);
+}
+
+/* line 117, ../sass/_humans.scss */
+.delarosaAlexis {
+  background-image: url(../images/delarosaAlexis.jpg);
+}
+
+/* line 121, ../sass/_humans.scss */
+.deleonLynzky {
+  background-image: url(../images/deleonLynzky.jpg);
+}
+
+/* line 125, ../sass/_humans.scss */
+.demlerAya {
+  background-image: url(../images/demlerAya.jpg);
+}
+
+/* line 129, ../sass/_humans.scss */
+.edmondsIsaiah {
+  background-image: url(../images/edmondsIsaiah.jpg);
+}
+
+/* line 134, ../sass/_humans.scss */
+.essexChristopher {
+  background-image: url(../images/essexChristopher.jpg);
+}
+
+/* line 138, ../sass/_humans.scss */
+.felbingerBrenan {
+  background-image: url(../images/felbingerBrenan.jpg);
+}
+
+/* line 142, ../sass/_humans.scss */
+.fieldsSaraRemi {
+  background-image: url(../images/fieldsSaraRemi.jpg);
+}
+
+/* line 146, ../sass/_humans.scss */
+.frazerKatherine {
+  background-image: url(../images/frazerKatherine.jpg);
+}
+
+/* line 150, ../sass/_humans.scss */
+.fritzMorgan {
+  background-image: url(../images/fritzMorgan.jpg);
+}
+
+/* line 154, ../sass/_humans.scss */
+.gardnerDavid {
+  background-image: url(../images/gardnerDavid.jpg);
+}
+
+/* line 158, ../sass/_humans.scss */
+.gershunyAndrea {
+  background-image: url(../images/gershunyAndrea.jpg);
+}
+
+/* line 162, ../sass/_humans.scss */
+.goldsteinLauren {
+  background-image: url(../images/goldsteinLauren.jpg);
+}
+
+/* line 166, ../sass/_humans.scss */
+.hackerEmmy {
+  background-image: url(../images/hackerEmmy.jpg);
+}
+
+/* line 170, ../sass/_humans.scss */
+.hamiltonAlyssa {
+  background-image: url(../images/hamiltonAlyssa.jpg);
+}
+
+/* line 174, ../sass/_humans.scss */
+.heXuran {
+  background-image: url(../images/heXuran.jpg);
+}
+
+/* line 178, ../sass/_humans.scss */
+.hoKendra {
+  background-image: url(../images/hoKendra.jpg);
+}
+
+/* line 182, ../sass/_humans.scss */
+.huangEileen {
+  background-image: url(../images/huangEileen.jpg);
+}
+
+/* line 186, ../sass/_humans.scss */
+.huangGina {
+  background-image: url(../images/huangGina.jpg);
+}
+
+/* line 190, ../sass/_humans.scss */
+.hwangJi {
+  background-image: url(../images/hwangJi.jpg);
+}
+
+/* line 194, ../sass/_humans.scss */
+.ideraSade {
+  background-image: url(../images/ideraSade.jpg);
+}
+
+/* line 198, ../sass/_humans.scss */
+.iottAlicia {
+  background-image: url(../images/iottAlicia.jpg);
+}
+
+/* line 202, ../sass/_humans.scss */
+.jeffsAJ {
+  background-image: url(../images/jeffsAJ.jpg);
+}
+
+/* line 206, ../sass/_humans.scss */
+.jonesWesley {
+  background-image: url(../images/jonesWesley.jpg);
+}
+
+/* line 210, ../sass/_humans.scss */
+.josephKeith {
+  background-image: url(../images/josephKeith.jpg);
+}
+
+/* line 214, ../sass/_humans.scss */
+.kangSnow {
+  background-image: url(../images/kangSnow.jpg);
+}
+
+/* line 218, ../sass/_humans.scss */
+.kellyKeith {
+  background-image: url(../images/kellyKeith.jpg);
+}
+
+/* line 222, ../sass/_humans.scss */
+.kimDaniel {
+  background-image: url(../images/kimDaniel.jpg);
+}
+
+/* line 226, ../sass/_humans.scss */
+.kimHannah {
+  background-image: url(../images/kimHannah.jpg);
+}
+
+/* line 230, ../sass/_humans.scss */
+.kimJay {
+  background-image: url(../images/kimJay.jpg);
+}
+
+/* line 234, ../sass/_humans.scss */
+.kimJohn {
+  background-image: url(../images/kimJohn.jpg);
+}
+
+/* line 238, ../sass/_humans.scss */
+.kodiNeha {
+  background-image: url(../images/kodiNeha.jpg);
+}
+
+/* line 242, ../sass/_humans.scss */
+.kongLiana {
+  background-image: url(../images/kongLiana.jpg);
+}
+
+/* line 246, ../sass/_humans.scss */
+.liangAngela {
+  background-image: url(../images/liangAngela.jpg);
+}
+
+/* line 250, ../sass/_humans.scss */
+.liArissa {
+  background-image: url(../images/liArissa.jpg);
+}
+
+/* line 254, ../sass/_humans.scss */
+.linJarret {
+  background-image: url(../images/linJarret.jpg);
+}
+
+/* line 258, ../sass/_humans.scss */
+.liuBecki {
+  background-image: url(../images/liuBecki.jpg);
+}
+
+/* line 262, ../sass/_humans.scss */
+.merskiOshie {
+  background-image: url(../images/merskiOshie.jpg);
+}
+
+/* line 266, ../sass/_humans.scss */
+.michelLaurel {
+  background-image: url(../images/michelLaurel.jpg);
+}
+
+/* line 270, ../sass/_humans.scss */
+.millermanAnna {
+  background-image: url(../images/millermanAnna.jpg);
+}
+
+/* line 274, ../sass/_humans.scss */
+.moiseStephane {
+  background-image: url(../images/moiseStephane.jpg);
+}
+
+/* line 278, ../sass/_humans.scss */
+.nelsonJillian {
+  background-image: url(../images/nelsonJillian.jpg);
+}
+
+/* line 282, ../sass/_humans.scss */
+.onoAntonio {
+  background-image: url(../images/onoAntonio.jpg);
+}
+
+/* line 286, ../sass/_humans.scss */
+.paparisDanae {
+  background-image: url(../images/paparisDanae.jpg);
+}
+
+/* line 290, ../sass/_humans.scss */
+.parrinelloSophie {
+  background-image: url(../images/parrinelloSophie.jpg);
+}
+
+/* line 294, ../sass/_humans.scss */
+.patelChanda {
+  background-image: url(../images/patelChanda.jpg);
+}
+
+/* line 298, ../sass/_humans.scss */
+.quadriFeyi {
+  background-image: url(../images/quadriFeyi.jpg);
+}
+
+/* line 302, ../sass/_humans.scss */
+.ragazzoKira {
+  background-image: url(../images/ragazzoKira.jpg);
+}
+
+/* line 306, ../sass/_humans.scss */
+.ratanalertChanamon {
+  background-image: url(../images/ratanalertChanamon.jpg);
+}
+
+/* line 310, ../sass/_humans.scss */
+.rayShalini {
+  background-image: url(../images/rayShalini.jpg);
+}
+
+/* line 314, ../sass/_humans.scss */
+.sandforthJolyn {
+  background-image: url(../images/sandforthJolyn.jpg);
+}
+
+/* line 318, ../sass/_humans.scss */
+.shcloverNika {
+  background-image: url(../images/shcloverNika.jpg);
+}
+
+/* line 322, ../sass/_humans.scss */
+.shenCecilia {
+  background-image: url(../images/shenCecilia.jpg);
+}
+
+/* line 326, ../sass/_humans.scss */
+.shenJessica {
+  background-image: url(../images/shenJessica.jpg);
+}
+
+/* line 330, ../sass/_humans.scss */
+.singhShana {
+  background-image: url(../images/singhShana.jpg);
+}
+
+/* line 334, ../sass/_humans.scss */
+.songVictor {
+  background-image: url(../images/songVictor.jpg);
+}
+
+/* line 338, ../sass/_humans.scss */
+.sunSteven {
+  background-image: url(../images/sunSteven.jpg);
+}
+
+/* line 342, ../sass/_humans.scss */
+.tamayoCarolina {
+  background-image: url(../images/tamayoCarolina.jpg);
+}
+
+/* line 346, ../sass/_humans.scss */
+.taylorAmaya {
+  background-image: url(../images/taylorAmaya.jpg);
+}
+
+/* line 350, ../sass/_humans.scss */
+.thomasLeila {
+  background-image: url(../images/thomasLeila.jpg);
+}
+
+/* line 354, ../sass/_humans.scss */
+.townsendCharlotte {
+  background-image: url(../images/townsendCharlotte.jpg);
+}
+
+/* line 358, ../sass/_humans.scss */
+.umNoel {
+  background-image: url(../images/umNoel.jpg);
+}
+
+/* line 362, ../sass/_humans.scss */
+.uphoffJessica {
+  background-image: url(../images/uphoffJessica.jpg);
+}
+
+/* line 366, ../sass/_humans.scss */
+.walkerAlex {
+  background-image: url(../images/walkerAlex.jpg);
+}
+
+/* line 370, ../sass/_humans.scss */
+.wangJason {
+  background-image: url(../images/wangJason.jpg);
+}
+
+/* line 374, ../sass/_humans.scss */
+.winthrowJenna {
+  background-image: url(../images/winthrowJenna.jpg);
+}
+
+/* line 378, ../sass/_humans.scss */
+.wolffNoa {
+  background-image: url(../images/wolffNoa.jpg);
+}
+
+/* line 382, ../sass/_humans.scss */
+.wooSohee {
+  background-image: url(../images/wooSohee.jpg);
+}
+
+/* line 386, ../sass/_humans.scss */
+.yeAlice {
+  background-image: url(../images/yeAlice.jpg);
+}
+
+/* line 390, ../sass/_humans.scss */
+.yerlanDina {
+  background-image: url(../images/yerlanDina.jpg);
+}
+
+/* line 394, ../sass/_humans.scss */
+.yoonJane {
+  background-image: url(../images/yoonJane.jpg);
+}
+
+/* line 398, ../sass/_humans.scss */
+.zemeringLauren {
+  background-image: url(../images/zemeringLauren.jpg);
+}
+
+/* line 402, ../sass/_humans.scss */
+.zhaoKatherine {
+  background-image: url(../images/zhaoKatherine.jpg);
+}
+
+/* line 406, ../sass/_humans.scss */
+.zhengCatherine {
+  background-image: url(../images/zhengCatherine.jpg);
+}
+
+/* line 1, ../sass/_collections.scss */
+body .content section.designs.intension {
+  background-image: url("lines/1-intension.png");
+}
+
+/* line 4, ../sass/_collections.scss */
+body .content section.designs.lustre {
+  background-image: url("lines/2-lustre.png");
+}
+
+/* line 7, ../sass/_collections.scss */
+body .content section.designs.theWealthySlums {
+  background-image: url("lines/3-wealthoftheslums.png");
+}
+
+/* line 10, ../sass/_collections.scss */
+body .content section.designs.exoskeleton {
+  background-image: url("lines/4-exoskeleton.png");
+}
+
+/* line 13, ../sass/_collections.scss */
+body .content section.designs.cakery {
+  background-image: url("lines/5-cakery.png");
+}
+
+/* line 16, ../sass/_collections.scss */
+body .content section.designs.letsPlay {
+  background-image: url("lines/6-letsplay.png");
+}
+
+/* line 19, ../sass/_collections.scss */
+body .content section.designs.uncover {
+  background-image: url("lines/7-uncover.png");
+}
+
+/* line 22, ../sass/_collections.scss */
+body .content section.designs.mashinka {
+  background-image: url("lines/8-mashinka.png");
+}
+
+/* line 25, ../sass/_collections.scss */
+body .content section.designs.bound {
+  background-image: url("lines/9-bound.png");
+}
+
+/* line 28, ../sass/_collections.scss */
+body .content section.designs.mas-querade {
+  background-image: url("lines/10-masquerade.png");
+}
+
+/* line 31, ../sass/_collections.scss */
+body .content section.designs.dressedToKill {
+  background-image: url("lines/11-dressedtokill.png");
+}
+
+/* line 34, ../sass/_collections.scss */
+body .content section.designs.till {
+  background-image: url("lines/12-till.png");
+}
+
+/* line 37, ../sass/_collections.scss */
+body .content section.designs.morph {
+  background-image: url("lines/13-morph.png");
+}
+
+/* line 40, ../sass/_collections.scss */
+body .content section.designs.revive {
+  background-image: url("lines/14-revive.png");
+}
+
+/* line 43, ../sass/_collections.scss */
+body .content section.designs.totsiens {
+  background-image: url("lines/15-totsiens.png");
+}
+
+/* line 46, ../sass/_collections.scss */
+body .content section.designs.cleen {
+  background-image: url("lines/16-cleen.png");
+}
+
+/* line 49, ../sass/_collections.scss */
+body .content section.designs.tact {
+  background-image: url("lines/17-tact.png");
+}
+
+/* line 52, ../sass/_collections.scss */
+body .content section.designs.beora {
+  background-image: url("lines/18-beora.png");
+}
+
+/* line 55, ../sass/_collections.scss */
+body .content section.designs.sinew {
+  background-image: url("lines/19sinew.png");
+}
+
+/* line 58, ../sass/_collections.scss */
+body .content section.designs.menagerie {
+  background-image: url("lines/20-menagerie.png");
+}
+
+/* line 61, ../sass/_collections.scss */
+body .content section.designs.rift {
+  background-image: url("lines/21-rift.png");
+}
+
+/* line 20, ../sass/screen.scss */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-touch-callout: none;
+}
+/* line 24, ../sass/screen.scss */
+body ::selection {
+  background: #ff00ff;
+}
+/* line 30, ../sass/screen.scss */
+body .content section {
+  cursor: pointer;
+  -moz-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* line 34, ../sass/screen.scss */
+body .content section:hover {
+  -webkit-animation: sectionPulse .001s linear infinite;
+  -moz-animation: sectionPulse .001s linear infinite;
+  animation: sectionPulse .001s linear infinite;
+}
+/* line 37, ../sass/screen.scss */
+body .content section:hover.active {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+/* line 44, ../sass/screen.scss */
+body .content section.active {
+  cursor: default;
+}
+/* line 48, ../sass/screen.scss */
+body .content section.header, body .content section.text {
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* line 52, ../sass/screen.scss */
+body .content section.header .inside, body .content section.text .inside {
+  text-indent: -99999em;
+}
+/* line 58, ../sass/screen.scss */
+body .content section.tickets.active, body .content section.tickets.second-class, body .content section.blog.active, body .content section.blog.second-class {
+  -webkit-animation: sectionPulse .001s linear infinite;
+  -moz-animation: sectionPulse .001s linear infinite;
+  animation: sectionPulse .001s linear infinite;
+}
+/* line 61, ../sass/screen.scss */
+body .content section.tickets.active a, body .content section.tickets.second-class a, body .content section.blog.active a, body .content section.blog.second-class a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 73, ../sass/screen.scss */
+body .content section.header.title {
+  background-image: url("graphics/vestige.png");
+}
+/* line 77, ../sass/screen.scss */
+body .content section.header.tickets {
+  background-image: url("graphics/tickets.png");
+}
+/* line 81, ../sass/screen.scss */
+body .content section.header.people {
+  background-image: url("graphics/people.png");
+}
+/* line 85, ../sass/screen.scss */
+body .content section.header.about {
+  background-image: url("graphics/about.png");
+}
+/* line 89, ../sass/screen.scss */
+body .content section.header.designs {
+  background-image: url("graphics/collections.png");
+}
+/* line 94, ../sass/screen.scss */
+body .content section.text {
+  text-indent: -9999em;
+}
+/* line 98, ../sass/screen.scss */
+body .content section.text.about {
+  background-image: url("graphics/aboutText.png");
+}
+/* line 102, ../sass/screen.scss */
+body .content section.text.tagline {
+  background-image: url("graphics/tagline.png");
+}
+/* line 106, ../sass/screen.scss */
+body .content section.text.sponsors {
+  background-image: url("graphics/sponsors/allSponsors.jpg");
+}
+/* line 110, ../sass/screen.scss */
+body .content section.text.logistics {
+  background-image: url("graphics/logistics.png");
+}
+/* line 114, ../sass/screen.scss */
+body .content section.text.logo {
+  background-image: url("graphics/lg.png");
+}
+/* line 118, ../sass/screen.scss */
+body .content section.text.blog {
+  background-image: url("graphics/blog.png");
+}
+/* line 122, ../sass/screen.scss */
+body .content section.text.sponsors {
+  background-image: url("graphics/sponsors.png");
+}
+/* line 128, ../sass/screen.scss */
+body .content section.text.names.beora {
+  background-image: url("graphics/lines/beora/name.png");
+}
+/* line 132, ../sass/screen.scss */
+body .content section.text.names.bound {
+  background-image: url("graphics/lines/bound/name.png");
+}
+/* line 136, ../sass/screen.scss */
+body .content section.text.names.cakery {
+  background-image: url("graphics/lines/cakery/name.png");
+}
+/* line 140, ../sass/screen.scss */
+body .content section.text.names.cleen {
+  background-image: url("graphics/lines/cleen/name.png");
+}
+/* line 144, ../sass/screen.scss */
+body .content section.text.names.dressedToKill {
+  background-image: url("graphics/lines/dressedToKill/name.png");
+}
+/* line 148, ../sass/screen.scss */
+body .content section.text.names.exoskeleton {
+  background-image: url("graphics/lines/exoskeleton/name.png");
+}
+/* line 152, ../sass/screen.scss */
+body .content section.text.names.intension {
+  background-image: url("graphics/lines/intension/name.png");
+}
+/* line 156, ../sass/screen.scss */
+body .content section.text.names.letsPlay {
+  background-image: url("graphics/lines/letsplay/name.png");
+}
+/* line 160, ../sass/screen.scss */
+body .content section.text.names.lustre {
+  background-image: url("graphics/lines/lustre/name.png");
+}
+/* line 164, ../sass/screen.scss */
+body .content section.text.names.mas-querade {
+  background-image: url("graphics/lines/mas-querade/name.png");
+}
+/* line 168, ../sass/screen.scss */
+body .content section.text.names.mashinka {
+  background-image: url("graphics/lines/mashinka/name.png");
+}
+/* line 172, ../sass/screen.scss */
+body .content section.text.names.menagerie {
+  background-image: url("graphics/lines/menagerie/name.png");
+}
+/* line 176, ../sass/screen.scss */
+body .content section.text.names.morph {
+  background-image: url("graphics/lines/morph/name.png");
+}
+/* line 180, ../sass/screen.scss */
+body .content section.text.names.revive {
+  background-image: url("graphics/lines/revive/name.png");
+}
+/* line 184, ../sass/screen.scss */
+body .content section.text.names.rift {
+  background-image: url("graphics/lines/rift/name.png");
+}
+/* line 188, ../sass/screen.scss */
+body .content section.text.names.sinew {
+  background-image: url("graphics/lines/sinew/name.png");
+}
+/* line 192, ../sass/screen.scss */
+body .content section.text.names.tact {
+  background-image: url("graphics/lines/tact/name.png");
+}
+/* line 196, ../sass/screen.scss */
+body .content section.text.names.theWealthySlums {
+  background-image: url("graphics/lines/theWealthySlums/name.png");
+}
+/* line 200, ../sass/screen.scss */
+body .content section.text.names.till {
+  background-image: url("graphics/lines/till/name.png");
+}
+/* line 204, ../sass/screen.scss */
+body .content section.text.names.totsiens {
+  background-image: url("graphics/lines/totsiens/name.png");
+}
+/* line 208, ../sass/screen.scss */
+body .content section.text.names.uncover {
+  background-image: url("graphics/lines/uncover/name.png");
+}
+/* line 215, ../sass/screen.scss */
+body .content section.text.description.beora {
+  background-image: url("graphics/lines/beora/description.png");
+}
+/* line 219, ../sass/screen.scss */
+body .content section.text.description.bound {
+  background-image: url("graphics/lines/bound/description.png");
+}
+/* line 223, ../sass/screen.scss */
+body .content section.text.description.cakery {
+  background-image: url("graphics/lines/cakery/description.png");
+}
+/* line 227, ../sass/screen.scss */
+body .content section.text.description.cleen {
+  background-image: url("graphics/lines/cleen/description.png");
+}
+/* line 231, ../sass/screen.scss */
+body .content section.text.description.dressedToKill {
+  background-image: url("graphics/lines/dressedToKill/description.png");
+}
+/* line 235, ../sass/screen.scss */
+body .content section.text.description.exoskeleton {
+  background-image: url("graphics/lines/exoskeleton/description.png");
+}
+/* line 239, ../sass/screen.scss */
+body .content section.text.description.intension {
+  background-image: url("graphics/lines/intension/description.png");
+}
+/* line 243, ../sass/screen.scss */
+body .content section.text.description.letsPlay {
+  background-image: url("graphics/lines/letsplay/description.png");
+}
+/* line 247, ../sass/screen.scss */
+body .content section.text.description.lustre {
+  background-image: url("graphics/lines/lustre/description.png");
+}
+/* line 251, ../sass/screen.scss */
+body .content section.text.description.mas-querade {
+  background-image: url("graphics/lines/mas-querade/description.png");
+}
+/* line 255, ../sass/screen.scss */
+body .content section.text.description.mashinka {
+  background-image: url("graphics/lines/mashinka/description.png");
+}
+/* line 259, ../sass/screen.scss */
+body .content section.text.description.menagerie {
+  background-image: url("graphics/lines/menagerie/description.png");
+}
+/* line 263, ../sass/screen.scss */
+body .content section.text.description.morph {
+  background-image: url("graphics/lines/morph/description.png");
+}
+/* line 267, ../sass/screen.scss */
+body .content section.text.description.revive {
+  background-image: url("graphics/lines/revive/description.png");
+}
+/* line 271, ../sass/screen.scss */
+body .content section.text.description.rift {
+  background-image: url("graphics/lines/rift/description.png");
+}
+/* line 275, ../sass/screen.scss */
+body .content section.text.description.sinew {
+  background-image: url("graphics/lines/sinew/description.png");
+}
+/* line 279, ../sass/screen.scss */
+body .content section.text.description.tact {
+  background-image: url("graphics/lines/tact/description.png");
+}
+/* line 283, ../sass/screen.scss */
+body .content section.text.description.theWealthySlums {
+  background-image: url("graphics/lines/theWealthySlums/description.png");
+}
+/* line 287, ../sass/screen.scss */
+body .content section.text.description.till {
+  background-image: url("graphics/lines/till/description.png");
+}
+/* line 291, ../sass/screen.scss */
+body .content section.text.description.totsiens {
+  background-image: url("graphics/lines/totsiens/description.png");
+}
+/* line 295, ../sass/screen.scss */
+body .content section.text.description.uncover {
+  background-image: url("graphics/lines/uncover/description.png");
+}
+/* line 301, ../sass/screen.scss */
+body .content section.divider {
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+/* line 304, ../sass/screen.scss */
+body .content section.divider video {
+  width: 100%;
+  height: 100%;
+  -moz-transform: scale3d(200, 1, 1);
+  -ms-transform: scale3d(200, 1, 1);
+  -webkit-transform: scale3d(200, 1, 1);
+  transform: scale3d(200, 1, 1);
+  -moz-transition: cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+  -o-transition: cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+  -webkit-transition: cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+  -moz-transition-property: -moz-transform, -webkit-transform, -moz-transform;
+  -o-transition-property: -o-transform, -webkit-transform, -moz-transform;
+  -webkit-transition-property: -webkit-transform, -webkit-transform, -moz-transform;
+  transition-property: transform, -webkit-transform, -moz-transform;
+}
+@media screen and (max-aspect-ratio: 16 / 9) {
+  /* line 304, ../sass/screen.scss */
+  body .content section.divider video {
+    width: auto;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 48em) {
+  /* line 304, ../sass/screen.scss */
+  body .content section.divider video {
+    display: none;
+  }
+}
+/* line 323, ../sass/screen.scss */
+body .content section.divider.active video {
+  -moz-transform: scale3d(8, 1, 1);
+  -ms-transform: scale3d(8, 1, 1);
+  -webkit-transform: scale3d(8, 1, 1);
+  transform: scale3d(8, 1, 1);
+}
+@media screen and (max-aspect-ratio: 16 / 9) {
+  /* line 323, ../sass/screen.scss */
+  body .content section.divider.active video {
+    -moz-transform: scale3d(4, 1, 1);
+    -ms-transform: scale3d(4, 1, 1);
+    -webkit-transform: scale3d(4, 1, 1);
+    transform: scale3d(4, 1, 1);
+  }
+}
+/* line 333, ../sass/screen.scss */
+body .content section.divider.second-class video {
+  -moz-transform: scale3d(20, 1, 1);
+  -ms-transform: scale3d(20, 1, 1);
+  -webkit-transform: scale3d(20, 1, 1);
+  transform: scale3d(20, 1, 1);
+}
