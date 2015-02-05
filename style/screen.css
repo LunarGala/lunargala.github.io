@@ -156,7 +156,7 @@ body .content section.human h2, body .content section.human p {
 /* Constants */
 /* line 7, ../sass/_scrolling.scss */
 body {
-  height: 5950vh;
+  height: 9520vh;
   /* To allow scrolling */
   display: none;
   /* Hide until loaded */
