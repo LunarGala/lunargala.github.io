@@ -12,11 +12,11 @@
     /* Constants */
     var ACTIVE_CLASS    = 'active',
         SECOND_CLASS    = 'second-class', 
-        THROTTLE_RATE   = 1500,
+        THROTTLE_RATE   = 800,
         HIDE_RATE       = 1000,
-        SPLINTER_HEIGHT = 2,
+        SPLINTER_HEIGHT = 1,
         HEADER_HEIGHT   = 16,
-        ACTIVE_HEIGHT   = 40,
+        ACTIVE_HEIGHT   = 32,
         MOUSE_MOVES     = 15, 
         MOUSE_MOVE_TIME = 1000,
         HIDEME_HEIGHT   = 0;
@@ -83,8 +83,8 @@
         if (!hideHeaders) {
 
             // Calculate the new heights. 
-            secondClassHeight = (100 - ACTIVE_HEIGHT - HEADER_HEIGHT*headerCount - SPLINTER_HEIGHT*splinterCount)/2;
-            activeHeight = ACTIVE_HEIGHT + (siblingTotal == 1 ? secondClassHeight : 0);
+            secondClassHeight = (100 - (ACTIVE_HEIGHT - 35) - HEADER_HEIGHT*headerCount - SPLINTER_HEIGHT*splinterCount)/2;
+            activeHeight = (ACTIVE_HEIGHT - 35)+ (siblingTotal == 1 ? secondClassHeight : 0);
             headerHeight = HEADER_HEIGHT;
 
         } else {
@@ -114,6 +114,7 @@
         var $sections = $('.content section');
         // _.throttle prevents key events happening faster than css animations
         var keyhandler = _.throttle(function(e) {
+            console.log('keypress');
             
             // Pause the video if we're leaving it.
             if ($sections.eq(active).hasClass('.video')) { killVideo(); }
@@ -241,7 +242,11 @@
         })();
 
 
-        $('.content').mousemove(function() {
+        $('section').mousemove(function() {
+            if( $(this).hasClass('active') || $(this).hasClass('second-class')) {
+                return;
+            }
+
             console.log('mousemove');
             resetCalls();
             calls++;
