@@ -51,9 +51,19 @@ body {
             &.divider img, &.design img, &.designers img {
                 position: absolute;
                 top: 0;
+            }
+
+            &.design img, &.designers img {
                 left: -50%;
                 @include background-size(200% 100%);
                 width: 200%;
+                height: 100%;
+            }
+            
+            &.divider img {
+                left: -175%;
+                @include background-size(400% 100%);
+                width: 400%;
                 height: 100%;
             }
             

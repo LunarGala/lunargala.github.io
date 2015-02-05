@@ -232,6 +232,9 @@ body .content section .inside {
 body .content section.divider img, body .content section.design img, body .content section.designers img {
   position: absolute;
   top: 0;
+}
+/* line 56, ../sass/_scrolling.scss */
+body .content section.design img, body .content section.designers img {
   left: -50%;
   -moz-background-size: 200% 100%;
   -o-background-size: 200% 100%;
@@ -240,11 +243,21 @@ body .content section.divider img, body .content section.design img, body .conte
   width: 200%;
   height: 100%;
 }
-/* line 72, ../sass/_scrolling.scss */
+/* line 63, ../sass/_scrolling.scss */
+body .content section.divider img {
+  left: -175%;
+  -moz-background-size: 400% 100%;
+  -o-background-size: 400% 100%;
+  -webkit-background-size: 400% 100%;
+  background-size: 400% 100%;
+  width: 400%;
+  height: 100%;
+}
+/* line 82, ../sass/_scrolling.scss */
 body .content section.intro .inside {
   color: black;
 }
-/* line 85, ../sass/_scrolling.scss */
+/* line 95, ../sass/_scrolling.scss */
 body .content section.active .inside {
   display: block;
   -moz-transform: scale3d(1, 1, 1);
@@ -253,7 +266,7 @@ body .content section.active .inside {
   transform: scale3d(1, 1, 1);
   /* 75 / 75 */
 }
-/* line 93, ../sass/_scrolling.scss */
+/* line 103, ../sass/_scrolling.scss */
 body .content section.second-class .inside {
   display: block;
   -moz-transform: scale3d(1, 0.06, 1);
@@ -262,7 +275,7 @@ body .content section.second-class .inside {
   transform: scale3d(1, 0.06, 1);
   /* 4.5 / 75 */
 }
-/* line 108, ../sass/_scrolling.scss */
+/* line 118, ../sass/_scrolling.scss */
 body .content section .inside {
   -webkit-transform-origin: 0 0;
   /* Keep text aligned properly */
