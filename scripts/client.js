@@ -265,7 +265,7 @@
         })();
 
 
-        $('section').mousemove(function() {
+        $('.header').mousemove(function() {
             if( $(this).hasClass('active') || $(this).hasClass('second-class')) {
                 return;
             }
