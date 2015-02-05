@@ -73,23 +73,7 @@ body {
                     color: black;
                 }
             }
-    
-            &.video {
-                .video-cover {
-                    background-image: url('graphics/video.png');
-                    @include background-size(100% 100%);
-                    position: absolute;
-                    top: 0;
-                    bottom: 0; 
-                    left: 0; 
-                    right: 0;
-                }
-    
-                iframe {
-                    display: none;
-                }
-            }
-    
+        
             /*************************
     
             * Section sizing
