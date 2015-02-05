@@ -14,9 +14,9 @@
         SECOND_CLASS    = 'second-class', 
         THROTTLE_RATE   = 800,
         HIDE_RATE       = 1000,
-        SPLINTER_HEIGHT = .5,
+        SPLINTER_HEIGHT = 1,
         HEADER_HEIGHT   = 16,
-        ACTIVE_HEIGHT   = 24,
+        ACTIVE_HEIGHT   = 32,
         MOUSE_MOVES     = 15, 
         MOUSE_MOVE_TIME = 1000,
         HIDEME_HEIGHT   = 0;
