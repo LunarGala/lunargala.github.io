@@ -51,9 +51,19 @@ body {
             &.divider img, &.design img, &.designers img {
                 position: absolute;
                 top: 0;
+            }
+
+            &.design img, &.designers img {
                 left: -50%;
                 @include background-size(200% 100%);
                 width: 200%;
+                height: 100%;
+            }
+            
+            &.divider img {
+                left: -175%;
+                @include background-size(400% 100%);
+                width: 400%;
                 height: 100%;
             }
             
@@ -73,23 +83,7 @@ body {
                     color: black;
                 }
             }
-    
-            &.video {
-                .video-cover {
-                    background-image: url('graphics/video.png');
-                    @include background-size(100% 100%);
-                    position: absolute;
-                    top: 0;
-                    bottom: 0; 
-                    left: 0; 
-                    right: 0;
-                }
-    
-                iframe {
-                    display: none;
-                }
-            }
-    
+        
             /*************************
     
             * Section sizing
