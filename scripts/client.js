@@ -15,8 +15,10 @@
         THROTTLE_RATE   = 1500,
         HIDE_RATE       = 1000,
         SPLINTER_HEIGHT = 2,
-        HEADER_HEIGHT   = 8,
+        HEADER_HEIGHT   = 16,
         ACTIVE_HEIGHT   = 40,
+        MOUSE_MOVES     = 15, 
+        MOUSE_MOVE_TIME = 1000,
         HIDEME_HEIGHT   = 0;
 
     /* Globals */
@@ -226,9 +228,26 @@
      * Hide titles whenever the mouse hasn't moved in a bit
      */
     var initializeMouseMoveHandler = function() {
+        var calls = 0;
+        
+        var resetCalls = (function() {
+            var timeoutId = -1;
+            return function() {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(function() {
+                    calls = 0;
+                }, MOUSE_MOVE_TIME);
+            };
+        })();
+
+
         $('.content').mousemove(function() {
             console.log('mousemove');
-            triggerPageAction(); 
+            resetCalls();
+            calls++;
+            if (calls >= MOUSE_MOVES) {
+                triggerPageAction(); 
+            }
         });
     };
 

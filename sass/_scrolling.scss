@@ -99,6 +99,7 @@ body {
             }   
     
             &.second-class {
+                @include transition-delay(0.1);
     
                 .inside {
                     display: block;
