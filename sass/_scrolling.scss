@@ -53,11 +53,19 @@ body {
                 top: 0;
             }
 
-            &.design img, &.designers img {
+            &.design img {
                 left: -50%;
                 @include background-size(200% 100%);
                 width: 200%;
                 height: 100%;
+            }
+
+            &.designers img {
+                left: -50%;
+                top: -50%;
+                @include background-size(200% 200%);
+                width: 200%;
+                height: 200%;
             }
             
             &.divider img {
