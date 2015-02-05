@@ -36,14 +36,6 @@ body {
             text-transform: lowercase;
             position: relative;
 
-            &.hideme {
-                // height: 0%;
-                display: none;
-
-                &.header {
-                    display: block;
-                }
-            }
 
             .inside {
                 display: none;

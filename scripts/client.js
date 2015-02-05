@@ -112,7 +112,6 @@
         $hideme.height(HIDEME_HEIGHT + '%');                // Hideme
         $hideme.data('next-height', HIDEME_HEIGHT + '%');
 
-
         hidden = !!hideHeaders;
 
         updateTops();
