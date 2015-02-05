@@ -1023,13 +1023,13 @@ body .content section.header, body .content section.text {
 body .content section.header .inside, body .content section.text .inside {
   text-indent: -99999em;
 }
-/* line 47, ../sass/screen.scss */
-body .content section.tickets, body .content section.blog {
+/* line 49, ../sass/screen.scss */
+body .content section.tickets.active:hover, body .content section.blog.active:hover {
   -webkit-animation: sectionPulse .001s linear infinite;
   -moz-animation: sectionPulse .001s linear infinite;
   animation: sectionPulse .001s linear infinite;
 }
-/* line 51, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 body .content section.tickets a, body .content section.blog a {
   display: block;
   height: 100%;
@@ -1038,7 +1038,7 @@ body .content section.tickets a, body .content section.blog a {
   top: 0;
   left: 0;
 }
-/* line 63, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 body .content section.video .video-cover {
   background-image: url("graphics/video.jpg");
   -moz-background-size: 100% 100%;
@@ -1052,245 +1052,245 @@ body .content section.video .video-cover {
   cursor: pointer;
   right: 0;
 }
-/* line 73, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 body .content section.video .video-cover:hover {
   -webkit-animation: sectionPulse .001s linear infinite;
   -moz-animation: sectionPulse .001s linear infinite;
   animation: sectionPulse .001s linear infinite;
 }
-/* line 78, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 body .content section.video iframe {
   display: none;
 }
-/* line 85, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 body .content section.header:hover {
   -webkit-animation: sectionPulse .001s linear infinite;
   -moz-animation: sectionPulse .001s linear infinite;
   animation: sectionPulse .001s linear infinite;
 }
-/* line 88, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 body .content section.header:hover.active {
   -webkit-animation: none;
   -moz-animation: none;
   animation: none;
 }
-/* line 95, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 body .content section.header.title {
   background-image: url("graphics/vestige.png");
 }
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 body .content section.header.tickets {
   background-image: url("graphics/tickets.png");
 }
-/* line 103, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 body .content section.header.people {
   background-image: url("graphics/people.png");
 }
-/* line 107, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 body .content section.header.about {
   background-image: url("graphics/about.png");
 }
-/* line 111, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 body .content section.header.designs {
   background-image: url("graphics/collections.png");
 }
-/* line 116, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 body .content section.text {
   text-indent: -9999em;
 }
-/* line 120, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 body .content section.text.about {
   background-image: url("graphics/aboutText.png");
 }
-/* line 124, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 body .content section.text.tagline {
   background-image: url("graphics/tagline.png");
 }
-/* line 128, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 body .content section.text.sponsors {
   background-image: url("graphics/sponsors/allSponsors.jpg");
 }
-/* line 132, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 body .content section.text.logistics {
   background-image: url("graphics/logistics.png");
 }
-/* line 136, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 body .content section.text.logo {
   background-image: url("graphics/lg.png");
 }
-/* line 140, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 body .content section.text.blog {
   background-image: url("graphics/blog.png");
 }
-/* line 144, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 body .content section.text.sponsors {
   background-image: url("graphics/sponsors.png");
 }
-/* line 150, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 body .content section.text.names.beora {
   background-image: url("graphics/lines/beora/name.png");
 }
-/* line 154, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 body .content section.text.names.bound {
   background-image: url("graphics/lines/bound/name.png");
 }
-/* line 158, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 body .content section.text.names.cakery {
   background-image: url("graphics/lines/cakery/name.png");
 }
-/* line 162, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 body .content section.text.names.cleen {
   background-image: url("graphics/lines/cleen/name.png");
 }
-/* line 166, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 body .content section.text.names.dressedToKill {
   background-image: url("graphics/lines/dressedToKill/name.png");
 }
-/* line 170, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 body .content section.text.names.exoskeleton {
   background-image: url("graphics/lines/exoskeleton/name.png");
 }
-/* line 174, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 body .content section.text.names.intension {
   background-image: url("graphics/lines/intension/name.png");
 }
-/* line 178, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 body .content section.text.names.letsPlay {
   background-image: url("graphics/lines/letsplay/name.png");
 }
-/* line 182, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 body .content section.text.names.lustre {
   background-image: url("graphics/lines/lustre/name.png");
 }
-/* line 186, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 body .content section.text.names.mas-querade {
   background-image: url("graphics/lines/mas-querade/name.png");
 }
-/* line 190, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 body .content section.text.names.mashinka {
   background-image: url("graphics/lines/mashinka/name.png");
 }
-/* line 194, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 body .content section.text.names.menagerie {
   background-image: url("graphics/lines/menagerie/name.png");
 }
-/* line 198, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 body .content section.text.names.morph {
   background-image: url("graphics/lines/morph/name.png");
 }
-/* line 202, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 body .content section.text.names.revive {
   background-image: url("graphics/lines/revive/name.png");
 }
-/* line 206, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 body .content section.text.names.rift {
   background-image: url("graphics/lines/rift/name.png");
 }
-/* line 210, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 body .content section.text.names.sinew {
   background-image: url("graphics/lines/sinew/name.png");
 }
-/* line 214, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 body .content section.text.names.tact {
   background-image: url("graphics/lines/tact/name.png");
 }
-/* line 218, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 body .content section.text.names.theWealthySlums {
   background-image: url("graphics/lines/theWealthySlums/name.png");
 }
-/* line 222, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 body .content section.text.names.till {
   background-image: url("graphics/lines/till/name.png");
 }
-/* line 226, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 body .content section.text.names.totsiens {
   background-image: url("graphics/lines/totsiens/name.png");
 }
-/* line 230, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 body .content section.text.names.uncover {
   background-image: url("graphics/lines/uncover/name.png");
 }
-/* line 237, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 body .content section.text.description.beora {
   background-image: url("graphics/lines/beora/description.png");
 }
-/* line 241, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 body .content section.text.description.bound {
   background-image: url("graphics/lines/bound/description.png");
 }
-/* line 245, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 body .content section.text.description.cakery {
   background-image: url("graphics/lines/cakery/description.png");
 }
-/* line 249, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 body .content section.text.description.cleen {
   background-image: url("graphics/lines/cleen/description.png");
 }
-/* line 253, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 body .content section.text.description.dressedToKill {
   background-image: url("graphics/lines/dressedToKill/description.png");
 }
-/* line 257, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 body .content section.text.description.exoskeleton {
   background-image: url("graphics/lines/exoskeleton/description.png");
 }
-/* line 261, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 body .content section.text.description.intension {
   background-image: url("graphics/lines/intension/description.png");
 }
-/* line 265, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 body .content section.text.description.letsPlay {
   background-image: url("graphics/lines/letsplay/description.png");
 }
-/* line 269, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 body .content section.text.description.lustre {
   background-image: url("graphics/lines/lustre/description.png");
 }
-/* line 273, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 body .content section.text.description.mas-querade {
   background-image: url("graphics/lines/mas-querade/description.png");
 }
-/* line 277, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 body .content section.text.description.mashinka {
   background-image: url("graphics/lines/mashinka/description.png");
 }
-/* line 281, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 body .content section.text.description.menagerie {
   background-image: url("graphics/lines/menagerie/description.png");
 }
-/* line 285, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 body .content section.text.description.morph {
   background-image: url("graphics/lines/morph/description.png");
 }
-/* line 289, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 body .content section.text.description.revive {
   background-image: url("graphics/lines/revive/description.png");
 }
-/* line 293, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 body .content section.text.description.rift {
   background-image: url("graphics/lines/rift/description.png");
 }
-/* line 297, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 body .content section.text.description.sinew {
   background-image: url("graphics/lines/sinew/description.png");
 }
-/* line 301, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 body .content section.text.description.tact {
   background-image: url("graphics/lines/tact/description.png");
 }
-/* line 305, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 body .content section.text.description.theWealthySlums {
   background-image: url("graphics/lines/theWealthySlums/description.png");
 }
-/* line 309, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 body .content section.text.description.till {
   background-image: url("graphics/lines/till/description.png");
 }
-/* line 313, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 body .content section.text.description.totsiens {
   background-image: url("graphics/lines/totsiens/description.png");
 }
-/* line 317, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 body .content section.text.description.uncover {
   background-image: url("graphics/lines/uncover/description.png");
 }
