@@ -96,13 +96,37 @@
 
         // Update heights
         $splinters.height(SPLINTER_HEIGHT + '%');           // Splinters
+        $splinters.data('next-height', SPLINTER_HEIGHT + '%');
+
         $headers.height(headerHeight + '%');                // Headers
+        $headers.data('next-height', headerHeight + '%');
+
         $active.height(activeHeight + '%');                 // Active
+        $active.data('next-height', activeHeight + '%');
+
         $nextSecondClass.height(secondClassHeight + '%');   // Second classes
+        $nextSecondClass.data('next-height', secondClassHeight + '%');
         $prevSecondClass.height(secondClassHeight + '%');
+        $prevSecondClass.data('next-height', secondClassHeight + '%');
+
         $hideme.height(HIDEME_HEIGHT + '%');                // Hideme
+        $hideme.data('next-height', HIDEME_HEIGHT + '%');
+
 
         hidden = !!hideHeaders;
+
+        updateTops();
+    };
+
+    var updateTops = function() {
+        var total = 0;
+        $('section').each(function(i, elem) {
+            console.log('total', total + '%');
+            $(elem).css('top', total + '%');
+            var percent = $(elem).data('next-height');
+            percent = percent.slice(0, percent.length - 1);
+            total += parseFloat(percent);
+        });
     };
 
 

@@ -181,6 +181,7 @@ body .content {
 /* line 29, ../sass/_scrolling.scss */
 body .content section {
   overflow: hidden;
+  position: absolute !important;
   box-sizing: border-box;
   position: relative;
   width: 100%;
@@ -216,24 +217,24 @@ body .content section {
 
          *************************/
 }
-/* line 38, ../sass/_scrolling.scss */
+/* line 39, ../sass/_scrolling.scss */
 body .content section.hideme {
   display: none;
 }
-/* line 42, ../sass/_scrolling.scss */
+/* line 43, ../sass/_scrolling.scss */
 body .content section.hideme.header {
   display: block;
 }
-/* line 47, ../sass/_scrolling.scss */
+/* line 48, ../sass/_scrolling.scss */
 body .content section .inside {
   display: none;
 }
-/* line 51, ../sass/_scrolling.scss */
+/* line 52, ../sass/_scrolling.scss */
 body .content section.divider img, body .content section.design img, body .content section.designers img {
   position: absolute;
   top: 0;
 }
-/* line 56, ../sass/_scrolling.scss */
+/* line 57, ../sass/_scrolling.scss */
 body .content section.design img, body .content section.designers img {
   left: -50%;
   -moz-background-size: 200% 100%;
@@ -243,7 +244,7 @@ body .content section.design img, body .content section.designers img {
   width: 200%;
   height: 100%;
 }
-/* line 63, ../sass/_scrolling.scss */
+/* line 64, ../sass/_scrolling.scss */
 body .content section.divider img {
   left: -175%;
   -moz-background-size: 400% 100%;
@@ -253,11 +254,11 @@ body .content section.divider img {
   width: 400%;
   height: 100%;
 }
-/* line 82, ../sass/_scrolling.scss */
+/* line 83, ../sass/_scrolling.scss */
 body .content section.intro .inside {
   color: black;
 }
-/* line 95, ../sass/_scrolling.scss */
+/* line 96, ../sass/_scrolling.scss */
 body .content section.active .inside {
   display: block;
   -moz-transform: scale3d(1, 1, 1);
@@ -266,14 +267,14 @@ body .content section.active .inside {
   transform: scale3d(1, 1, 1);
   /* 75 / 75 */
 }
-/* line 101, ../sass/_scrolling.scss */
+/* line 102, ../sass/_scrolling.scss */
 body .content section.second-class {
   -moz-transition-delay: 0.1;
   -o-transition-delay: 0.1;
   -webkit-transition-delay: 0.1;
   transition-delay: 0.1;
 }
-/* line 104, ../sass/_scrolling.scss */
+/* line 105, ../sass/_scrolling.scss */
 body .content section.second-class .inside {
   display: block;
   -moz-transform: scale3d(1, 0.06, 1);
@@ -282,7 +283,7 @@ body .content section.second-class .inside {
   transform: scale3d(1, 0.06, 1);
   /* 4.5 / 75 */
 }
-/* line 119, ../sass/_scrolling.scss */
+/* line 120, ../sass/_scrolling.scss */
 body .content section .inside {
   -webkit-transform-origin: 0 0;
   /* Keep text aligned properly */
