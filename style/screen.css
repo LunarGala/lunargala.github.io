@@ -1,4 +1,4 @@
-/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -181,13 +181,11 @@ body .content {
 /* line 29, ../sass/_scrolling.scss */
 body .content section {
   overflow: hidden;
-  position: absolute !important;
+  position: absolute;
   box-sizing: border-box;
-  position: relative;
   width: 100%;
   text-align: justify;
   text-transform: lowercase;
-  position: relative;
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -217,16 +215,16 @@ body .content section {
 
          *************************/
 }
-/* line 40, ../sass/_scrolling.scss */
+/* line 38, ../sass/_scrolling.scss */
 body .content section .inside {
   display: none;
 }
-/* line 44, ../sass/_scrolling.scss */
+/* line 42, ../sass/_scrolling.scss */
 body .content section.divider img, body .content section.design img, body .content section.designers img {
   position: absolute;
   top: 0;
 }
-/* line 49, ../sass/_scrolling.scss */
+/* line 47, ../sass/_scrolling.scss */
 body .content section.design img {
   left: -50%;
   -moz-background-size: 200% 100%;
@@ -236,7 +234,7 @@ body .content section.design img {
   width: 200%;
   height: 100%;
 }
-/* line 56, ../sass/_scrolling.scss */
+/* line 54, ../sass/_scrolling.scss */
 body .content section.designers img {
   left: -50%;
   top: -50%;
@@ -247,7 +245,7 @@ body .content section.designers img {
   width: 200%;
   height: 200%;
 }
-/* line 64, ../sass/_scrolling.scss */
+/* line 62, ../sass/_scrolling.scss */
 body .content section.divider img {
   left: -175%;
   -moz-background-size: 400% 100%;
@@ -257,11 +255,11 @@ body .content section.divider img {
   width: 400%;
   height: 100%;
 }
-/* line 83, ../sass/_scrolling.scss */
+/* line 81, ../sass/_scrolling.scss */
 body .content section.intro .inside {
   color: black;
 }
-/* line 96, ../sass/_scrolling.scss */
+/* line 94, ../sass/_scrolling.scss */
 body .content section.active .inside {
   display: block;
   -moz-transform: scale3d(1, 1, 1);
@@ -270,14 +268,14 @@ body .content section.active .inside {
   transform: scale3d(1, 1, 1);
   /* 75 / 75 */
 }
-/* line 102, ../sass/_scrolling.scss */
+/* line 100, ../sass/_scrolling.scss */
 body .content section.second-class {
   -moz-transition-delay: 0.1;
   -o-transition-delay: 0.1;
   -webkit-transition-delay: 0.1;
   transition-delay: 0.1;
 }
-/* line 105, ../sass/_scrolling.scss */
+/* line 103, ../sass/_scrolling.scss */
 body .content section.second-class .inside {
   display: block;
   -moz-transform: scale3d(1, 0.06, 1);
@@ -286,7 +284,7 @@ body .content section.second-class .inside {
   transform: scale3d(1, 0.06, 1);
   /* 4.5 / 75 */
 }
-/* line 120, ../sass/_scrolling.scss */
+/* line 118, ../sass/_scrolling.scss */
 body .content section .inside {
   -webkit-transform-origin: 0 0;
   /* Keep text aligned properly */
@@ -311,8 +309,9 @@ body.teaser.static .content {
 /* line 7, ../sass/_static.scss */
 body.teaser.static .content section {
   height: 4em;
+  position: relative !important;
 }
-/* line 10, ../sass/_static.scss */
+/* line 11, ../sass/_static.scss */
 body.teaser.static .content section .inside {
   display: block;
   -moz-transform: none;
@@ -320,40 +319,40 @@ body.teaser.static .content section .inside {
   -webkit-transform: none;
   transform: none;
 }
-/* line 15, ../sass/_static.scss */
+/* line 16, ../sass/_static.scss */
 body.teaser.static .content section.header {
   height: 4em;
 }
-/* line 18, ../sass/_static.scss */
+/* line 19, ../sass/_static.scss */
 body.teaser.static .content section.header.vestige {
   height: 20em;
 }
-/* line 22, ../sass/_static.scss */
+/* line 23, ../sass/_static.scss */
 body.teaser.static .content section.header.tagline {
   height: .5em;
   display: none;
 }
-/* line 27, ../sass/_static.scss */
+/* line 28, ../sass/_static.scss */
 body.teaser.static .content section.header.tickets {
   height: 8em;
 }
-/* line 31, ../sass/_static.scss */
+/* line 32, ../sass/_static.scss */
 body.teaser.static .content section.header.logistics {
   height: 12em;
 }
-/* line 35, ../sass/_static.scss */
+/* line 36, ../sass/_static.scss */
 body.teaser.static .content section.header.aboutText {
   height: 12em;
 }
-/* line 39, ../sass/_static.scss */
+/* line 40, ../sass/_static.scss */
 body.teaser.static .content section.header.sponsors {
   height: 8em;
 }
-/* line 44, ../sass/_static.scss */
+/* line 45, ../sass/_static.scss */
 body.teaser.static .content section.video {
   height: 12em;
 }
-/* line 48, ../sass/_static.scss */
+/* line 49, ../sass/_static.scss */
 body.teaser.static .content section.divider {
   height: 2em;
   -moz-background-size: 150% 150%;
@@ -362,23 +361,23 @@ body.teaser.static .content section.divider {
   background-size: 150% 150%;
   background-position: 25% 25%;
 }
-/* line 53, ../sass/_static.scss */
+/* line 54, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(4n+1) {
   height: 1em;
 }
-/* line 57, ../sass/_static.scss */
+/* line 58, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(odd) {
   height: 2em;
 }
-/* line 61, ../sass/_static.scss */
+/* line 62, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(3n+2) {
   height: 3em;
 }
-/* line 64, ../sass/_static.scss */
+/* line 65, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(4n+2) {
   height: 5em;
 }
-/* line 68, ../sass/_static.scss */
+/* line 69, ../sass/_static.scss */
 body.teaser.static .content section.divider video {
   display: none;
 }

@@ -120,7 +120,6 @@
     var updateTops = function() {
         var total = 0;
         $('section').each(function(i, elem) {
-            console.log('total', total + '%');
             $(elem).css('top', total + '%');
             var percent = $(elem).data('next-height');
             percent = percent.slice(0, percent.length - 1);
@@ -137,7 +136,6 @@
         var $sections = $('.content section');
         // _.throttle prevents key events happening faster than css animations
         var keyhandler = _.throttle(function(e) {
-            console.log('keypress');
             
             // Pause the video if we're leaving it.
             if ($sections.eq(active).hasClass('.video')) { killVideo(); }
@@ -185,7 +183,6 @@
      */
     var initializeClickHandlers = function() {
         $('.content section').click(function() {
-            console.log('click', this);
             var idx = $(this).data('index');
             fixScroll(idx);
             updateActive(idx);

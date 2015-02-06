@@ -28,13 +28,11 @@ body {
     
          section {
             overflow: hidden;
-            position: absolute !important;
+            position: absolute;
             box-sizing: border-box;
-            position: relative;
             width: 100%;
             text-align: justify;
             text-transform: lowercase;
-            position: relative;
 
 
             .inside {
