@@ -310,15 +310,20 @@
         $(window).scrollTop(0);
         updateActive(active);
 
+        var timeToWait = 1000;
+
         // Start asynch loading of gifs
         $('img').filter(function(i, elem) { 
             return !!($(elem).attr('data-src')); 
         }).map(function(i, elem) {
-            var gif = new Image(); 
-            gif.onload = function() {
-                $(elem).replaceWith(gif);
-            }; 
-            gif.src = $(elem).attr('data-src'); 
+            setTimeout(function() {
+                var gif = new Image(); 
+                gif.onload = function() {
+                    $(elem).replaceWith(gif);
+                }; 
+                gif.src = $(elem).attr('data-src');  
+                timeToWait += 200;   // Stagger loading
+            }, timeToWait);
         });
 
         // Bind handlers
