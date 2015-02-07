@@ -954,66 +954,71 @@ body .content section.designs.mashinka {
 }
 
 /* line 25, ../sass/_collections.scss */
+body .content section.designs.soulStylz {
+  background-image: url("lines/soulStylz.png");
+}
+
+/* line 28, ../sass/_collections.scss */
 body .content section.designs.bound {
   background-image: url("lines/9-bound.png");
 }
 
-/* line 28, ../sass/_collections.scss */
+/* line 31, ../sass/_collections.scss */
 body .content section.designs.mas-querade {
   background-image: url("lines/10-masquerade.png");
 }
 
-/* line 31, ../sass/_collections.scss */
+/* line 34, ../sass/_collections.scss */
 body .content section.designs.dressedToKill {
   background-image: url("lines/11-dressedtokill.png");
 }
 
-/* line 34, ../sass/_collections.scss */
+/* line 37, ../sass/_collections.scss */
 body .content section.designs.till {
   background-image: url("lines/12-till.png");
 }
 
-/* line 37, ../sass/_collections.scss */
+/* line 40, ../sass/_collections.scss */
 body .content section.designs.morph {
   background-image: url("lines/13-morph.png");
 }
 
-/* line 40, ../sass/_collections.scss */
+/* line 43, ../sass/_collections.scss */
 body .content section.designs.revive {
   background-image: url("lines/14-revive.png");
 }
 
-/* line 43, ../sass/_collections.scss */
+/* line 46, ../sass/_collections.scss */
 body .content section.designs.totsiens {
   background-image: url("lines/15-totsiens.png");
 }
 
-/* line 46, ../sass/_collections.scss */
+/* line 49, ../sass/_collections.scss */
 body .content section.designs.cleen {
   background-image: url("lines/16-cleen.png");
 }
 
-/* line 49, ../sass/_collections.scss */
+/* line 52, ../sass/_collections.scss */
 body .content section.designs.tact {
   background-image: url("lines/17-tact.png");
 }
 
-/* line 52, ../sass/_collections.scss */
+/* line 55, ../sass/_collections.scss */
 body .content section.designs.beora {
   background-image: url("lines/18-beora.png");
 }
 
-/* line 55, ../sass/_collections.scss */
+/* line 58, ../sass/_collections.scss */
 body .content section.designs.sinew {
   background-image: url("lines/19sinew.png");
 }
 
-/* line 58, ../sass/_collections.scss */
+/* line 61, ../sass/_collections.scss */
 body .content section.designs.menagerie {
   background-image: url("lines/20-menagerie.png");
 }
 
-/* line 61, ../sass/_collections.scss */
+/* line 64, ../sass/_collections.scss */
 body .content section.designs.rift {
   background-image: url("lines/21-rift.png");
 }
