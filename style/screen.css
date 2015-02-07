@@ -1004,21 +1004,26 @@ body .content section.designs.tact {
 }
 
 /* line 55, ../sass/_collections.scss */
+body .content section.designs.lgDance {
+  background-image: url("lines/lgDance.png");
+}
+
+/* line 58, ../sass/_collections.scss */
 body .content section.designs.beora {
   background-image: url("lines/18-beora.png");
 }
 
-/* line 58, ../sass/_collections.scss */
+/* line 61, ../sass/_collections.scss */
 body .content section.designs.sinew {
   background-image: url("lines/19sinew.png");
 }
 
-/* line 61, ../sass/_collections.scss */
+/* line 64, ../sass/_collections.scss */
 body .content section.designs.menagerie {
   background-image: url("lines/20-menagerie.png");
 }
 
-/* line 64, ../sass/_collections.scss */
+/* line 67, ../sass/_collections.scss */
 body .content section.designs.rift {
   background-image: url("lines/21-rift.png");
 }
