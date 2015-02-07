@@ -8,6 +8,16 @@ body.teaser.static {
             height: 4em;
             position: relative !important;
             
+            // for mobile program
+            &.statement{
+                height: 8em;
+                
+                &.theWealthySlums {
+                    height: 16em;
+                }
+            }
+            //
+            
             .inside {
                 display: block;
                 @include transform(none);
@@ -69,6 +79,16 @@ body.teaser.static {
                 video {
                     display: none;
                 }
+                // for mobile program
+                &.sponsors {
+                    height: 16em;
+                    img {
+                        background-size: 100%;
+                        width: 100%;
+                        left: 0;
+                        }
+                }
+                //
             }
         }
     }

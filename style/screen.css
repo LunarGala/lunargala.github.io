@@ -1,4 +1,4 @@
-/* line 5, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -311,7 +311,15 @@ body.teaser.static .content section {
   height: 4em;
   position: relative !important;
 }
-/* line 11, ../sass/_static.scss */
+/* line 12, ../sass/_static.scss */
+body.teaser.static .content section.statement {
+  height: 8em;
+}
+/* line 15, ../sass/_static.scss */
+body.teaser.static .content section.statement.theWealthySlums {
+  height: 16em;
+}
+/* line 21, ../sass/_static.scss */
 body.teaser.static .content section .inside {
   display: block;
   -moz-transform: none;
@@ -319,40 +327,40 @@ body.teaser.static .content section .inside {
   -webkit-transform: none;
   transform: none;
 }
-/* line 16, ../sass/_static.scss */
+/* line 26, ../sass/_static.scss */
 body.teaser.static .content section.header {
   height: 4em;
 }
-/* line 19, ../sass/_static.scss */
+/* line 29, ../sass/_static.scss */
 body.teaser.static .content section.header.vestige {
   height: 20em;
 }
-/* line 23, ../sass/_static.scss */
+/* line 33, ../sass/_static.scss */
 body.teaser.static .content section.header.tagline {
   height: .5em;
   display: none;
 }
-/* line 28, ../sass/_static.scss */
+/* line 38, ../sass/_static.scss */
 body.teaser.static .content section.header.tickets {
   height: 8em;
 }
-/* line 32, ../sass/_static.scss */
+/* line 42, ../sass/_static.scss */
 body.teaser.static .content section.header.logistics {
   height: 12em;
 }
-/* line 36, ../sass/_static.scss */
+/* line 46, ../sass/_static.scss */
 body.teaser.static .content section.header.aboutText {
   height: 12em;
 }
-/* line 40, ../sass/_static.scss */
+/* line 50, ../sass/_static.scss */
 body.teaser.static .content section.header.sponsors {
   height: 8em;
 }
-/* line 45, ../sass/_static.scss */
+/* line 55, ../sass/_static.scss */
 body.teaser.static .content section.video {
   height: 12em;
 }
-/* line 49, ../sass/_static.scss */
+/* line 59, ../sass/_static.scss */
 body.teaser.static .content section.divider {
   height: 2em;
   -moz-background-size: 150% 150%;
@@ -361,25 +369,35 @@ body.teaser.static .content section.divider {
   background-size: 150% 150%;
   background-position: 25% 25%;
 }
-/* line 54, ../sass/_static.scss */
+/* line 64, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(4n+1) {
   height: 1em;
 }
-/* line 58, ../sass/_static.scss */
+/* line 68, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(odd) {
   height: 2em;
 }
-/* line 62, ../sass/_static.scss */
+/* line 72, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(3n+2) {
   height: 3em;
 }
-/* line 65, ../sass/_static.scss */
+/* line 75, ../sass/_static.scss */
 body.teaser.static .content section.divider:nth-child(4n+2) {
   height: 5em;
 }
-/* line 69, ../sass/_static.scss */
+/* line 79, ../sass/_static.scss */
 body.teaser.static .content section.divider video {
   display: none;
+}
+/* line 83, ../sass/_static.scss */
+body.teaser.static .content section.divider.sponsors {
+  height: 16em;
+}
+/* line 85, ../sass/_static.scss */
+body.teaser.static .content section.divider.sponsors img {
+  background-size: 100%;
+  width: 100%;
+  left: 0;
 }
 
 /* line 1, ../sass/_humans.scss */
